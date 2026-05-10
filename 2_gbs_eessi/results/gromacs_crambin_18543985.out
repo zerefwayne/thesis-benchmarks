@@ -1,0 +1,96 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) ModuleLabel/label   2) lumi-tools/24.05   3) init-lumi/0.2
+
+The following sticky modules could not be reloaded:
+
+  1) lumi-tools
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+================================================================
+Loaded environment:
+  ucx_info:    /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/UCX-ROCm/1.18.0-rocm-compilers-19.0.0-ROCm-6.4.1/bin/ucx_info
+  mpirun:      /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun
+  OSU prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+  Hostname:    nid005003
+  Date:        Sun May 10 16:10:06 EEST 2026
+================================================================
+OK: ucx_info reports ROCm support compiled in
+
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/thesis-benchmarks/2_gbs_eessi/GROMACS_Benchmark_Suite/HECBioSim/Crambin
+Command line:
+  gmx_mpi mdrun -s benchmark.tpr -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+
+Back Off! I just backed up md.log to ./#md.log.1#
+Reading file benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005003 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 14 OpenMP threads per MPI process
+
+
+Back Off! I just backed up traj.trr to ./#traj.trr.1#
+
+Back Off! I just backed up ener.edr to ./#ener.edr.1#
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 5.9%.
+ The balanceable part of the MD step is 73%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 4.3%.
+ Average PME mesh/force load: 0.359
+ Part of the total run time spent waiting due to PP/PME imbalance: 3.1 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     3031.501       27.090    11190.3
+                 (ns/day)    (hour/ns)
+Performance:      318.938        0.075
+
+GROMACS reminds you: "We're having an information explosion, among others, and it's certainly obvious that information is of no use unless it's available." (Sister Mary Kenneth Keller)
+
