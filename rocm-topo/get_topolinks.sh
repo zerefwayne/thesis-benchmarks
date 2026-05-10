@@ -1,0 +1,1 @@
+cat /sys/class/kfd/kfd/topology/nodes/*/io_links/*/properties > topo_nodes.txt
