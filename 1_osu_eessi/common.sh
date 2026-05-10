@@ -17,19 +17,19 @@ else
 fi
 
 # --- ROCm / HSA settings ---
-export ROCR_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
-export HSA_AMD_P2P=1
+# export ROCR_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+# export HSA_AMD_P2P=1
 # Disable UCX memtype cache for clean GPU buffer detection
-export UCX_MEMTYPE_CACHE=n
+# export UCX_MEMTYPE_CACHE=n
 
 # --- UCX transports: full set including ROCm ---
 # rocm_copy = host<->device + intra-process device copy
 # rocm_ipc  = direct GPU<->GPU peer access via xGMI
-export UCX_TLS=xpmem,rocm_copy,rocm_ipc,cma,sm,self
+# export UCX_TLS=xpmem,rocm_copy,rocm_ipc,cma,sm,self
 
 # --- OpenMPI: force UCX PML so we don't fall back to ob1 ---
-export OMPI_MCA_pml=ucx
-export OMPI_MCA_btl='^uct,openib'
+# export OMPI_MCA_pml=ucx
+# export OMPI_MCA_btl='^uct,openib'
 
 # --- OSU benchmark paths ---
 # OSU 7.5 installs benchmarks under libexec/osu-micro-benchmarks/{mpi,xccl}/...

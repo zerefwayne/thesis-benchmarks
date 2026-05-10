@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=lumi_topo
-#SBATCH --account=project_462000XXX
-#SBATCH --partition=standard-g
+#SBATCH --account=project_462000226
+#SBATCH --partition=dev-g
 #SBATCH --nodes=1
 #SBATCH --gpus=8
+#SBATCH --exclusive
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=56
 #SBATCH --time=00:05:00
@@ -19,7 +20,7 @@
 #   - NIC layout (Slingshot)
 # ============================================================================
 
-source utils/common.sh
+source common.sh
 
 mkdir -p results
 
