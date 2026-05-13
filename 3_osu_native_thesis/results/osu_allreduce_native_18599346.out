@@ -1,0 +1,60 @@
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+Using OSU collective binaries from: /users/joglekar/osu-native/osu-micro-benchmarks-7.5/c/mpi/collective/blocking
+
+################################################################
+# osu_allreduce  N=2 GCDs   devices=0,1
+################################################################
+  [run 1/6] warm-up starting
+  [run 2/6] recording
+  [run 3/6] recording
+  [run 4/6] recording
+  [run 5/6] recording
+  [run 6/6] recording
+
+################################################################
+# osu_allreduce  N=4 GCDs   devices=0,1,2,3
+################################################################
+  [run 1/6] warm-up starting
+  [run 2/6] recording
+  [run 3/6] recording
+  [run 4/6] recording
+  [run 5/6] recording
+  [run 6/6] recording
+
+################################################################
+# osu_allreduce  N=6 GCDs   devices=0,1,2,3,4,5
+################################################################
+  [run 1/6] warm-up starting
+  [run 2/6] recording
+  [run 3/6] recording
+  [run 4/6] recording
+  [run 5/6] recording
+  [run 6/6] recording
+
+################################################################
+# osu_allreduce  N=8 GCDs   devices=0,1,2,3,4,5,6,7
+################################################################
+  [run 1/6] warm-up starting
+  [run 2/6] recording
+  [run 3/6] recording
+  [run 4/6] recording
+  [run 5/6] recording
+  [run 6/6] recording
+
+================================================================
+ALL BENCHMARKS COMPLETE
+  CSV: results/osu_allreduce_native_18599346.csv
+  Log: results/osu_allreduce_native_18599346.log
+================================================================
