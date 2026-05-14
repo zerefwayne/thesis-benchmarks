@@ -66,14 +66,14 @@ run_pair() {
     for run in $(seq 1 $NUM_RUNS); do
         if (( run == WARMUP_RUN )); then
             echo "  [run $run] warm-up — output discarded" | tee -a "$LOG_FILE"
-            ROCR_VISIBLE_DEVICES=$g0,$g1 mpirun -n 2 ${OSU_PT2PT}/osu_bw -d rocm D D \
+            ROCR_VISIBLE_DEVICES=$g0,$g1 mpirun -n 2 ${OSU_PT2PT}/osu_bw -m 1:1073741824 -i 100 -d rocm D D \
                 > /dev/null 2>&1
             continue
         fi
 
         echo "  [run $run] recording" | tee -a "$LOG_FILE"
         local raw
-        raw=$(ROCR_VISIBLE_DEVICES=$g0,$g1 mpirun -n 2 ${OSU_PT2PT}/osu_bw \
+        raw=$(ROCR_VISIBLE_DEVICES=$g0,$g1 mpirun -n 2 ${OSU_PT2PT}/osu_bw -m 1:1073741824 -i 100 \
               -d rocm D D 2>/dev/null)
 
         # Append raw OSU output to log for inspection
@@ -106,14 +106,14 @@ run_self_pair() {
     for run in $(seq 1 $NUM_RUNS); do
         if (( run == WARMUP_RUN )); then
             echo "  [run $run] warm-up — output discarded" | tee -a "$LOG_FILE"
-            ROCR_VISIBLE_DEVICES=$g mpirun -n 2 ${OSU_PT2PT}/osu_bw -d rocm D D \
+            ROCR_VISIBLE_DEVICES=$g mpirun -n 2 ${OSU_PT2PT}/osu_bw -d rocm D D -m 1:1073741824 -i 100 \
                 > /dev/null 2>&1
             continue
         fi
 
         echo "  [run $run] recording" | tee -a "$LOG_FILE"
         local raw
-        raw=$(ROCR_VISIBLE_DEVICES=$g mpirun -n 2 ${OSU_PT2PT}/osu_bw \
+        raw=$(ROCR_VISIBLE_DEVICES=$g mpirun -n 2 ${OSU_PT2PT}/osu_bw -m 1:1073741824 -i 100 \
               -d rocm D D 2>/dev/null)
 
         echo "$raw" >> "$LOG_FILE"
