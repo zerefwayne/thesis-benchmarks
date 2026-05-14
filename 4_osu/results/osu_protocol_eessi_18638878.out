@@ -23,34 +23,64 @@ via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
 reuse existing sources for packages. 
 [setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
 
-# [eessi sdma=0 UCX_RNDV_THRESH=1024] intra_pkg_OAM0  GCD(0,1)
-  [run 1/4] warm-up — 20:58:28
-  [run 1/4] warm-up done in 19s
-  [run 2/4] recording — 20:58:47
-  [run 2/4] done in 10s
-  [run 3/4] recording — 20:58:57
-  [run 3/4] done in 9s
-  [run 4/4] recording — 20:59:06
-  [run 4/4] done in 10s
-
 # [eessi sdma=0 UCX_RNDV_THRESH=DEFAULT] intra_pkg_OAM0  GCD(0,1)
-  [run 1/4] warm-up — 20:59:16
-  [run 1/4] warm-up done in 10s
-  [run 2/4] recording — 20:59:26
+  [run 1/4] warm-up — 01:08:59
+  [run 1/4] warm-up done in 21s
+  [run 2/4] recording — 01:09:20
   [run 2/4] done in 10s
-  [run 3/4] recording — 20:59:36
+  [run 3/4] recording — 01:09:30
   [run 3/4] done in 10s
-  [run 4/4] recording — 20:59:46
+  [run 4/4] recording — 01:09:40
   [run 4/4] done in 10s
 
-# [eessi sdma=0 UCX_RNDV_THRESH=16777216] intra_pkg_OAM0  GCD(0,1)
-  [run 1/4] warm-up — 20:59:56
-  [run 1/4] warm-up done in 175s
-  [run 2/4] recording — 21:02:51
-  [run 2/4] done in 174s
-  [run 3/4] recording — 21:05:45
-  [run 3/4] done in 174s
-  [run 4/4] recording — 21:08:39
-  [run 4/4] done in 173s
+# [eessi sdma=0 UCX_RNDV_THRESH=1024] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:09:50
+  [run 1/4] warm-up done in 10s
+  [run 2/4] recording — 01:10:00
+  [run 2/4] done in 10s
+  [run 3/4] recording — 01:10:10
+  [run 3/4] done in 10s
+  [run 4/4] recording — 01:10:20
+  [run 4/4] done in 10s
 
-ALL BENCHMARKS COMPLETE  CSV=results/osu_protocol_eessi_18634230.csv
+# [eessi sdma=0 UCX_RNDV_THRESH=2048] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:10:30
+  [run 1/4] warm-up done in 9s
+  [run 2/4] recording — 01:10:39
+  [run 2/4] done in 10s
+  [run 3/4] recording — 01:10:49
+  [run 3/4] done in 10s
+  [run 4/4] recording — 01:10:59
+  [run 4/4] done in 10s
+
+# [eessi sdma=0 UCX_RNDV_THRESH=4096] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:11:09
+  [run 1/4] warm-up done in 10s
+  [run 2/4] recording — 01:11:19
+  [run 2/4] done in 10s
+  [run 3/4] recording — 01:11:29
+  [run 3/4] done in 10s
+  [run 4/4] recording — 01:11:39
+  [run 4/4] done in 10s
+
+# [eessi sdma=0 UCX_RNDV_THRESH=8192] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:11:49
+  [run 1/4] warm-up done in 10s
+  [run 2/4] recording — 01:11:59
+  [run 2/4] done in 9s
+  [run 3/4] recording — 01:12:08
+  [run 3/4] done in 10s
+  [run 4/4] recording — 01:12:18
+  [run 4/4] done in 10s
+
+# [eessi sdma=0 UCX_RNDV_THRESH=16384] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:12:28
+  [run 1/4] warm-up done in 10s
+  [run 2/4] recording — 01:12:38
+  [run 2/4] done in 10s
+  [run 3/4] recording — 01:12:48
+  [run 3/4] done in 10s
+  [run 4/4] recording — 01:12:58
+  [run 4/4] done in 10s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_protocol_eessi_18638878.csv

@@ -1,0 +1,76 @@
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=DEFAULT] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:11:51
+  [run 1/4] warm-up done in 10s
+  [run 2/4] recording — 01:12:01
+  [run 2/4] done in 7s
+  [run 3/4] recording — 01:12:08
+  [run 3/4] done in 8s
+  [run 4/4] recording — 01:12:16
+  [run 4/4] done in 8s
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=1024] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:12:24
+  [run 1/4] warm-up done in 8s
+  [run 2/4] recording — 01:12:32
+  [run 2/4] done in 8s
+  [run 3/4] recording — 01:12:40
+  [run 3/4] done in 8s
+  [run 4/4] recording — 01:12:48
+  [run 4/4] done in 8s
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=2048] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:12:56
+  [run 1/4] warm-up done in 8s
+  [run 2/4] recording — 01:13:04
+  [run 2/4] done in 8s
+  [run 3/4] recording — 01:13:12
+  [run 3/4] done in 9s
+  [run 4/4] recording — 01:13:21
+  [run 4/4] done in 7s
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=4096] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:13:28
+  [run 1/4] warm-up done in 7s
+  [run 2/4] recording — 01:13:35
+  [run 2/4] done in 7s
+  [run 3/4] recording — 01:13:42
+  [run 3/4] done in 8s
+  [run 4/4] recording — 01:13:50
+  [run 4/4] done in 7s
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=8192] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:13:57
+  [run 1/4] warm-up done in 8s
+  [run 2/4] recording — 01:14:05
+  [run 2/4] done in 8s
+  [run 3/4] recording — 01:14:13
+  [run 3/4] done in 8s
+  [run 4/4] recording — 01:14:21
+  [run 4/4] done in 8s
+
+# [native sdma=0 MPICH_GPU_IPC_THRESHOLD=16384] intra_pkg_OAM0  GCD(0,1)
+  [run 1/4] warm-up — 01:14:29
+  [run 1/4] warm-up done in 9s
+  [run 2/4] recording — 01:14:38
+  [run 2/4] done in 8s
+  [run 3/4] recording — 01:14:46
+  [run 3/4] done in 8s
+  [run 4/4] recording — 01:14:54
+  [run 4/4] done in 8s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_protocol_native_18638911.csv

@@ -7,11 +7,22 @@
 #SBATCH --exclusive
 #SBATCH --ntasks-per-node=2
 #SBATCH --cpus-per-task=28
-#SBATCH --time=00:30:00
+#SBATCH --time=00:15:00
 #SBATCH --output=results/%x_%j.out
 #
 # osu_protocol_native.sh — A5: Cray MPICH IPC threshold sweep (native)
-# Single pair (0,1), SDMA=0, 3 thresholds × 4 runs.
+# Single pair (0,1), SDMA=0, 6 thresholds × 4 runs (1 warmup + 3 recorded).
+#
+# Finer sweep across the IPC transition zone — mirrors osu_protocol_eessi.sh.
+# Previous sweep {1, DEFAULT, 16777216} showed:
+#   - IPC=1 (always IPC) hurts small msgs (~half DEFAULT at 1B-512B)
+#   - DEFAULT is clean (no cliff)
+#   - IPC=16M was ~2× FASTER than DEFAULT at 1K-4K (host-staged wins there)
+# So the sweet spot for native sits between DEFAULT (~8K?) and 16M.
+# This run samples 1024..16384 to find where Cray IPC starts helping/hurting
+# the 1K-16K transition zone. IPC=1 (known-bad) and 16M (already tested)
+# are omitted.
+#
 # Native-only — no --constraint=eessi needed.
 
 source common.sh
@@ -38,11 +49,10 @@ TIER="${TOPO%,*}"; NLINKS="${TOPO#*,}"
 setup_native || { echo "ERROR: setup_native failed" >&2; exit 1; }
 export HSA_ENABLE_SDMA=0
 
-# Bracket matches paper Alps tuning (arXiv:2408.14090v2 Sec III-B):
-#   1        — force IPC for all sizes (paper's small-msg-speedup)
-#   DEFAULT  — Cray built-in
-#   16777216 — suppress IPC for nearly all sizes
-for ipc in 1 DEFAULT 16777216; do
+# Sweep matches the EESSI side (osu_protocol_eessi.sh):
+#   DEFAULT       — Cray built-in (baseline)
+#   1024..16384   — powers of 2 to find the IPC transition sweet spot
+for ipc in DEFAULT 1024 2048 4096 8192 16384; do
     if [[ "$ipc" == "DEFAULT" ]]; then
         unset MPICH_GPU_IPC_THRESHOLD
     else

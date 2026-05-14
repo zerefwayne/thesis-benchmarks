@@ -15,6 +15,9 @@ SCRIPTS=(
     reference.py        # H1 topology, H2 coverage
     barcharts.py        # B1, B2, B4 (per-pair + tier-aggregated bars)
     per_pair_curves.py  # B3 (small multiples: bw, bibw, latency)
+    per_pair_curves_fixed_rndv.py  # B3d (bw small multiples, fixed_rndv)
+    per_pair_curves_rma.py  # B3e/B3f (osu_put_bw, osu_get_bw small multiples)
+    protocol_sweep_eessi.py # E1 (UCX_RNDV_THRESH sweep)
     distributions.py    # B5, B6 (per-run strip plots)
     delta_curves.py     # D1 (signed % delta vs message size)
     delta_bars.py       # D2 (sorted % delta tornado bars)

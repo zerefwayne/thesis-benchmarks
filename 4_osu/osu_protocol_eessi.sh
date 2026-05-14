@@ -7,12 +7,22 @@
 #SBATCH --exclusive
 #SBATCH --ntasks-per-node=2
 #SBATCH --cpus-per-task=28
-#SBATCH --time=00:30:00
+#SBATCH --time=00:15:00
 #SBATCH --output=results/%x_%j.out
 #SBATCH --constraint=eessi
 #
 # osu_protocol_eessi.sh — A5: UCX rendezvous threshold sweep (EESSI)
-# Single pair (0,1), SDMA=0, 3 thresholds × 4 runs (1 warmup + 3 recorded).
+# Single pair (0,1), SDMA=0, 6 thresholds × 4 runs (1 warmup + 3 recorded).
+#
+# Finer sweep across the eager / rendezvous transition zone — picks
+# powers of 2 from 1024 up to 16384, which brackets the 8 KiB point
+# where the original osu_bw_eessi recovered to native parity. DEFAULT
+# (~256 B) is kept as the baseline-cliff anchor; 16 MiB is omitted —
+# the previous sweep already showed it pins bulk at the ~660 MB/s
+# eager bounce-buffer ceiling (catastrophic, no need to repeat).
+# Goal: find the largest threshold that fixes the 512 B - 4 KiB band
+# without regressing bulk bandwidth at >= 8 KiB.
+#
 # EESSI-only — no module purge needed since this is the first/only section.
 
 source common.sh
@@ -40,7 +50,7 @@ TIER="${TOPO%,*}"; NLINKS="${TOPO#*,}"
 setup_eessi || { echo "ERROR: setup_eessi failed" >&2; exit 1; }
 export HSA_ENABLE_SDMA=0
 
-for rndv in 1024 DEFAULT 16777216; do
+for rndv in DEFAULT 1024 2048 4096 8192 16384; do
     if [[ "$rndv" == "DEFAULT" ]]; then
         unset UCX_RNDV_THRESH
     else

@@ -7,7 +7,7 @@
 #SBATCH --exclusive
 #SBATCH --ntasks-per-node=8
 #SBATCH --cpus-per-task=7
-#SBATCH --time=01:00:00
+#SBATCH --time=00:15:00
 #SBATCH --output=results/%x_%j.out
 #SBATCH --constraint=eessi
 #

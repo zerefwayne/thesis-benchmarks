@@ -1,8 +1,8 @@
-# === node metadata @ 2026-05-14T20:58:19+03:00 ===
-hostname=nid005048
-slurm_job_id=18634230
-slurm_nodelist=nid005048
-cray_xname=x1100c3s0b0n0
+# === node metadata @ 2026-05-15T01:00:31+03:00 ===
+hostname=nid005008
+slurm_job_id=18638826
+slurm_nodelist=nid005008
+cray_xname=x1100c0s4b0n0
 kernel=6.4.0-150600.23.73_15.0.14-cray_shasta_c
 # rocm-smi topology:
   
