@@ -1,0 +1,2510 @@
+################# EESSI STACK (HSA_ENABLE_SDMA=0) ##################
+
+# [eessi sdma=0] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg
+  [run 1/6] warm-up — 00:19:54
+  [run 1/6] warm-up done in 32s
+  [run 2/6] recording — 00:20:26
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-55885@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       8.92
+4                      17.85
+8                      35.80
+16                     71.06
+32                    136.55
+64                    286.78
+128                   564.55
+256                  1169.84
+512                  2236.31
+1024                 4526.79
+2048                 8492.23
+4096                13549.55
+8192                17751.78
+16384               20720.46
+32768               26260.87
+65536               30882.05
+131072              33096.93
+262144              25474.97
+524288              14551.71
+1048576             11388.91
+2097152             10495.26
+4194304             10367.54
+8388608              9812.20
+16777216             9808.35
+  [run 3/6] recording — 00:20:53
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-55936@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.59
+2                       8.88
+4                      18.10
+8                      34.94
+16                     71.93
+32                    144.59
+64                    296.60
+128                   589.62
+256                  1165.79
+512                  2215.94
+1024                 4668.10
+2048                 8723.62
+4096                13559.46
+8192                17459.65
+16384               20818.11
+32768               26636.46
+65536               30919.35
+131072              33659.27
+262144              26002.45
+524288              15292.46
+1048576             11359.26
+2097152             10704.55
+4194304             10021.64
+8388608              9762.39
+16777216            10143.48
+  [run 4/6] recording — 00:21:18
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-55987@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.43
+2                       8.95
+4                      17.57
+8                      36.44
+16                     72.24
+32                    141.08
+64                    279.80
+128                   603.18
+256                  1219.51
+512                  2324.38
+1024                 4721.44
+2048                 8712.12
+4096                13549.62
+8192                17789.32
+16384               20809.63
+32768               25837.46
+65536               30604.46
+131072              33072.82
+262144              26434.24
+524288              15199.45
+1048576             11911.32
+2097152             10479.66
+4194304              9983.88
+8388608             10127.70
+16777216             9804.32
+  [run 5/6] recording — 00:21:44
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56053@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.40
+2                       8.63
+4                      16.43
+8                      35.59
+16                     72.12
+32                    143.22
+64                    285.05
+128                   570.40
+256                  1131.16
+512                  2268.56
+1024                 4615.43
+2048                 7681.15
+4096                13517.84
+8192                17798.63
+16384               20660.25
+32768               25776.24
+65536               30395.26
+131072              32561.29
+262144              26677.12
+524288              15200.69
+1048576             11378.99
+2097152             10486.54
+4194304             10361.50
+8388608              9803.55
+16777216             9807.13
+  [run 6/6] recording — 00:22:10
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56099@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       8.66
+4                      17.31
+8                      33.91
+16                     71.51
+32                    143.66
+64                    286.37
+128                   570.50
+256                  1145.10
+512                  2203.62
+1024                 4221.01
+2048                 8375.65
+4096                13508.07
+8192                17199.50
+16384               20413.70
+32768               25917.22
+65536               30922.27
+131072              33459.64
+262144              25798.24
+524288              15245.46
+1048576             11394.10
+2097152             10491.75
+4194304             10017.48
+8388608             10113.22
+16777216             9753.23
+
+# [eessi sdma=0] intra_pkg_OAM1  GCD(2,3) tier=intra_pkg
+  [run 1/6] warm-up — 00:22:36
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:23:02
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56202@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.31
+2                       8.83
+4                      17.03
+8                      33.93
+16                     70.95
+32                    143.28
+64                    272.10
+128                   569.22
+256                  1139.41
+512                  2002.53
+1024                 4317.93
+2048                 8033.31
+4096                12855.18
+8192                16918.56
+16384               20400.72
+32768               25582.21
+65536               30235.31
+131072              32670.99
+262144              25989.88
+524288              15231.18
+1048576             11336.87
+2097152             10733.79
+4194304              9980.71
+8388608              9777.96
+16777216            10119.48
+  [run 3/6] recording — 00:23:28
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56252@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.54
+2                       8.83
+4                      18.58
+8                      35.85
+16                     73.25
+32                    145.76
+64                    292.46
+128                   583.33
+256                  1174.40
+512                  2237.47
+1024                 4744.18
+2048                 8606.37
+4096                13718.57
+8192                17385.34
+16384               20388.96
+32768               25807.49
+65536               30653.13
+131072              33191.37
+262144              25101.28
+524288              15219.69
+1048576             11342.81
+2097152             10451.52
+4194304              9993.43
+8388608              9768.68
+16777216             9774.21
+  [run 4/6] recording — 00:23:54
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56301@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.56
+2                       8.91
+4                      18.30
+8                      36.66
+16                     73.18
+32                    141.91
+64                    296.46
+128                   580.72
+256                  1120.73
+512                  2298.44
+1024                 4472.07
+2048                 8385.22
+4096                13729.95
+8192                17545.94
+16384               20601.85
+32768               26091.75
+65536               30780.10
+131072              32794.22
+262144              25921.21
+524288              15166.80
+1048576             11258.87
+2097152             10803.09
+4194304              9955.66
+8388608              9738.62
+16777216             9730.36
+  [run 5/6] recording — 00:24:21
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56357@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.31
+2                       8.63
+4                      17.18
+8                      34.90
+16                     67.83
+32                    136.31
+64                    279.72
+128                   534.42
+256                  1111.56
+512                  2213.17
+1024                 4350.55
+2048                 8127.29
+4096                13615.06
+8192                17389.38
+16384               20470.80
+32768               24630.58
+65536               30265.83
+131072              33398.88
+262144              25525.17
+524288              15458.14
+1048576             11552.26
+2097152             10455.21
+4194304              9966.89
+8388608              9783.37
+16777216             9797.93
+  [run 6/6] recording — 00:24:47
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56409@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.53
+2                       9.12
+4                      17.82
+8                      35.82
+16                     72.61
+32                    145.03
+64                    289.66
+128                   580.76
+256                  1124.82
+512                  2296.00
+1024                 4594.51
+2048                 8528.27
+4096                13614.42
+8192                17814.57
+16384               20749.18
+32768               26072.28
+65536               30841.28
+131072              33648.12
+262144              26158.31
+524288              15531.16
+1048576             11359.13
+2097152             10469.89
+4194304              9963.23
+8388608              9747.71
+16777216             9758.23
+
+# [eessi sdma=0] intra_pkg_OAM2  GCD(4,5) tier=intra_pkg
+  [run 1/6] warm-up — 00:25:13
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:25:39
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56508@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.50
+2                       8.93
+4                      18.47
+8                      36.56
+16                     72.93
+32                    143.29
+64                    297.60
+128                   591.97
+256                  1072.14
+512                  2347.23
+1024                 4609.64
+2048                 8824.19
+4096                13824.10
+8192                17805.91
+16384               20294.39
+32768               25429.14
+65536               31014.14
+131072              31071.43
+262144              26036.81
+524288              15702.77
+1048576             11322.87
+2097152             10457.18
+4194304              9980.12
+8388608             10093.63
+16777216            10101.16
+  [run 3/6] recording — 00:26:05
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56557@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       3.99
+2                       9.08
+4                      16.44
+8                      35.85
+16                     71.35
+32                    146.85
+64                    252.22
+128                   518.26
+256                  1170.79
+512                  2077.22
+1024                 4546.39
+2048                 7716.26
+4096                13772.81
+8192                17205.10
+16384               20180.70
+32768               25265.25
+65536               30150.23
+131072              33492.10
+262144              26080.22
+524288              15466.37
+1048576             11623.37
+2097152             10716.15
+4194304              9987.37
+8388608              9773.35
+16777216             9781.28
+  [run 4/6] recording — 00:26:31
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56694@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.39
+2                       9.00
+4                      17.75
+8                      36.14
+16                     71.49
+32                    141.35
+64                    280.69
+128                   533.96
+256                  1084.83
+512                  2205.10
+1024                 4580.81
+2048                 8327.99
+4096                12970.14
+8192                16791.41
+16384               20764.46
+32768               25619.97
+65536               30391.98
+131072              33279.55
+262144              25812.43
+524288              14438.36
+1048576             11295.71
+2097152             10474.25
+4194304             10306.08
+8388608              9772.06
+16777216             9775.19
+  [run 5/6] recording — 00:26:57
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56745@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.55
+2                       8.96
+4                      17.06
+8                      36.00
+16                     72.02
+32                    138.18
+64                    288.68
+128                   574.46
+256                  1026.25
+512                  2191.85
+1024                 4499.35
+2048                 8220.55
+4096                12155.38
+8192                17405.99
+16384               20206.34
+32768               26400.51
+65536               30957.90
+131072              33174.03
+262144              25235.66
+524288              15285.19
+1048576             11288.37
+2097152             10461.42
+4194304              9998.32
+8388608              9767.25
+16777216             9777.49
+  [run 6/6] recording — 00:27:23
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56795@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.45
+2                       8.88
+4                      18.21
+8                      35.91
+16                     65.54
+32                    146.09
+64                    286.05
+128                   578.83
+256                  1191.63
+512                  2375.79
+1024                 4472.89
+2048                 8714.38
+4096                13973.47
+8192                17874.39
+16384               20640.81
+32768               23846.75
+65536               30880.46
+131072              33404.12
+262144              25917.47
+524288              15632.50
+1048576             11297.83
+2097152             10666.55
+4194304              9986.18
+8388608             10242.99
+16777216             9764.69
+
+# [eessi sdma=0] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:27:49
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:28:16
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56903@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.09
+2                       9.01
+4                      17.15
+8                      35.69
+16                     70.43
+32                    145.51
+64                    284.08
+128                   560.10
+256                  1155.58
+512                  2014.23
+1024                 4402.27
+2048                 8151.85
+4096                13268.30
+8192                17589.82
+16384               20725.68
+32768               25320.76
+65536               30733.34
+131072              33538.62
+262144              25800.75
+524288              14493.55
+1048576             11938.05
+2097152             10474.72
+4194304              9968.59
+8388608              9778.86
+16777216            10087.31
+  [run 3/6] recording — 00:28:41
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56949@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.03
+2                       9.00
+4                      18.04
+8                      34.60
+16                     66.76
+32                    138.68
+64                    287.25
+128                   538.08
+256                  1155.59
+512                  2025.41
+1024                 4530.67
+2048                 8191.31
+4096                13851.04
+8192                17282.33
+16384               20368.45
+32768               25992.89
+65536               30130.13
+131072              33710.09
+262144              25826.95
+524288              15289.81
+1048576             11929.49
+2097152             10446.27
+4194304              9985.32
+8388608              9754.95
+16777216             9746.75
+  [run 4/6] recording — 00:29:08
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-56999@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.01
+2                       8.87
+4                      17.65
+8                      35.43
+16                     69.96
+32                    131.36
+64                    284.30
+128                   513.70
+256                  1141.02
+512                  2068.15
+1024                 4317.02
+2048                 8261.41
+4096                13545.41
+8192                16887.33
+16384               20465.43
+32768               25900.26
+65536               30418.23
+131072              33552.46
+262144              26318.90
+524288              15207.03
+1048576             11614.75
+2097152             10462.39
+4194304              9914.10
+8388608              9753.32
+16777216            10222.60
+  [run 5/6] recording — 00:29:33
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57050@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       8.81
+4                      17.67
+8                      35.35
+16                     70.11
+32                    141.50
+64                    284.29
+128                   556.27
+256                  1106.96
+512                  2123.08
+1024                 4233.12
+2048                 7903.15
+4096                13394.38
+8192                17337.70
+16384               19790.34
+32768               25018.64
+65536               29978.70
+131072              33038.65
+262144              25357.86
+524288              14593.02
+1048576             11572.95
+2097152             10490.39
+4194304              9977.34
+8388608              9747.26
+16777216            10217.56
+  [run 6/6] recording — 00:29:59
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57096@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.61
+2                       9.19
+4                      18.40
+8                      36.13
+16                     70.58
+32                    148.24
+64                    296.98
+128                   592.77
+256                  1182.50
+512                  2333.20
+1024                 4107.54
+2048                 8731.60
+4096                13933.58
+8192                18062.39
+16384               21020.49
+32768               25780.05
+65536               29901.93
+131072              32962.05
+262144              25779.15
+524288              15583.93
+1048576             11618.20
+2097152             10475.81
+4194304             10000.32
+8388608              9792.67
+16777216             9795.95
+
+# [eessi sdma=0] inter_pkg_2link_24  GCD(2,4) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:30:25
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:30:51
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57200@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.53
+2                       8.80
+4                      18.49
+8                      36.99
+16                     68.44
+32                    145.58
+64                    285.63
+128                   580.85
+256                  1159.16
+512                  2194.28
+1024                 4505.12
+2048                 8014.51
+4096                13170.05
+8192                17251.96
+16384               20455.63
+32768               25948.19
+65536               30892.44
+131072              33511.21
+262144              26896.28
+524288              14766.32
+1048576             11639.26
+2097152             10503.26
+4194304              9987.18
+8388608              9778.41
+16777216             9776.21
+  [run 3/6] recording — 00:31:18
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57267@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       8.18
+4                      18.92
+8                      36.50
+16                     64.24
+32                    143.07
+64                    298.32
+128                   594.82
+256                  1142.07
+512                  2320.47
+1024                 4569.86
+2048                 8625.67
+4096                13103.50
+8192                17588.88
+16384               19985.08
+32768               26464.51
+65536               30881.53
+131072              33161.99
+262144              25652.25
+524288              14653.59
+1048576             11657.63
+2097152             10704.07
+4194304              9995.40
+8388608             10106.96
+16777216             9820.64
+  [run 4/6] recording — 00:31:44
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57319@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.43
+2                       9.22
+4                      17.62
+8                      36.74
+16                     72.65
+32                    145.36
+64                    294.88
+128                   530.47
+256                  1190.40
+512                  2313.10
+1024                 4622.31
+2048                 8433.05
+4096                13872.19
+8192                17816.88
+16384               20614.64
+32768               25898.14
+65536               31250.04
+131072              33610.45
+262144              25951.38
+524288              15531.52
+1048576             11636.73
+2097152             10707.87
+4194304             10015.06
+8388608              9766.88
+16777216            10132.62
+  [run 5/6] recording — 00:32:09
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57441@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.35
+2                       8.92
+4                      17.55
+8                      34.45
+16                     71.84
+32                    142.38
+64                    282.21
+128                   562.61
+256                  1166.09
+512                  2308.90
+1024                 4476.10
+2048                 8399.75
+4096                13518.26
+8192                17667.93
+16384               20808.05
+32768               26683.13
+65536               30752.01
+131072              32493.16
+262144              25321.11
+524288              15636.22
+1048576             11654.50
+2097152             10522.92
+4194304             10014.96
+8388608              9798.27
+16777216            10254.71
+  [run 6/6] recording — 00:32:35
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57493@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.38
+2                       9.18
+4                      18.13
+8                      36.03
+16                     71.88
+32                    149.28
+64                    297.05
+128                   566.79
+256                  1152.26
+512                  2070.48
+1024                 4369.68
+2048                 8440.78
+4096                13305.15
+8192                17914.35
+16384               20270.52
+32768               26163.50
+65536               31084.56
+131072              33792.58
+262144              26134.89
+524288              15187.13
+1048576             11955.42
+2097152             10493.34
+4194304             10008.34
+8388608              9800.70
+16777216             9781.73
+
+# [eessi sdma=0] inter_pkg_1link_02  GCD(0,2) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:33:01
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:33:27
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57593@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.51
+2                       9.28
+4                      15.57
+8                      37.09
+16                     73.57
+32                    149.84
+64                    284.73
+128                   583.50
+256                  1170.64
+512                  2228.19
+1024                 4698.88
+2048                 8547.50
+4096                13753.61
+8192                17627.10
+16384               20924.63
+32768               26663.17
+65536               31038.83
+131072              32172.40
+262144              25581.24
+524288              14823.01
+1048576             11658.54
+2097152             10480.95
+4194304             10365.63
+8388608              9795.08
+16777216            10121.35
+  [run 3/6] recording — 00:33:52
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57644@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.25
+2                       8.46
+4                      17.62
+8                      30.69
+16                     67.44
+32                    132.78
+64                    283.22
+128                   560.05
+256                  1100.23
+512                  2070.65
+1024                 4287.00
+2048                 7809.82
+4096                13163.96
+8192                17346.55
+16384               20574.75
+32768               25678.87
+65536               30347.41
+131072              33255.24
+262144              25621.71
+524288              15140.08
+1048576             11192.69
+2097152             10769.41
+4194304             10478.23
+8388608              9818.32
+16777216             9805.78
+  [run 4/6] recording — 00:34:18
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57696@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.61
+2                       9.04
+4                      18.08
+8                      33.54
+16                     72.02
+32                    145.62
+64                    296.53
+128                   577.82
+256                  1040.71
+512                  2205.10
+1024                 4119.44
+2048                 8161.92
+4096                12406.70
+8192                17642.84
+16384               20631.05
+32768               25797.50
+65536               31003.34
+131072              33541.06
+262144              25392.56
+524288              15600.65
+1048576             11556.50
+2097152             10467.69
+4194304             10485.49
+8388608              9788.19
+16777216             9745.66
+  [run 5/6] recording — 00:34:45
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57746@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.49
+2                       9.20
+4                      18.35
+8                      36.64
+16                     71.38
+32                    142.65
+64                    285.15
+128                   587.57
+256                  1154.11
+512                  2320.98
+1024                 4595.87
+2048                 8421.92
+4096                13697.89
+8192                17687.63
+16384               20845.52
+32768               26216.30
+65536               31157.93
+131072              33956.08
+262144              25989.69
+524288              15180.16
+1048576             11590.21
+2097152             10461.94
+4194304              9996.84
+8388608              9793.19
+16777216             9765.83
+  [run 6/6] recording — 00:35:11
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57793@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.49
+2                       9.21
+4                      16.55
+8                      36.33
+16                     72.83
+32                    144.60
+64                    279.31
+128                   521.43
+256                  1155.45
+512                  2291.93
+1024                 4435.55
+2048                 7687.70
+4096                13724.62
+8192                17919.19
+16384               20409.08
+32768               26495.69
+65536               30198.62
+131072              33231.01
+262144              26022.10
+524288              14717.23
+1048576             11613.12
+2097152             10829.19
+4194304             10440.44
+8388608              9764.34
+16777216             9744.96
+
+# [eessi sdma=0] inter_pkg_1link_15  GCD(1,5) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:35:37
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:36:03
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-57912@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.43
+2                       9.14
+4                      18.21
+8                      35.84
+16                     72.53
+32                    146.39
+64                    283.84
+128                   582.92
+256                  1142.22
+512                  2235.88
+1024                 4500.28
+2048                 8361.90
+4096                13327.72
+8192                17358.81
+16384               20212.47
+32768               25568.21
+65536               30363.43
+131072              33710.35
+262144              26625.95
+524288              14429.53
+1048576             11330.53
+2097152             10505.46
+4194304              9992.04
+8388608              9785.20
+16777216             9754.21
+  [run 3/6] recording — 00:36:29
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-58058@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.47
+2                       9.17
+4                      18.49
+8                      36.85
+16                     71.88
+32                    145.68
+64                    298.98
+128                   580.31
+256                  1174.37
+512                  2266.55
+1024                 4465.01
+2048                 8410.76
+4096                13880.95
+8192                17773.07
+16384               20891.38
+32768               26073.94
+65536               30583.51
+131072              33261.17
+262144              25116.79
+524288              15711.19
+1048576             11932.05
+2097152             10480.96
+4194304              9966.27
+8388608              9776.16
+16777216             9749.56
+  [run 4/6] recording — 00:36:55
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-58108@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.64
+2                       8.96
+4                      18.40
+8                      36.18
+16                     74.38
+32                    150.38
+64                    288.78
+128                   556.94
+256                  1168.09
+512                  2288.14
+1024                 4300.16
+2048                 8462.62
+4096                13488.57
+8192                17683.80
+16384               20681.03
+32768               24998.80
+65536               30508.24
+131072              33340.62
+262144              25167.11
+524288              15554.93
+1048576             11348.71
+2097152             10694.50
+4194304             10023.93
+8388608             10107.73
+16777216             9794.49
+  [run 5/6] recording — 00:37:21
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-58158@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.43
+2                       8.62
+4                      15.98
+8                      35.25
+16                     68.45
+32                    136.87
+64                    268.36
+128                   538.64
+256                  1104.72
+512                  2261.15
+1024                 4396.14
+2048                 7522.79
+4096                13438.13
+8192                17413.29
+16384               21132.09
+32768               26356.53
+65536               30423.96
+131072              33331.76
+262144              26422.62
+524288              15459.35
+1048576             11614.35
+2097152             10706.38
+4194304              9981.60
+8388608              9778.12
+16777216             9771.12
+  [run 6/6] recording — 00:37:48
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-58208@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.58
+2                       9.22
+4                      18.54
+8                      37.50
+16                     72.38
+32                    150.03
+64                    297.48
+128                   596.81
+256                  1215.47
+512                  2358.66
+1024                 4663.37
+2048                 8615.73
+4096                13217.49
+8192                17452.25
+16384               20295.92
+32768               25806.02
+65536               30817.35
+131072              33402.59
+262144              26267.81
+524288              14439.37
+1048576             11588.78
+2097152             10662.24
+4194304             10317.29
+8388608              9778.45
+16777216             9984.84
+
+# [eessi sdma=0] inter_pkg_1link_37  GCD(3,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:38:13
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:38:40
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-60829@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.58
+2                       9.06
+4                      18.23
+8                      37.00
+16                     73.51
+32                    133.41
+64                    297.33
+128                   576.86
+256                  1184.45
+512                  2245.75
+1024                 4323.29
+2048                 8464.97
+4096                13782.17
+8192                16536.01
+16384               20456.55
+32768               25750.97
+65536               30607.55
+131072              33175.14
+262144              26603.09
+524288              15541.88
+1048576             11368.91
+2097152             10701.79
+4194304             10009.98
+8388608              9768.26
+16777216             9801.88
+  [run 3/6] recording — 00:39:06
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-67991@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.36
+2                       8.97
+4                      17.35
+8                      36.49
+16                     72.18
+32                    148.91
+64                    290.41
+128                   573.48
+256                  1174.46
+512                  2289.03
+1024                 4601.72
+2048                 8376.35
+4096                13720.37
+8192                17742.02
+16384               20430.00
+32768               25549.73
+65536               30345.49
+131072              33613.23
+262144              25460.94
+524288              14675.03
+1048576             11555.95
+2097152             10461.81
+4194304              9992.86
+8388608             10015.68
+16777216             9776.98
+  [run 4/6] recording — 00:39:32
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68040@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.51
+2                       8.65
+4                      15.33
+8                      34.71
+16                     67.02
+32                    136.00
+64                    286.23
+128                   553.01
+256                  1100.57
+512                  2168.61
+1024                 4205.63
+2048                 7514.97
+4096                13374.93
+8192                17178.89
+16384               20508.70
+32768               26012.34
+65536               30231.58
+131072              33476.03
+262144              25261.48
+524288              15169.29
+1048576             11577.30
+2097152             10444.01
+4194304              9967.95
+8388608              9745.53
+16777216             9716.45
+  [run 5/6] recording — 00:39:58
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68159@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.50
+2                       9.03
+4                      17.97
+8                      36.00
+16                     71.62
+32                    145.90
+64                    260.01
+128                   510.34
+256                  1106.89
+512                  2277.91
+1024                 4494.90
+2048                 7784.49
+4096                13181.80
+8192                17207.48
+16384               19986.95
+32768               26067.64
+65536               30136.97
+131072              33697.88
+262144              25916.39
+524288              15129.04
+1048576             11289.52
+2097152             10449.95
+4194304             10009.38
+8388608              9780.29
+16777216            10085.67
+  [run 6/6] recording — 00:40:24
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68218@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.56
+2                       8.83
+4                      18.34
+8                      36.45
+16                     73.40
+32                    147.63
+64                    285.61
+128                   557.10
+256                  1167.40
+512                  2321.90
+1024                 4381.24
+2048                 8670.66
+4096                13670.11
+8192                17575.41
+16384               20334.49
+32768               26040.07
+65536               30582.68
+131072              33849.18
+262144              26748.68
+524288              15528.87
+1048576             11625.65
+2097152             10670.90
+4194304             10000.27
+8388608              9786.86
+16777216             9779.17
+
+# [eessi sdma=0] inter_pkg_1link_57  GCD(5,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:40:50
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:41:16
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68335@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.61
+2                       9.25
+4                      18.43
+8                      36.87
+16                     70.73
+32                    147.02
+64                    296.09
+128                   570.12
+256                  1183.12
+512                  2324.42
+1024                 3896.51
+2048                 8615.22
+4096                13136.13
+8192                17098.62
+16384               20606.76
+32768               26623.73
+65536               31101.98
+131072              33890.30
+262144              26271.10
+524288              15179.99
+1048576             11680.19
+2097152             10751.83
+4194304              9988.17
+8388608              9812.88
+16777216             9806.00
+  [run 3/6] recording — 00:41:42
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68387@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       7.82
+4                      17.40
+8                      35.65
+16                     68.93
+32                    137.72
+64                    286.16
+128                   561.46
+256                  1006.16
+512                  2157.85
+1024                 3928.43
+2048                 8183.67
+4096                12258.01
+8192                17191.14
+16384               20482.78
+32768               26333.45
+65536               31172.73
+131072              33957.02
+262144              25956.98
+524288              14593.52
+1048576             11327.64
+2097152             10479.97
+4194304              9992.43
+8388608              9783.99
+16777216             9807.30
+  [run 4/6] recording — 00:42:08
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68437@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.57
+2                       8.91
+4                      18.13
+8                      37.04
+16                     69.24
+32                    146.65
+64                    285.03
+128                   561.38
+256                  1194.85
+512                  2340.15
+1024                 4641.26
+2048                 8613.23
+4096                13745.96
+8192                18040.54
+16384               20799.00
+32768               26277.68
+65536               31212.87
+131072              33832.19
+262144              26791.26
+524288              14405.01
+1048576             11241.64
+2097152             10511.65
+4194304             10014.87
+8388608              9791.01
+16777216             9768.02
+  [run 5/6] recording — 00:42:35
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68487@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.52
+2                       8.93
+4                      16.72
+8                      36.89
+16                     72.31
+32                    146.22
+64                    296.47
+128                   592.05
+256                  1191.13
+512                  2321.36
+1024                 4638.66
+2048                 8124.16
+4096                13745.74
+8192                16956.17
+16384               20571.20
+32768               24660.35
+65536               30365.94
+131072              32953.68
+262144              25603.28
+524288              14446.19
+1048576             11291.60
+2097152             10685.97
+4194304              9978.76
+8388608             10100.69
+16777216             9785.55
+  [run 6/6] recording — 00:43:01
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68533@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.63
+2                       9.28
+4                      18.58
+8                      35.70
+16                     73.97
+32                    147.97
+64                    302.37
+128                   595.93
+256                  1183.16
+512                  2348.80
+1024                 4653.18
+2048                 8606.04
+4096                13758.90
+8192                17831.03
+16384               20664.58
+32768               25360.49
+65536               30907.66
+131072              33423.26
+262144              25349.47
+524288              14723.03
+1048576             11620.83
+2097152             10471.24
+4194304              9985.03
+8388608              9761.38
+16777216             9777.68
+
+# [eessi sdma=0] routed_07  GCD(0,7) tier=routed
+  [run 1/6] warm-up — 00:43:27
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:43:53
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68629@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.49
+2                       9.12
+4                      18.15
+8                      35.83
+16                     72.50
+32                    148.44
+64                    289.73
+128                   580.29
+256                  1165.50
+512                  2294.44
+1024                 4346.10
+2048                 8341.53
+4096                13462.41
+8192                17726.40
+16384               20368.09
+32768               26001.83
+65536               30681.80
+131072              32632.14
+262144              25982.08
+524288              14689.70
+1048576             11652.43
+2097152             10711.34
+4194304              9961.24
+8388608             10104.12
+16777216             9743.03
+  [run 3/6] recording — 00:44:19
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68679@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.56
+2                       8.95
+4                      18.42
+8                      35.65
+16                     73.39
+32                    148.18
+64                    290.86
+128                   598.35
+256                  1159.52
+512                  2322.51
+1024                 4590.84
+2048                 8658.55
+4096                13924.24
+8192                17917.36
+16384               20400.53
+32768               25691.20
+65536               30882.90
+131072              33610.38
+262144              26019.19
+524288              15494.51
+1048576             11576.67
+2097152             10689.63
+4194304              9995.55
+8388608             10104.81
+16777216            10250.75
+  [run 4/6] recording — 00:44:45
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68725@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.69
+2                       9.22
+4                      18.85
+8                      36.02
+16                     74.90
+32                    149.73
+64                    283.00
+128                   604.81
+256                  1166.45
+512                  2385.57
+1024                 4642.09
+2048                 8413.85
+4096                13343.96
+8192                17810.20
+16384               20481.34
+32768               25989.40
+65536               29726.56
+131072              33506.59
+262144              25941.78
+524288              15244.21
+1048576             11310.13
+2097152             10700.64
+4194304              9984.41
+8388608             10023.48
+16777216             9968.09
+  [run 5/6] recording — 00:45:10
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68777@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.63
+2                       8.14
+4                      18.37
+8                      36.92
+16                     72.28
+32                    145.43
+64                    258.95
+128                   575.27
+256                  1126.14
+512                  2374.41
+1024                 4263.55
+2048                 8160.04
+4096                13624.91
+8192                16543.02
+16384               21334.47
+32768               25408.21
+65536               29622.61
+131072              33118.20
+262144              26914.44
+524288              15215.86
+1048576             11335.89
+2097152             10484.02
+4194304              9985.04
+8388608              9778.99
+16777216             9776.06
+  [run 6/6] recording — 00:45:37
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68839@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.53
+2                       9.06
+4                      18.12
+8                      36.58
+16                     72.48
+32                    146.75
+64                    291.67
+128                   599.13
+256                  1230.21
+512                  2311.86
+1024                 4628.98
+2048                 8696.83
+4096                13603.38
+8192                18013.08
+16384               20730.89
+32768               26673.40
+65536               30950.99
+131072              33780.21
+262144              25683.68
+524288              15005.99
+1048576             11953.11
+2097152             10449.45
+4194304              9977.38
+8388608              9774.54
+16777216            10243.07
+
+# [eessi sdma=0] routed_03  GCD(0,3) tier=routed
+  [run 1/6] warm-up — 00:46:02
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:46:29
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68946@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.48
+2                       8.77
+4                      18.25
+8                      35.16
+16                     71.94
+32                    144.57
+64                    286.52
+128                   588.82
+256                  1159.81
+512                  2288.99
+1024                 4475.52
+2048                 8112.22
+4096                13706.21
+8192                17543.42
+16384               20940.16
+32768               25736.34
+65536               30406.11
+131072              33364.66
+262144              26483.66
+524288              14983.20
+1048576             11915.95
+2097152             10469.44
+4194304              9970.79
+8388608              9787.85
+16777216             9784.95
+  [run 3/6] recording — 00:46:55
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-68998@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.48
+2                       9.14
+4                      18.59
+8                      36.32
+16                     73.33
+32                    140.71
+64                    294.74
+128                   584.25
+256                  1127.49
+512                  2348.58
+1024                 4552.84
+2048                 8607.56
+4096                13428.48
+8192                17762.26
+16384               20733.93
+32768               25693.85
+65536               30224.31
+131072              33696.74
+262144              26129.27
+524288              14455.04
+1048576             11331.09
+2097152             10478.48
+4194304             10314.64
+8388608              9791.29
+16777216            10102.98
+  [run 4/6] recording — 00:47:21
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69049@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.40
+2                       9.05
+4                      18.39
+8                      36.05
+16                     65.78
+32                    147.37
+64                    294.72
+128                   587.42
+256                  1135.66
+512                  2086.55
+1024                 4578.98
+2048                 8120.43
+4096                13448.63
+8192                17482.93
+16384               20296.59
+32768               25967.19
+65536               31028.62
+131072              33207.86
+262144              26188.69
+524288              15227.29
+1048576             11617.28
+2097152             10478.79
+4194304             10331.42
+8388608              9774.54
+16777216            10115.66
+  [run 5/6] recording — 00:47:46
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69099@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.30
+2                       9.03
+4                      18.33
+8                      36.09
+16                     71.25
+32                    145.98
+64                    290.74
+128                   569.33
+256                  1128.55
+512                  2024.84
+1024                 4464.44
+2048                 8496.26
+4096                13585.29
+8192                17352.42
+16384               20446.20
+32768               25153.46
+65536               30456.90
+131072              33821.35
+262144              26498.96
+524288              15266.52
+1048576             11612.81
+2097152             10456.34
+4194304              9987.80
+8388608              9765.26
+16777216            10106.20
+  [run 6/6] recording — 00:48:12
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69151@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.41
+2                       8.99
+4                      18.29
+8                      36.39
+16                     72.86
+32                    145.61
+64                    293.57
+128                   565.88
+256                  1158.40
+512                  2301.70
+1024                 4594.16
+2048                 8468.70
+4096                13878.67
+8192                17599.95
+16384               20912.79
+32768               25602.86
+65536               30718.91
+131072              33766.95
+262144              25994.49
+524288              14450.85
+1048576             11319.26
+2097152             10673.13
+4194304              9998.02
+8388608              9763.74
+16777216             9776.68
+
+# [eessi sdma=0] routed_17  GCD(1,7) tier=routed
+  [run 1/6] warm-up — 00:48:38
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:49:04
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69253@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 27s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.66
+2                       9.01
+4                      18.30
+8                      36.21
+16                     72.24
+32                    149.71
+64                    295.71
+128                   580.06
+256                  1154.68
+512                  2311.66
+1024                 4432.91
+2048                 7712.35
+4096                13506.12
+8192                17551.83
+16384               20885.16
+32768               26312.03
+65536               30200.78
+131072              33259.95
+262144              25249.85
+524288              15149.66
+1048576             11640.49
+2097152             10497.57
+4194304             10205.39
+8388608              9776.51
+16777216             9778.30
+  [run 3/6] recording — 00:49:31
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69578@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.32
+2                       9.09
+4                      18.41
+8                      34.00
+16                     71.77
+32                    144.59
+64                    283.30
+128                   585.50
+256                  1158.60
+512                  2252.90
+1024                 4394.78
+2048                 8478.47
+4096                13867.34
+8192                17288.84
+16384               20380.15
+32768               26268.67
+65536               30704.83
+131072              33565.00
+262144              24797.06
+524288              15309.84
+1048576             11627.87
+2097152             10470.24
+4194304             10009.19
+8388608              9783.20
+16777216             9774.00
+  [run 4/6] recording — 00:49:57
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69624@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.59
+2                       9.18
+4                      16.35
+8                      37.13
+16                     73.87
+32                    147.45
+64                    294.88
+128                   537.98
+256                  1180.49
+512                  2367.52
+1024                 4478.04
+2048                 7838.46
+4096                13674.54
+8192                17662.86
+16384               20360.68
+32768               25681.36
+65536               30550.47
+131072              33431.84
+262144              26579.79
+524288              15223.75
+1048576             11255.59
+2097152             10702.49
+4194304              9990.69
+8388608              9774.41
+16777216             9747.38
+  [run 5/6] recording — 00:50:23
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69674@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.55
+2                       9.03
+4                      18.70
+8                      37.22
+16                     72.66
+32                    151.38
+64                    293.89
+128                   597.20
+256                  1181.53
+512                  2347.72
+1024                 4530.14
+2048                 8362.22
+4096                13941.90
+8192                17649.33
+16384               20286.16
+32768               26346.45
+65536               30266.77
+131072              33066.26
+262144              25845.97
+524288              14371.28
+1048576             11257.84
+2097152             10485.03
+4194304             10460.95
+8388608              9750.48
+16777216             9759.65
+  [run 6/6] recording — 00:50:49
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007955-69741@1,1]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 26s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       4.46
+2                       8.72
+4                      18.09
+8                      32.48
+16                     72.70
+32                    144.08
+64                    291.96
+128                   576.49
+256                  1190.53
+512                  2419.15
+1024                 4214.14
+2048                 8443.99
+4096                12719.37
+8192                16797.39
+16384               19827.68
+32768               24681.00
+65536               29912.47
+131072              33262.48
+262144              26062.67
+524288              15640.06
+1048576             11633.43
+2097152             10472.40
+4194304             10297.83
+8388608              9767.60
+16777216             9787.65
+ALL BENCHMARKS COMPLETE  CSV=results/osu_get_bw_eessi_18638323.csv

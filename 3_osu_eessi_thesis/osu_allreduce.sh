@@ -13,6 +13,28 @@
 
 source common.sh
 
+# Route collectives through UCC instead of coll/han (default priority 35) or
+# coll/tuned (30). coll/ucc ships with enable=0 and priority=10 in OMPI 5.0.7,
+# so without these overrides GPU buffers get host-staged and small-message
+# allreduce sits on a ~26us fixed-cost floor.
+#
+# Inside UCC, restrict the transport list to ucp + self — drop rccl. The
+# RCCL TL has a ~26us per-call launch overhead at small sizes (confirmed by
+# osu_xccl_allreduce direct = 25.78us at 4B) and segfaults at N=2. UCP over
+# UCX-ROCm's rocm_ipc transport gives ~2.4us at 4B instead. Tradeoff: this
+# also disables RCCL for large messages where it was the fastest path; if
+# we later want RCCL >= some threshold, use UCC_CL_BASIC_TUNE.
+#
+# See results/osu_allreduce_diag_18631216.summary for the diagnostic that
+# motivated this. Drop these env exports once the rompi-2025a OpenMPI and
+# UCC-ROCm modules bake the equivalent settings into modextravars.
+export OMPI_MCA_opal_common_ucx_devices=any
+export OMPI_MCA_coll_ucc_enable=1
+export OMPI_MCA_coll_ucc_priority=100
+export OMPI_MCA_accelerator=rocm
+export UCC_TLS=ucp,self
+export UCC_CL_BASIC_TLS=ucp,self
+
 RESULT_DIR="results"
 mkdir -p "$RESULT_DIR"
 CSV_FILE="$RESULT_DIR/osu_allreduce_${SLURM_JOB_ID}.csv"
@@ -22,12 +44,13 @@ NUM_RUNS=6
 WARMUP_RUN=1
 
 # GCD count → which GCDs to use (which devices ROCR_VISIBLE_DEVICES exposes)
-# We pick GCDs that minimise topology asymmetry where possible.
+# We pick GCDs that minimise topology asymmetry where possible. N=6 omitted
+# on purpose: standard-g nodes are 4 packages x 2 GCDs and real workloads
+# always scale by full packages (1/2/4/8 GCDs).
 gcd_set() {
     case $1 in
         2) echo "0,1" ;;          # intra-package, 4-link
         4) echo "0,1,2,3" ;;      # 2 full packages
-        6) echo "0,1,2,3,4,5" ;;  # 3 full packages
         8) echo "0,1,2,3,4,5,6,7" ;;
     esac
 }
@@ -77,14 +100,19 @@ run_collective() {
         if (( run == WARMUP_RUN )); then
             echo "  [run $run/$NUM_RUNS] warm-up starting" | tee -a "$LOG_FILE"
             ROCR_VISIBLE_DEVICES=$devices \
-                mpirun -n $n "$binary_path" -d rocm > /dev/null 2>&1
+                mpirun -n $n "$binary_path" -d rocm >> "$LOG_FILE" 2>&1 \
+                || echo "  [run $run/$NUM_RUNS] WARN: warm-up mpirun exit=$?" | tee -a "$LOG_FILE"
             continue
         fi
 
         echo "  [run $run/$NUM_RUNS] recording" | tee -a "$LOG_FILE"
-        local raw
+        local raw rc
         raw=$(ROCR_VISIBLE_DEVICES=$devices \
-              mpirun -n $n "$binary_path" -d rocm 2>/dev/null)
+              mpirun -n $n "$binary_path" -d rocm 2>>"$LOG_FILE")
+        rc=$?
+        if (( rc != 0 )); then
+            echo "  [run $run/$NUM_RUNS] ERROR: mpirun exit=$rc (see $LOG_FILE)" | tee -a "$LOG_FILE"
+        fi
 
         echo "$raw" >> "$LOG_FILE"
 
@@ -107,7 +135,7 @@ OSU_COLL="${OSU_COLLECTIVE:-${OSU_PT2PT%/pt2pt}/collective}"
 
 echo "Using OSU collective binaries from: $OSU_COLL" | tee -a "$LOG_FILE"
 
-for n in 2 4 6 8; do
+for n in 2 4 8; do
     # run_collective "$n" "osu_alltoall"  "${OSU_COLL}/osu_alltoall"
     run_collective "$n" "osu_allreduce" "${OSU_COLL}/osu_allreduce"
 done

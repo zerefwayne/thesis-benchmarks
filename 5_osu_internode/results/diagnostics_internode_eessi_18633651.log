@@ -1,0 +1,866 @@
+
+################################################################
+# NODES (stack=eessi)
+################################################################
+NODE_A=nid005056  NODE_B=nid005057  STACK=eessi
+## hostnames on both nodes
+nid005056: xname=x1100c3s4b0n0
+nid005057: xname=x1100c3s4b1n0
+## end hostnames on both nodes (exit=0)
+
+
+################################################################
+# EESSI SECTION — rompi-2025a / UCX / OpenMPI
+################################################################
+## loaded modules
+
+Currently Loaded Modules:
+  1) ModuleLabel/label                                    (S)
+  2) lumi-tools/24.05                                     (S)
+  3) init-lumi/0.2                                        (S)
+  4) EasyBuild/5.3.0
+  5) EESSI-extend/2025.06-easybuild
+  6) GCCcore/14.2.0
+  7) libxml2/2.13.4-GCCcore-14.2.0
+  8) OpenSSL/3
+  9) lz4/1.10.0-GCCcore-14.2.0
+ 10) gzip/1.13-GCCcore-14.2.0
+ 11) zstd/1.5.6-GCCcore-14.2.0
+ 12) libarchive/3.7.7-GCCcore-14.2.0
+ 13) elfutils/0.193-GCCcore-14.2.0
+ 14) numactl/2.0.19-GCCcore-14.2.0
+ 15) libpciaccess/0.18.1-GCCcore-14.2.0
+ 16) hwloc/2.11.2-GCCcore-14.2.0
+ 17) GMP/6.3.0-GCCcore-14.2.0
+ 18) libffi/3.4.5-GCCcore-14.2.0
+ 19) expat/2.6.4-GCCcore-14.2.0
+ 20) libpng/1.6.48-GCCcore-14.2.0
+ 21) Brotli/1.1.0-GCCcore-14.2.0
+ 22) freetype/2.13.3-GCCcore-14.2.0
+ 23) fontconfig/2.16.2-GCCcore-14.2.0
+ 24) xorg-macros/1.20.2-GCCcore-14.2.0
+ 25) X11/20250521-GCCcore-14.2.0
+ 26) libdrm/2.4.125-GCCcore-14.2.0
+ 27) Tcl/8.6.16-GCCcore-14.2.0
+ 28) SQLite/3.47.2-GCCcore-14.2.0
+ 29) Python/3.13.1-GCCcore-14.2.0
+ 30) Z3/4.13.4-GCCcore-14.2.0
+ 31) ROCm-LLVM/19.0.0-GCCcore-14.2.0-ROCm-6.4.1
+ 32) rocm-compilers/19.0.0-ROCm-6.4.1
+ 33) libevent/2.1.12-GCCcore-14.2.0
+ 34) libfabric/2.0.0-GCCcore-14.2.0
+ 35) xpmem/2.7.4-GCCcore-14.2.0
+ 36) rocm-smi/7.6.0-GCCcore-14.2.0-ROCm-6.4.1
+ 37) libglvnd/1.7.0-GCCcore-14.2.0
+ 38) rocm-cmake/0.14.0-rocm-compilers-19.0.0-ROCm-6.4.1
+ 39) Perl/5.40.0-GCCcore-14.2.0
+ 40) gflags/2.2.2-GCCcore-14.2.0
+ 41) libunwind/1.8.1-GCCcore-14.2.0
+ 42) glog/0.7.1-GCCcore-14.2.0
+ 43) rocminfo/1.0.0-rocm-compilers-19.0.0-ROCm-6.4.1
+ 44) fmt/11.2.0-GCCcore-14.2.0
+ 45) rocprofiler-register/0.4.0-GCCcore-14.2.0-ROCm-6.4.1
+ 46) HIP/6.4.1-rocm-compilers-19.0.0-ROCm-6.4.1
+ 47) hwloc-ROCm/2.11.2-rocm-compilers-19.0.0-ROCm-6.4.1
+ 48) PMIx/5.0.6-rocm-compilers-19.0.0-ROCm-6.4.1
+ 49) PRRTE/3.0.8-rocm-compilers-19.0.0-ROCm-6.4.1
+ 50) UCX-ROCm/1.18.0-rocm-compilers-19.0.0-ROCm-6.4.1
+ 51) rocTracer/4.1.0-rocm-compilers-19.0.0-ROCm-6.4.1
+ 52) googletest/1.17.0-GCCcore-14.2.0
+ 53) rocm-core/6.4.0-GCCcore-14.2.0-ROCm-6.4.1
+ 54) RCCL/2.22.3-rocm-compilers-19.0.0-ROCm-6.4.1
+ 55) UCC-ROCm/1.3.0-rocm-compilers-19.0.0-ROCm-6.4.1
+ 56) OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1
+ 57) rompi/2025a
+ 58) OSU-Micro-Benchmarks/7.5-rompi-2025a
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+ 
+
+## end loaded modules
+
+## ucx_info -b (build features, look for CXI / rocm)
+#define UCX_CONFIG_H              
+#define ENABLE_BUILTIN_MEMCPY     1
+#define ENABLE_DEBUG_DATA         0
+#define ENABLE_MT                 1
+#define ENABLE_PARAMS_CHECK       0
+#define HAVE_ALLOCA               1
+#define HAVE_ALLOCA_H             1
+#define HAVE_ATTRIBUTE_NOOPTIMIZE 0
+#define HAVE_CAP_USER_DATA_T      1
+#define HAVE_CAP_USER_HEADER_T    1
+#define HAVE_CLEARENV             1
+#define HAVE_CPU_SET_T            1
+#define HAVE_DC_DV                1
+#define HAVE_DECL_ASPRINTF        1
+#define HAVE_DECL_BASENAME        1
+#define HAVE_DECL_CPU_ISSET       1
+#define HAVE_DECL_CPU_ZERO        1
+#define HAVE_DECL_CU_MEM_HANDLE_TYPE_FABRIC 0
+#define HAVE_DECL_ETHTOOL_CMD_SPEED 1
+#define HAVE_DECL_FMEMOPEN        1
+#define HAVE_DECL_FUSE_MOUNT      0
+#define HAVE_DECL_FUSE_OPEN_CHANNEL 0
+#define HAVE_DECL_FUSE_UNMOUNT    0
+#define HAVE_DECL_F_SETOWN_EX     1
+#define HAVE_DECL_GETAUXVAL       1
+#define HAVE_DECL_IBV_ACCESS_ON_DEMAND 1
+#define HAVE_DECL_IBV_ACCESS_RELAXED_ORDERING 1
+#define HAVE_DECL_IBV_ADVISE_MR   1
+#define HAVE_DECL_IBV_ALLOC_DM    1
+#define HAVE_DECL_IBV_ALLOC_TD    1
+#define HAVE_DECL_IBV_CREATE_CQ_ATTR_IGNORE_OVERRUN 1
+#define HAVE_DECL_IBV_CREATE_CQ_EX 1
+#define HAVE_DECL_IBV_CREATE_QP_EX 1
+#define HAVE_DECL_IBV_CREATE_SRQ  1
+#define HAVE_DECL_IBV_CREATE_SRQ_EX 1
+#define HAVE_DECL_IBV_EVENT_GID_CHANGE 1
+#define HAVE_DECL_IBV_EVENT_TYPE_STR 1
+#define HAVE_DECL_IBV_GET_ASYNC_EVENT 1
+#define HAVE_DECL_IBV_GET_DEVICE_NAME 1
+#define HAVE_DECL_IBV_LINK_LAYER_ETHERNET 1
+#define HAVE_DECL_IBV_LINK_LAYER_INFINIBAND 1
+#define HAVE_DECL_IBV_QPF_GRH_REQUIRED 1
+#define HAVE_DECL_IBV_QUERY_DEVICE_EX 1
+#define HAVE_DECL_IBV_QUERY_GID   1
+#define HAVE_DECL_IBV_REG_DMABUF_MR 1
+#define HAVE_DECL_IBV_SET_ECE     1
+#define HAVE_DECL_IBV_TRANSPORT_UNSPECIFIED 1
+#define HAVE_DECL_IBV_TRANSPORT_USNIC 1
+#define HAVE_DECL_IBV_TRANSPORT_USNIC_UDP 1
+#define HAVE_DECL_IBV_WC_STATUS_STR 1
+#define HAVE_DECL_INOTIFY_ADD_WATCH 1
+#define HAVE_DECL_INOTIFY_INIT    1
+#define HAVE_DECL_IN_ATTRIB       1
+#define HAVE_DECL_IPPROTO_TCP     1
+#define HAVE_DECL_MADV_FREE       1
+#define HAVE_DECL_MADV_REMOVE     1
+#define HAVE_DECL_MLX5DV_CONTEXT_MASK_OOO_RECV_WRS 1
+#define HAVE_DECL_MLX5DV_CQ_INIT_ATTR_MASK_COMPRESSED_CQE 1
+#define HAVE_DECL_MLX5DV_CQ_INIT_ATTR_MASK_CQE_SIZE 1
+#define HAVE_DECL_MLX5DV_CREATE_QP 1
+#define HAVE_DECL_MLX5DV_DCTYPE_DCT 1
+#define HAVE_DECL_MLX5DV_DEVX_SUBSCRIBE_DEVX_EVENT 1
+#define HAVE_DECL_MLX5DV_DEVX_UMEM_REG_EX 1
+#define HAVE_DECL_MLX5DV_INIT_OBJ 1
+#define HAVE_DECL_MLX5DV_IS_SUPPORTED 1
+#define HAVE_DECL_MLX5DV_OBJ_AH   1
+#define HAVE_DECL_MLX5DV_QP_CREATE_ALLOW_SCATTER_TO_CQE 1
+#define HAVE_DECL_MLX5DV_UAR_ALLOC_TYPE_BF 1
+#define HAVE_DECL_MLX5DV_UAR_ALLOC_TYPE_NC_DEDICATED 1
+#define HAVE_DECL_NVMLDEVICEGETGPUFABRICINFO 0
+#define HAVE_DECL_POSIX_MADV_DONTNEED 1
+#define HAVE_DECL_PR_SET_PTRACER  1
+#define HAVE_DECL_SOL_SOCKET      1
+#define HAVE_DECL_SO_KEEPALIVE    1
+#define HAVE_DECL_SPEED_UNKNOWN   1
+#define HAVE_DECL_STRERROR_R      1
+#define HAVE_DECL_SYS_BRK         1
+#define HAVE_DECL_SYS_IPC         0
+#define HAVE_DECL_SYS_MADVISE     1
+#define HAVE_DECL_SYS_MMAP        1
+#define HAVE_DECL_SYS_MREMAP      1
+#define HAVE_DECL_SYS_MUNMAP      1
+#define HAVE_DECL_SYS_SHMAT       1
+#define HAVE_DECL_SYS_SHMDT       1
+#define HAVE_DECL_TCP_KEEPCNT     1
+#define HAVE_DECL_TCP_KEEPIDLE    1
+#define HAVE_DECL_TCP_KEEPINTVL   1
+#define HAVE_DECL___PPC_GET_TIMEBASE 0
+#define HAVE_DECL___PPC_GET_TIMEBASE_FREQ 0
+#define HAVE_DEVX                 1
+#define HAVE_DLFCN_H              1
+#define HAVE_HSA_AMD_PORTABLE_EXPORT_DMABUF 1
+#define HAVE_HSA_EXT_AMD_H        1
+#define HAVE_HSA_H                1
+#define HAVE_HW_TIMER             1
+#define HAVE_IB                   1
+#define HAVE_IBV_DM               1
+#define HAVE_IN6_ADDR_S6_ADDR32   1
+#define HAVE_INFINIBAND_MLX5DV_H  1
+#define HAVE_INOTIFY              1
+#define HAVE_INTTYPES_H           1
+#define HAVE_IP_IP_DST            1
+#define HAVE_LIBGEN_H             1
+#define HAVE_LIBRT                1
+#define HAVE_LINUX_FUTEX_H        1
+#define HAVE_LINUX_IP_H           1
+#define HAVE_LINUX_MMAN_H         1
+#define HAVE_MAD                  1
+#define HAVE_MALLOC_H             1
+#define HAVE_MALLOC_TRIM          1
+#define HAVE_MEMALIGN             1
+#define HAVE_MEMORY_H             1
+#define HAVE_MLX5_DV              1
+#define HAVE_MLX5_HW_UD           1
+#define HAVE_MLX5_MMO             1
+#define HAVE_MREMAP               1
+#define HAVE_NETINET_IP_H         1
+#define HAVE_NET_ETHERNET_H       1
+#define HAVE_OOO_RECV_WRS         1
+#define HAVE_POSIX_MEMALIGN       1
+#define HAVE_PREFETCH             1
+#define HAVE_ROCM                 1
+#define HAVE_SCHED_GETAFFINITY    1
+#define HAVE_SCHED_SETAFFINITY    1
+#define HAVE_SIGACTION_SA_RESTORER 1
+#define HAVE_SIGEVENT_SIGEV_UN_TID 1
+#define HAVE_SIGHANDLER_T         1
+#define HAVE_STDINT_H             1
+#define HAVE_STDLIB_H             1
+#define HAVE_STRERROR_R           1
+#define HAVE_STRINGS_H            1
+#define HAVE_STRING_H             1
+#define HAVE_STRUCT_DL_PHDR_INFO  1
+#define HAVE_STRUCT_IBV_DEVICE_ATTR_EX_ODP_CAPS 1
+#define HAVE_STRUCT_IBV_DEVICE_ATTR_EX_PCI_ATOMIC_CAPS 1
+#define HAVE_STRUCT_IBV_TM_CAPS_FLAGS 1
+#define HAVE_STRUCT_MLX5DV_CQ_CQ_UAR 1
+#define HAVE_SYS_CAPABILITY_H     1
+#define HAVE_SYS_EPOLL_H          1
+#define HAVE_SYS_EVENTFD_H        1
+#define HAVE_SYS_STAT_H           1
+#define HAVE_SYS_TYPES_H          1
+#define HAVE_SYS_UIO_H            1
+#define HAVE_TL_DC                1
+#define HAVE_TL_RC                1
+#define HAVE_TL_UD                1
+#define HAVE_UCM_PTMALLOC286      1
+#define HAVE_UNISTD_H             1
+#define HAVE___CLEAR_CACHE        1
+#define HAVE___CURBRK             1
+#define HAVE___SIGHANDLER_T       1
+#define IBV_HW_TM                 1
+#define LT_OBJDIR                 ".libs/"
+#define NVALGRIND                 1
+#define PACKAGE                   "ucx"
+#define PACKAGE_BUGREPORT         ""
+#define PACKAGE_NAME              "ucx"
+#define PACKAGE_STRING            "ucx 1.18"
+#define PACKAGE_TARNAME           "ucx"
+#define PACKAGE_URL               ""
+#define PACKAGE_VERSION           "1.18"
+#define STDC_HEADERS              1
+#define STRERROR_R_CHAR_P         1
+#define UCM_BISTRO_HOOKS          1
+#define UCS_MAX_LOG_LEVEL         UCS_LOG_LEVEL_DEBUG
+#define UCT_TCP_EP_KEEPALIVE      1
+#define UCT_UD_EP_DEBUG_HOOKS     0
+#define UCX_ALLOC_ALIGN           16
+#define UCX_CONFIGURE_FLAGS       "--prefix=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/UCX-ROCm/1.18.0-rocm-compilers-19.0.0-ROCm-6.4.1 --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --enable-optimizations --enable-cma --enable-mt --with-verbs --without-java --without-go --disable-doxygen-doc --disable-logging --disable-debug --disable-assertions --disable-params-check --with-rocm=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/ROCm-LLVM/19.0.0-GCCcore-14.2.0-ROCm-6.4.1 --with-xpmem=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/xpmem/2.7.4-GCCcore-14.2.0"
+#define UCX_MODULE_SUBDIR         "ucx"
+#define VERSION                   "1.18"
+#define restrict                  __restrict
+#define test_MODULES              ":module"
+#define ucm_MODULES               ":rocm"
+#define ucs_MODULES               ""
+#define uct_MODULES               ":ib:rocm:cma:xpmem"
+#define uct_cuda_MODULES          ""
+#define uct_ib_MODULES            ":mlx5"
+#define uct_rocm_MODULES          ""
+#define ucx_perftest_MODULES      ":rocm:mad"
+## end ucx_info -b (build features, look for CXI / rocm) (exit=0)
+
+## ucx_info -d (transports + devices visible to UCX)
+#
+# Memory domain: self
+#     Component: self
+#             register: unlimited, cost: 0 nsec
+#           remote key: 0 bytes
+#           rkey_ptr is supported
+#         memory types: host (access,reg_nonblock,reg,cache)
+#
+#      Transport: self
+#         Device: memory
+#           Type: loopback
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 19360.00 MB/sec
+#              latency: 0 nsec
+#             overhead: 10 nsec
+#            put_short: <= 4294967295
+#            put_bcopy: unlimited
+#            get_bcopy: unlimited
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#               domain: cpu
+#           atomic_add: 32, 64 bit
+#           atomic_and: 32, 64 bit
+#            atomic_or: 32, 64 bit
+#           atomic_xor: 32, 64 bit
+#          atomic_fadd: 32, 64 bit
+#          atomic_fand: 32, 64 bit
+#           atomic_for: 32, 64 bit
+#          atomic_fxor: 32, 64 bit
+#          atomic_swap: 32, 64 bit
+#         atomic_cswap: 32, 64 bit
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 0 bytes
+#        iface address: 8 bytes
+#       error handling: ep_check
+#
+#
+# Memory domain: tcp
+#     Component: tcp
+#             register: unlimited, cost: 0 nsec
+#           remote key: 0 bytes
+#         memory types: host (access,reg_nonblock,reg,cache)
+#
+#      Transport: tcp
+#         Device: hsn0
+#           Type: network
+#  System device: hsn0 (0)
+#
+#      capabilities:
+#            bandwidth: 2200.00/ppn + 0.00 MB/sec
+#              latency: 5203 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 1
+#     device num paths: 1
+#              max eps: 256
+#       device address: 6 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#      Transport: tcp
+#         Device: hsn1
+#           Type: network
+#  System device: hsn1 (1)
+#
+#      capabilities:
+#            bandwidth: 2200.00/ppn + 0.00 MB/sec
+#              latency: 5203 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 1
+#     device num paths: 1
+#              max eps: 256
+#       device address: 6 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#      Transport: tcp
+#         Device: hsn2
+#           Type: network
+#  System device: hsn2 (2)
+#
+#      capabilities:
+#            bandwidth: 2200.00/ppn + 0.00 MB/sec
+#              latency: 5203 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 1
+#     device num paths: 1
+#              max eps: 256
+#       device address: 6 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#      Transport: tcp
+#         Device: hsn3
+#           Type: network
+#  System device: hsn3 (3)
+#
+#      capabilities:
+#            bandwidth: 2200.00/ppn + 0.00 MB/sec
+#              latency: 5203 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: 256
+#       device address: 6 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#      Transport: tcp
+#         Device: lo
+#           Type: network
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 11.91/ppn + 0.00 MB/sec
+#              latency: 10960 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 1
+#     device num paths: 1
+#              max eps: 256
+#       device address: 18 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#      Transport: tcp
+#         Device: nmn0
+#           Type: network
+#  System device: nmn0 (4)
+#
+#      capabilities:
+#            bandwidth: 113.16/ppn + 0.00 MB/sec
+#              latency: 5776 nsec
+#             overhead: 50000 nsec
+#            put_zcopy: <= 18446744073709551590, up to 6 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 0
+#             am_short: <= 8K
+#             am_bcopy: <= 8K
+#             am_zcopy: <= 64K, up to 6 iov
+#   am_opt_zcopy_align: <= 1
+#         am_align_mtu: <= 0
+#            am header: <= 8037
+#           connection: to ep, to iface
+#      device priority: 1
+#     device num paths: 1
+#              max eps: 256
+#       device address: 6 bytes
+#        iface address: 2 bytes
+#           ep address: 10 bytes
+#       error handling: peer failure, ep_check, keepalive
+#
+#
+# Connection manager: tcp
+#      max_conn_priv: 2064 bytes
+#
+# Memory domain: sysv
+#     Component: sysv
+#             allocate: unlimited
+#           remote key: 12 bytes
+#           rkey_ptr is supported
+#         memory types: host (access,alloc,cache)
+#
+#      Transport: sysv
+#         Device: memory
+#           Type: intra-node
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 15360.00 MB/sec
+#              latency: 80 nsec
+#             overhead: 10 nsec
+#            put_short: <= 4294967295
+#            put_bcopy: unlimited
+#            get_bcopy: unlimited
+#             am_short: <= 100
+#             am_bcopy: <= 8256
+#               domain: cpu
+#           atomic_add: 32, 64 bit
+#           atomic_and: 32, 64 bit
+#            atomic_or: 32, 64 bit
+#           atomic_xor: 32, 64 bit
+#          atomic_fadd: 32, 64 bit
+#          atomic_fand: 32, 64 bit
+#           atomic_for: 32, 64 bit
+#          atomic_fxor: 32, 64 bit
+#          atomic_swap: 32, 64 bit
+#         atomic_cswap: 32, 64 bit
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 8 bytes
+#        iface address: 8 bytes
+#       error handling: ep_check
+#
+#
+# Memory domain: posix
+#     Component: posix
+#             allocate: <= 369274836K
+#           remote key: 24 bytes
+#           rkey_ptr is supported
+#         memory types: host (access,alloc,cache)
+#
+#      Transport: posix
+#         Device: memory
+#           Type: intra-node
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 15360.00 MB/sec
+#              latency: 80 nsec
+#             overhead: 10 nsec
+#            put_short: <= 4294967295
+#            put_bcopy: unlimited
+#            get_bcopy: unlimited
+#             am_short: <= 100
+#             am_bcopy: <= 8256
+#               domain: cpu
+#           atomic_add: 32, 64 bit
+#           atomic_and: 32, 64 bit
+#            atomic_or: 32, 64 bit
+#           atomic_xor: 32, 64 bit
+#          atomic_fadd: 32, 64 bit
+#          atomic_fand: 32, 64 bit
+#           atomic_for: 32, 64 bit
+#          atomic_fxor: 32, 64 bit
+#          atomic_swap: 32, 64 bit
+#         atomic_cswap: 32, 64 bit
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 8 bytes
+#        iface address: 8 bytes
+#       error handling: ep_check
+#
+#
+# Memory domain: rocm_cpy
+#     Component: rocm_cpy
+#             allocate: unlimited
+#             register: unlimited, cost: 0 nsec
+#           remote key: 16 bytes
+#         memory types: host (reg,cache), rocm (access,alloc,reg,cache,detect)
+#
+#      Transport: rocm_copy
+#         Device: rocm_cpy
+#           Type: accelerator
+#  System device: GPU0 (5)
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 6911.00 MB/sec
+#              latency: 100 nsec
+#             overhead: 0 nsec
+#            put_short: <= 4294967295
+#            put_zcopy: unlimited, up to 1 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 1
+#            get_short: <= 4294967295
+#            get_zcopy: unlimited, up to 1 iov
+#  get_opt_zcopy_align: <= 1
+#        get_align_mtu: <= 1
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 0 bytes
+#        iface address: 8 bytes
+#       error handling: none
+#
+#
+# Memory domain: rocm_ipc
+#     Component: rocm_ipc
+#             register: unlimited, cost: 9 nsec
+#           remote key: 56 bytes
+#         memory types: rocm (access,reg,cache)
+#
+#      Transport: rocm_ipc
+#         Device: rocm_ipc
+#           Type: accelerator
+#  System device: GPU0 (5)
+#
+#      capabilities:
+#            bandwidth: 204800.00/ppn + 0.00 MB/sec
+#              latency: 100 nsec
+#             overhead: 0 nsec
+#            put_zcopy: 128..inf, up to 1 iov
+#  put_opt_zcopy_align: <= 4
+#        put_align_mtu: <= 4
+#            get_zcopy: 128..inf, up to 1 iov
+#  get_opt_zcopy_align: <= 4
+#        get_align_mtu: <= 4
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 8 bytes
+#        iface address: 4 bytes
+#       error handling: none
+#
+#
+# Memory domain: cma
+#     Component: cma
+#             register: unlimited, cost: 9 nsec
+#         memory types: host (access,reg_nonblock,reg,cache)
+#
+#      Transport: cma
+#         Device: memory
+#           Type: intra-node
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 11145.00 MB/sec
+#              latency: 80 nsec
+#             overhead: 2000 nsec
+#            put_zcopy: unlimited, up to 16 iov
+#  put_opt_zcopy_align: <= 1
+#        put_align_mtu: <= 1
+#            get_zcopy: unlimited, up to 16 iov
+#  get_opt_zcopy_align: <= 1
+#        get_align_mtu: <= 1
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 8 bytes
+#        iface address: 4 bytes
+#       error handling: peer failure, ep_check
+#
+#
+# Memory domain: xpmem
+#     Component: xpmem
+#             register: unlimited, cost: 60 nsec
+#           remote key: 24 bytes
+#           rkey_ptr is supported
+#         memory types: host (access,alloc,reg_nonblock,reg,cache)
+#
+#      Transport: xpmem
+#         Device: memory
+#           Type: intra-node
+#  System device: <unknown>
+#
+#      capabilities:
+#            bandwidth: 0.00/ppn + 15360.00 MB/sec
+#              latency: 80 nsec
+#             overhead: 10 nsec
+#            put_short: <= 4294967295
+#            put_bcopy: unlimited
+#            get_bcopy: unlimited
+#             am_short: <= 100
+#             am_bcopy: <= 8256
+#               domain: cpu
+#           atomic_add: 32, 64 bit
+#           atomic_and: 32, 64 bit
+#            atomic_or: 32, 64 bit
+#           atomic_xor: 32, 64 bit
+#          atomic_fadd: 32, 64 bit
+#          atomic_fand: 32, 64 bit
+#           atomic_for: 32, 64 bit
+#          atomic_fxor: 32, 64 bit
+#          atomic_swap: 32, 64 bit
+#         atomic_cswap: 32, 64 bit
+#           connection: to iface
+#      device priority: 0
+#     device num paths: 1
+#              max eps: inf
+#       device address: 8 bytes
+#        iface address: 16 bytes
+#       error handling: none
+#
+## end ucx_info -d (transports + devices visible to UCX) (exit=0)
+
+## ucx_info -d (KEY DIAGNOSTIC: filtered to Transport: + Device: lines)
+#         Device: hsn0
+#         Device: hsn1
+#         Device: hsn2
+#         Device: hsn3
+#         Device: lo
+#         Device: memory
+#         Device: nmn0
+#         Device: rocm_cpy
+#         Device: rocm_ipc
+#      Transport: cma
+#      Transport: posix
+#      Transport: rocm_copy
+#      Transport: rocm_ipc
+#      Transport: self
+#      Transport: sysv
+#      Transport: tcp
+#      Transport: xpmem
+## end ucx_info -d (KEY DIAGNOSTIC: filtered to Transport: + Device: lines) (exit=0)
+
+## ucx_info -d on both nodes via mpirun
+=== nid005056 ===
+=== nid005057 ===
+#         Device: hsn0
+#         Device: hsn1
+#         Device: hsn2
+#         Device: hsn3
+#         Device: lo
+#         Device: memory
+#         Device: nmn0
+#         Device: rocm_cpy
+#         Device: rocm_ipc
+#      Transport: cma
+#      Transport: posix
+#      Transport: rocm_copy
+#      Transport: rocm_ipc
+#      Transport: self
+#      Transport: sysv
+#      Transport: tcp
+#      Transport: xpmem
+#         Device: hsn0
+#         Device: hsn1
+#         Device: hsn2
+#         Device: hsn3
+#         Device: lo
+#         Device: memory
+#         Device: nmn0
+#         Device: rocm_cpy
+#         Device: rocm_ipc
+#      Transport: cma
+#      Transport: posix
+#      Transport: rocm_copy
+#      Transport: rocm_ipc
+#      Transport: self
+#      Transport: sysv
+#      Transport: tcp
+#      Transport: xpmem
+## end ucx_info -d on both nodes via mpirun (exit=0)
+
+## ompi_info — UCX/OFI/CXI components
+             MCA btl ofi: parameter "btl_ofi_mode" (current value: "0", data source: default, level: 5 tuner/detail, type: int)
+             MCA btl ofi: parameter "btl_ofi_num_cq_read" (current value: "64", data source: default, level: 5 tuner/detail, type: int)
+             MCA btl ofi: parameter "btl_ofi_progress_mode" (current value: "unspec", data source: default, level: 5 tuner/detail, type: string)
+             MCA btl ofi: parameter "btl_ofi_num_contexts_per_module" (current value: "1", data source: default, level: 5 tuner/detail, type: int)
+             MCA btl ofi: parameter "btl_ofi_disable_sep" (current value: "false", data source: default, level: 5 tuner/detail, type: bool)
+             MCA btl ofi: parameter "btl_ofi_progress_threshold" (current value: "64", data source: default, level: 5 tuner/detail, type: int)
+             MCA btl ofi: parameter "btl_ofi_rd_num" (current value: "10", data source: default, level: 5 tuner/detail, type: int)
+             MCA btl ofi: parameter "btl_ofi_disable_inject" (current value: "false", data source: default, level: 5 tuner/detail, type: bool)
+             MCA btl ofi: parameter "btl_ofi_disable_hmem" (current value: "false", data source: default, level: 5 tuner/detail, type: bool)
+             MCA btl ofi: parameter "btl_ofi_provider_include" (current value: "", data source: default, level: 1 user/basic, type: string, synonym of: opal_common_ofi_provider_include)
+                          Comma-delimited list of OFI providers that are considered for use (e.g., "psm,psm2"; an empty value means that all providers will be considered). Mutually exclusive with mtl_ofi_provider_exclude.
+             MCA btl ofi: parameter "btl_ofi_provider_exclude" (current value: "shm,sockets,tcp,udp,rstream,usnic,net", data source: default, level: 1 user/basic, type: string, synonym of: opal_common_ofi_provider_exclude)
+                          Comma-delimited list of OFI providers that are not considered for use (default: "sockets,mxm"; empty value means that all providers will be considered). Mutually exclusive with mtl_ofi_provider_include.
+             MCA btl ofi: parameter "btl_ofi_verbose" (current value: "0", data source: default, level: 3 user/all, type: int, synonym of: opal_common_ofi_verbose)
+             MCA btl ofi: parameter "btl_ofi_exclusivity" (current value: "65486", data source: default, level: 7 dev/basic, type: unsigned_int)
+             MCA btl ofi: parameter "btl_ofi_flags" (current value: "", data source: default, level: 5 tuner/detail, type: unsigned_int)
+             MCA btl ofi: informational "btl_ofi_atomic_flags" (current value: "", data source: default, level: 5 tuner/detail, type: unsigned_int)
+             MCA btl ofi: parameter "btl_ofi_rndv_eager_limit" (current value: "0", data source: default, level: 4 tuner/basic, type: size_t)
+             MCA btl ofi: parameter "btl_ofi_eager_limit" (current value: "0", data source: default, level: 4 tuner/basic, type: size_t)
+             MCA btl ofi: parameter "btl_ofi_accelerator_max_send_size" (current value: "0", data source: default, level: 4 tuner/basic, type: size_t)
+             MCA btl ofi: parameter "btl_ofi_max_send_size" (current value: "0", data source: default, level: 4 tuner/basic, type: size_t)
+             MCA mtl ofi: parameter "mtl_ofi_priority" (current value: "25", data source: default, level: 9 dev/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_progress_event_cnt" (current value: "100", data source: default, level: 6 tuner/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_tag_mode" (current value: "auto", data source: default, level: 6 tuner/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_control_progress" (current value: "unspec", data source: default, level: 3 user/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_data_progress" (current value: "unspec", data source: default, level: 3 user/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_av" (current value: "map", data source: default, level: 3 user/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_enable_sep" (current value: "0", data source: default, level: 3 user/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_thread_grouping" (current value: "0", data source: default, level: 3 user/all, type: int)
+             MCA mtl ofi: parameter "mtl_ofi_num_ctxts" (current value: "1", data source: default, level: 4 tuner/basic, type: int)
+## end ompi_info — UCX/OFI/CXI components (exit=0)
+
+## EESSI env vars (UCX_, OMPI_, UCC_, HSA_)
+HSA_PATH=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/ROCm-LLVM/19.0.0-GCCcore-14.2.0-ROCm-6.4.1
+OMPI_MCA_opal_common_ucx_devices=any
+OMPI_MCA_plm_slurm_args=--external-launcher
+## end EESSI env vars (UCX_, OMPI_, UCC_, HSA_) (exit=0)
+
+## EESSI osu_latency 2-node H H smoke test
+
+# OSU MPI Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+8                      13.97
+16                     13.65
+32                     13.52
+64                     14.72
+128                    13.62
+256                    15.05
+512                    14.88
+1024                   14.81
+2048                   15.05
+4096                   17.40
+8192                   20.16
+16384                  25.38
+## end EESSI osu_latency 2-node H H smoke test (exit=0)
+
+## EESSI osu_latency 2-node D D smoke test (ROCR=0 on both ranks)
+
+# OSU MPI-ROCM Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+8                      13.41
+16                     13.88
+32                     13.98
+64                     13.74
+128                    13.83
+256                    15.19
+512                    19.85
+1024                   20.13
+2048                   20.36
+4096                   21.61
+8192                   28.33
+16384                  47.19
+## end EESSI osu_latency 2-node D D smoke test (ROCR=0 on both ranks) (exit=0)
+
+## EESSI osu_bw 2-node D D smoke test (1KiB-16MiB)
+
+# OSU MPI-ROCM Bandwidth Test v7.5
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+1024                  100.87
+2048                  195.06
+4096                  373.38
+8192                  539.20
+16384                 524.61
+32768                1032.31
+65536                1663.32
+131072               2244.16
+262144               3336.71
+524288               4043.04
+1048576              4434.52
+2097152              4386.15
+4194304              4496.48
+8388608              4106.03
+[1778779888.748512] [nid005056:93956:0]    rocm_copy_ep.c:200  UCX  ERROR increase the maximum number of signal pool elements with UCX_ROCM_COPY_SIGPOOL_MAX_ELEMS
+[1778779888.748581] [nid005056:93956:0]    rocm_copy_ep.c:200  UCX  ERROR increase the maximum number of signal pool elements with UCX_ROCM_COPY_SIGPOOL_MAX_ELEMS
+...
+[1778779894.758552] [nid005056:93956:0]    rocm_copy_ep.c:200  UCX  ERROR increase the maximum number of signal pool elements with UCX_ROCM_COPY_SIGPOOL_MAX_ELEMS
+16777216             3626.34
+## end EESSI osu_bw 2-node D D smoke test (1KiB-16MiB) (exit=0)
+
+
+################################################################
+# DIAGNOSTICS COMPLETE (stack=eessi)
+################################################################
+Log:  results/diagnostics_internode_eessi_18633651.log
+Meta: results/diagnostics_internode_eessi_18633651.meta
+Out:  results/diagnostics_internode_eessi_18633651.out (copy of results/diagnostics_internode_18633651.out, made by EXIT trap)

@@ -23,12 +23,13 @@ NUM_RUNS=6
 WARMUP_RUN=1
 
 # GCD count → which GCDs to use (which devices ROCR_VISIBLE_DEVICES exposes)
-# We pick GCDs that minimise topology asymmetry where possible.
+# We pick GCDs that minimise topology asymmetry where possible. N=6 omitted
+# on purpose: standard-g nodes are 4 packages x 2 GCDs and real workloads
+# always scale by full packages (1/2/4/8 GCDs).
 gcd_set() {
     case $1 in
         2) echo "0,1" ;;          # intra-package, 4-link
         4) echo "0,1,2,3" ;;      # 2 full packages
-        6) echo "0,1,2,3,4,5" ;;  # 3 full packages
         8) echo "0,1,2,3,4,5,6,7" ;;
     esac
 }
@@ -83,7 +84,7 @@ OSU_COLL="/users/joglekar/osu-native/osu-micro-benchmarks-7.5/c/mpi/collective/b
 
 echo "Using OSU collective binaries from: $OSU_COLL" | tee -a "$LOG_FILE"
 
-for n in 2 4 6 8; do
+for n in 2 4 8; do
     run_collective "$n" "osu_allreduce"  "${OSU_COLL}/osu_allreduce"
 done
 

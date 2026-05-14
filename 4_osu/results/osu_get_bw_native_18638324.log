@@ -1,0 +1,2385 @@
+################# NATIVE STACK (HSA_ENABLE_SDMA=0) #################
+
+# [native sdma=0] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg
+  [run 1/6] warm-up — 00:19:47
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:20:14
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.1
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 2/6] done in 23s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      19.41
+4                      40.27
+8                      82.07
+16                    146.65
+32                    323.12
+64                    636.08
+128                  1243.04
+256                  2352.23
+512                  4640.31
+1024                 9132.38
+2048                15712.15
+4096                13418.17
+8192                15608.48
+16384               20267.33
+32768               26139.08
+65536               31144.73
+131072              34021.17
+262144              26857.21
+524288              16669.64
+1048576             13251.11
+2097152             12023.66
+4194304             11491.97
+8388608             11400.50
+16777216             9989.66
+  [run 3/6] recording — 00:20:37
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.2
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.2 ON nid007977 CANCELLED AT 2026-05-15T00:21:01 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.21
+2                      19.12
+4                      40.30
+8                      82.07
+16                    158.31
+32                    328.07
+64                    632.64
+128                  1256.22
+256                  2496.18
+512                  4875.95
+1024                 8686.43
+2048                14964.97
+4096                19823.73
+8192                17489.13
+16384               21045.72
+32768               26175.33
+65536               32022.08
+131072              35135.32
+262144              26737.57
+524288              15860.07
+1048576             11898.76
+2097152             10836.98
+4194304             10396.03
+8388608             10183.85
+16777216            10224.04
+  [run 4/6] recording — 00:21:01
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.3
+slurmstepd: error: *** STEP 18638324.3 ON nid007977 CANCELLED AT 2026-05-15T00:21:25 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.3
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      20.33
+4                      37.84
+8                      82.02
+16                    167.37
+32                    332.82
+64                    627.39
+128                  1262.43
+256                  2500.19
+512                  4878.93
+1024                 9083.31
+2048                15657.79
+4096                18642.32
+8192                16926.89
+16384               20705.61
+32768               26264.74
+65536               31192.51
+131072              33049.05
+262144              26071.47
+524288              15635.87
+1048576             12004.11
+2097152             10800.46
+4194304             10121.69
+8388608             10157.43
+16777216            10143.76
+  [run 5/6] recording — 00:21:25
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.4
+slurmstepd: error: *** STEP 18638324.4 ON nid007977 CANCELLED AT 2026-05-15T00:21:47 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.4
+  [run 5/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      20.33
+4                      39.80
+8                      73.05
+16                    146.62
+32                    331.79
+64                    627.98
+128                  1262.15
+256                  2496.14
+512                  4883.96
+1024                 9044.74
+2048                14589.46
+4096                19203.59
+8192                17458.15
+16384               20912.11
+32768               25753.59
+65536               31045.98
+131072              33994.70
+262144              27015.01
+524288              15197.56
+1048576             13276.45
+2097152             12056.57
+4194304             11349.28
+8388608             11412.99
+16777216            11338.50
+  [run 6/6] recording — 00:21:47
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.5
+slurmstepd: error: *** STEP 18638324.5 ON nid007977 CANCELLED AT 2026-05-15T00:22:12 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.5
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.18
+2                      17.94
+4                      39.62
+8                      78.10
+16                    164.94
+32                    331.60
+64                    636.18
+128                  1183.98
+256                  2461.13
+512                  4599.78
+1024                 9077.76
+2048                15241.85
+4096                12949.76
+8192                16969.77
+16384               20436.84
+32768               25806.05
+65536               30733.76
+131072              33632.30
+262144              26192.92
+524288              15392.53
+1048576             11914.44
+2097152             10833.24
+4194304              9957.16
+8388608             10111.88
+16777216            10168.54
+
+# [native sdma=0] intra_pkg_OAM1  GCD(2,3) tier=intra_pkg
+  [run 1/6] warm-up — 00:22:12
+  [run 1/6] warm-up done in 23s
+  [run 2/6] recording — 00:22:35
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.7
+slurmstepd: error: *** STEP 18638324.7 ON nid007977 CANCELLED AT 2026-05-15T00:22:59 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.7
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.72
+2                      20.37
+4                      39.32
+8                      68.53
+16                    167.32
+32                    330.74
+64                    627.56
+128                  1262.62
+256                  2496.91
+512                  4883.22
+1024                 9097.21
+2048                12900.90
+4096                17007.21
+8192                16248.68
+16384               21130.11
+32768               25586.64
+65536               30936.96
+131072              35515.62
+262144              28005.84
+524288              16352.26
+1048576             11876.58
+2097152             10749.88
+4194304              9941.76
+8388608             10000.57
+16777216            10112.31
+  [run 3/6] recording — 00:22:59
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.8
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.8 ON nid007977 CANCELLED AT 2026-05-15T00:23:24 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.23
+2                      19.43
+4                      35.44
+8                      79.24
+16                    166.74
+32                    311.05
+64                    558.84
+128                  1257.11
+256                  2374.53
+512                  4042.13
+1024                 8590.95
+2048                13941.71
+4096                16423.26
+8192                17119.55
+16384               21543.59
+32768               26793.27
+65536               31441.93
+131072              35814.89
+262144              26733.73
+524288              16277.17
+1048576             11955.24
+2097152             10757.40
+4194304             10111.19
+8388608             10166.26
+16777216             9964.55
+  [run 4/6] recording — 00:23:24
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.9
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 4/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.22
+2                      19.40
+4                      38.34
+8                      78.03
+16                    166.15
+32                    332.08
+64                    634.49
+128                  1106.09
+256                  2229.28
+512                  4883.59
+1024                 9106.45
+2048                14709.54
+4096                17894.39
+8192                17954.19
+16384               21498.98
+32768               27154.39
+65536               31347.87
+131072              33965.19
+262144              27547.17
+524288              15359.76
+1048576             13270.96
+2097152             12009.88
+4194304             11424.98
+8388608             11458.28
+16777216            11460.97
+  [run 5/6] recording — 00:23:46
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.10
+slurmstepd: error: *** STEP 18638324.10 ON nid007977 CANCELLED AT 2026-05-15T00:24:10 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.10
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.68
+2                      19.11
+4                      38.28
+8                      77.73
+16                    167.12
+32                    327.09
+64                    633.98
+128                  1260.00
+256                  2496.52
+512                  4857.92
+1024                 8769.82
+2048                15195.64
+4096                13228.29
+8192                16854.48
+16384               20336.57
+32768               25867.18
+65536               31679.01
+131072              33685.31
+262144              25959.92
+524288              15394.01
+1048576             11986.53
+2097152             10750.92
+4194304             10051.90
+8388608             10118.09
+16777216            10112.64
+  [run 6/6] recording — 00:24:10
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.11
+slurmstepd: error: *** STEP 18638324.11 ON nid007977 CANCELLED AT 2026-05-15T00:24:34 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.11
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.20
+2                      19.40
+4                      38.24
+8                      77.87
+16                    167.30
+32                    332.88
+64                    635.29
+128                  1185.43
+256                  2496.14
+512                  4867.90
+1024                 9110.76
+2048                14508.39
+4096                21082.65
+8192                17916.99
+16384               21055.79
+32768               25239.33
+65536               32147.39
+131072              35377.52
+262144              26566.98
+524288              15420.45
+1048576             12042.40
+2097152             10742.47
+4194304             10068.80
+8388608             10069.00
+16777216            10173.72
+
+# [native sdma=0] intra_pkg_OAM2  GCD(4,5) tier=intra_pkg
+  [run 1/6] warm-up — 00:24:35
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 00:24:59
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.13
+slurmstepd: error: *** STEP 18638324.13 ON nid007977 CANCELLED AT 2026-05-15T00:25:23 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.13
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.95
+2                      17.11
+4                      40.15
+8                      77.85
+16                    150.92
+32                    332.73
+64                    636.10
+128                  1164.42
+256                  2356.29
+512                  4665.13
+1024                 8999.95
+2048                13354.89
+4096                21948.93
+8192                17805.12
+16384               21567.65
+32768               25469.79
+65536               30946.20
+131072              35439.67
+262144              26598.90
+524288              16508.09
+1048576             11969.11
+2097152             10778.45
+4194304              9931.66
+8388608             10104.59
+16777216            10174.25
+  [run 3/6] recording — 00:25:23
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.14
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.14 ON nid007977 CANCELLED AT 2026-05-15T00:25:46 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 23s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.20
+2                      20.42
+4                      38.32
+8                      81.94
+16                    166.58
+32                    332.79
+64                    596.28
+128                  1261.24
+256                  2370.37
+512                  4886.95
+1024                 9104.80
+2048                14042.26
+4096                13768.19
+8192                17771.99
+16384               21090.63
+32768               26157.67
+65536               31361.00
+131072              33814.60
+262144              26855.42
+524288              16546.23
+1048576             13289.41
+2097152             12069.27
+4194304             11528.30
+8388608             11459.31
+16777216            11495.15
+  [run 4/6] recording — 00:25:46
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.15
+slurmstepd: error: *** STEP 18638324.15 ON nid007977 CANCELLED AT 2026-05-15T00:26:10 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.15
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      19.39
+4                      40.20
+8                      80.82
+16                    167.21
+32                    331.30
+64                    636.19
+128                  1174.73
+256                  2196.11
+512                  4877.77
+1024                 9091.26
+2048                15076.91
+4096                16195.43
+8192                16799.67
+16384               20249.10
+32768               26227.49
+65536               31037.10
+131072              35028.71
+262144              25379.70
+524288              15629.80
+1048576             13336.60
+2097152             12103.77
+4194304              9937.31
+8388608             10046.02
+16777216            10121.91
+  [run 5/6] recording — 00:26:10
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.16
+slurmstepd: error: *** STEP 18638324.16 ON nid007977 CANCELLED AT 2026-05-15T00:26:34 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.16
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.72
+2                      19.16
+4                      35.38
+8                      75.29
+16                    166.78
+32                    321.65
+64                    558.38
+128                  1259.10
+256                  2499.58
+512                  4369.45
+1024                 8119.99
+2048                15492.78
+4096                12799.99
+8192                15841.58
+16384               20648.34
+32768               26260.99
+65536               30434.42
+131072              35648.64
+262144              26403.96
+524288              16563.81
+1048576             12065.15
+2097152             10774.38
+4194304              9953.95
+8388608             10129.39
+16777216            10159.76
+  [run 6/6] recording — 00:26:34
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.17
+slurmstepd: error: *** STEP 18638324.17 ON nid007977 CANCELLED AT 2026-05-15T00:26:58 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.17
+  [run 6/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.65
+2                      19.33
+4                      37.85
+8                      81.97
+16                    166.92
+32                    331.20
+64                    626.65
+128                  1257.44
+256                  2493.63
+512                  4892.94
+1024                 9146.05
+2048                15455.97
+4096                19308.33
+8192                17559.43
+16384               21280.36
+32768               27117.31
+65536               31916.97
+131072              33671.67
+262144              27090.55
+524288              15485.50
+1048576             12017.73
+2097152             10861.70
+4194304             10101.04
+8388608             10065.42
+16777216            10157.78
+
+# [native sdma=0] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:26:58
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 00:27:22
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.19
+slurmstepd: error: *** STEP 18638324.19 ON nid007977 CANCELLED AT 2026-05-15T00:27:47 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.19
+  [run 2/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.16
+2                      17.92
+4                      33.57
+8                      81.59
+16                    159.55
+32                    291.68
+64                    586.98
+128                  1256.95
+256                  2217.13
+512                  4457.47
+1024                 9110.89
+2048                15131.14
+4096                19499.58
+8192                17943.17
+16384               21079.54
+32768               26706.63
+65536               32327.68
+131072              35178.32
+262144              26214.68
+524288              15347.73
+1048576             11992.18
+2097152             10805.37
+4194304             10049.95
+8388608             10073.59
+16777216            10129.95
+  [run 3/6] recording — 00:27:47
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.20
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.70
+2                      17.30
+4                      37.56
+8                      77.80
+16                    165.24
+32                    315.59
+64                    635.51
+128                  1259.59
+256                  2427.41
+512                  4295.64
+1024                 9104.30
+2048                15142.70
+4096                18090.25
+8192                16312.16
+16384               20456.26
+32768               25534.05
+65536               30901.10
+131072              33775.22
+262144              27985.32
+524288              16392.21
+1048576             13260.40
+2097152             11948.21
+4194304             11494.80
+8388608             11379.28
+16777216            11442.94
+  [run 4/6] recording — 00:28:09
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.21
+slurmstepd: error: *** STEP 18638324.21 ON nid007977 CANCELLED AT 2026-05-15T00:28:33 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.21
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.74
+2                      19.34
+4                      40.18
+8                      82.08
+16                    165.00
+32                    332.75
+64                    635.22
+128                  1261.20
+256                  2464.84
+512                  4854.89
+1024                 8417.70
+2048                14881.39
+4096                16056.78
+8192                17660.90
+16384               20717.37
+32768               26704.18
+65536               31689.30
+131072              33776.40
+262144              26600.65
+524288              15340.07
+1048576             11946.31
+2097152             10839.60
+4194304             10121.91
+8388608             10147.34
+16777216            10159.27
+  [run 5/6] recording — 00:28:33
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.22
+slurmstepd: error: *** STEP 18638324.22 ON nid007977 CANCELLED AT 2026-05-15T00:28:57 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.22
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      20.33
+4                      40.10
+8                      81.93
+16                    156.66
+32                    331.60
+64                    605.64
+128                  1202.97
+256                  2498.32
+512                  4611.07
+1024                 8725.25
+2048                15407.91
+4096                16019.12
+8192                17744.86
+16384               21299.63
+32768               26734.20
+65536               32145.64
+131072              33833.51
+262144              25971.11
+524288              15512.85
+1048576             11882.05
+2097152             10744.35
+4194304             10071.03
+8388608             10158.66
+16777216            10101.02
+  [run 6/6] recording — 00:28:57
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.23
+slurmstepd: error: *** STEP 18638324.23 ON nid007977 CANCELLED AT 2026-05-15T00:29:19 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.23
+  [run 6/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      20.14
+4                      38.12
+8                      81.79
+16                    167.21
+32                    325.50
+64                    637.21
+128                  1263.38
+256                  2495.26
+512                  4886.00
+1024                 9113.93
+2048                14552.93
+4096                20245.72
+8192                17242.75
+16384               20505.36
+32768               25377.89
+65536               30914.65
+131072              35789.45
+262144              28155.66
+524288              17017.45
+1048576             12048.63
+2097152             10874.87
+4194304             10092.15
+8388608             11464.32
+16777216            11570.01
+
+# [native sdma=0] inter_pkg_2link_24  GCD(2,4) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:29:19
+  [run 1/6] warm-up done in 25s
+  [run 2/6] recording — 00:29:44
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.25
+slurmstepd: error: *** STEP 18638324.25 ON nid007977 CANCELLED AT 2026-05-15T00:30:08 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.25
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      19.87
+4                      35.35
+8                      77.27
+16                    167.22
+32                    328.66
+64                    634.94
+128                  1256.93
+256                  2494.93
+512                  4870.43
+1024                 9138.76
+2048                14855.53
+4096                16152.34
+8192                17158.46
+16384               20840.81
+32768               26027.34
+65536               31179.96
+131072              33653.51
+262144              26461.82
+524288              15265.26
+1048576             11928.49
+2097152             10821.64
+4194304             10090.96
+8388608             10154.25
+16777216            10144.56
+  [run 3/6] recording — 00:30:08
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.26
+slurmstepd: error: *** STEP 18638324.26 ON nid007977 CANCELLED AT 2026-05-15T00:30:30 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.26
+  [run 3/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      19.30
+4                      38.36
+8                      77.99
+16                    166.14
+32                    315.29
+64                    633.41
+128                  1253.24
+256                  2477.91
+512                  4035.10
+1024                 8655.53
+2048                15359.07
+4096                15054.78
+8192                17931.60
+16384               20884.98
+32768               26358.98
+65536               31176.20
+131072              35563.97
+262144              27332.28
+524288              16376.63
+1048576             13352.59
+2097152             12078.49
+4194304             11494.54
+8388608             11387.93
+16777216            11476.44
+  [run 4/6] recording — 00:30:30
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.27
+slurmstepd: error: *** STEP 18638324.27 ON nid007977 CANCELLED AT 2026-05-15T00:30:54 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.27
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      19.34
+4                      38.32
+8                      77.05
+16                    166.51
+32                    331.58
+64                    636.19
+128                  1258.44
+256                  2493.97
+512                  4878.35
+1024                 9148.60
+2048                15336.39
+4096                21129.64
+8192                18019.85
+16384               21128.05
+32768               25445.08
+65536               32613.20
+131072              32969.09
+262144              26128.38
+524288              15576.34
+1048576             11996.25
+2097152             10809.67
+4194304             10101.58
+8388608             10135.89
+16777216            10122.03
+  [run 5/6] recording — 00:30:54
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.28
+slurmstepd: error: *** STEP 18638324.28 ON nid007977 CANCELLED AT 2026-05-15T00:31:18 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.28
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.73
+2                      20.40
+4                      40.25
+8                      77.67
+16                    160.63
+32                    331.79
+64                    636.20
+128                  1257.01
+256                  2496.48
+512                  4884.11
+1024                 9098.47
+2048                15693.67
+4096                13528.91
+8192                17874.33
+16384               20973.67
+32768               26100.17
+65536               30878.60
+131072              35791.03
+262144              28649.67
+524288              16477.65
+1048576             11989.28
+2097152             10780.43
+4194304             10127.87
+8388608             10139.16
+16777216            10152.22
+  [run 6/6] recording — 00:31:18
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.29
+slurmstepd: error: *** STEP 18638324.29 ON nid007977 CANCELLED AT 2026-05-15T00:31:42 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.29
+  [run 6/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.70
+2                      20.40
+4                      38.39
+8                      77.93
+16                    164.30
+32                    332.01
+64                    634.94
+128                  1255.83
+256                  2486.95
+512                  4881.70
+1024                 9146.56
+2048                14498.75
+4096                14026.91
+8192                17639.94
+16384               21539.02
+32768               26662.14
+65536               31623.27
+131072              33753.89
+262144              25548.21
+524288              15559.40
+1048576             12046.40
+2097152             10799.14
+4194304             10124.09
+8388608             10127.31
+16777216            10176.43
+
+# [native sdma=0] inter_pkg_1link_02  GCD(0,2) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:31:42
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 00:32:06
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.31
+slurmstepd: error: *** STEP 18638324.31 ON nid007977 CANCELLED AT 2026-05-15T00:32:31 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.31
+  [run 2/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.72
+2                      20.08
+4                      35.32
+8                      74.54
+16                    166.63
+32                    317.95
+64                    636.04
+128                  1252.70
+256                  2500.19
+512                  4596.93
+1024                 8685.40
+2048                15129.38
+4096                15454.42
+8192                17570.99
+16384               20747.07
+32768               26333.27
+65536               31914.41
+131072              34175.22
+262144              27714.11
+524288              15688.99
+1048576             11910.57
+2097152             10812.83
+4194304             10048.13
+8388608             10122.75
+16777216            10167.97
+  [run 3/6] recording — 00:32:31
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.32
+slurmstepd: error: *** STEP 18638324.32 ON nid007977 CANCELLED AT 2026-05-15T00:32:55 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.32
+  [run 3/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      20.42
+4                      37.98
+8                      77.97
+16                    167.11
+32                    331.45
+64                    634.44
+128                  1261.71
+256                  2351.89
+512                  4888.55
+1024                 9005.51
+2048                15480.46
+4096                13965.36
+8192                18469.77
+16384               21158.24
+32768               26645.25
+65536               31318.50
+131072              34071.72
+262144              26562.64
+524288              15492.85
+1048576             12043.43
+2097152             10811.15
+4194304             10089.24
+8388608             10155.95
+16777216            10164.97
+  [run 4/6] recording — 00:32:55
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.33
+slurmstepd: error: *** STEP 18638324.33 ON nid007977 CANCELLED AT 2026-05-15T00:33:19 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.33
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.20
+2                      20.33
+4                      40.23
+8                      77.66
+16                    146.44
+32                    302.60
+64                    635.19
+128                  1198.37
+256                  2358.71
+512                  4668.19
+1024                 9124.98
+2048                15038.07
+4096                18215.30
+8192                17105.28
+16384               21256.31
+32768               25556.63
+65536               31647.04
+131072              34088.51
+262144              26582.27
+524288              15665.33
+1048576             12044.80
+2097152             10769.66
+4194304             10121.50
+8388608             10113.10
+16777216            10145.16
+  [run 5/6] recording — 00:33:19
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.34
+slurmstepd: error: *** STEP 18638324.34 ON nid007977 CANCELLED AT 2026-05-15T00:33:43 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.34
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.52
+2                      20.36
+4                      38.30
+8                      75.12
+16                    140.04
+32                    331.64
+64                    634.30
+128                  1108.99
+256                  2266.51
+512                  4889.21
+1024                 8758.09
+2048                15318.77
+4096                20961.88
+8192                17536.48
+16384               20992.77
+32768               26060.81
+65536               30776.94
+131072              33841.34
+262144              26928.65
+524288              16524.84
+1048576             12034.24
+2097152             10721.70
+4194304             10067.13
+8388608             10119.70
+16777216            10150.03
+  [run 6/6] recording — 00:33:43
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.35
+slurmstepd: error: *** STEP 18638324.35 ON nid007977 CANCELLED AT 2026-05-15T00:34:05 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.35
+  [run 6/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.91
+2                      18.91
+4                      34.43
+8                      72.63
+16                    153.87
+32                    315.29
+64                    547.72
+128                  1150.62
+256                  2296.27
+512                  4274.70
+1024                 8136.65
+2048                15098.13
+4096                16419.23
+8192                16075.62
+16384               20730.79
+32768               25632.11
+65536               31113.99
+131072              33840.51
+262144              27523.37
+524288              15626.05
+1048576             13273.91
+2097152             12078.30
+4194304             11493.02
+8388608             11372.48
+16777216            11472.69
+
+# [native sdma=0] inter_pkg_1link_15  GCD(1,5) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:34:05
+  [run 1/6] warm-up done in 25s
+  [run 2/6] recording — 00:34:30
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.37
+slurmstepd: error: *** STEP 18638324.37 ON nid007977 CANCELLED AT 2026-05-15T00:34:54 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.37
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      20.41
+4                      40.10
+8                      80.51
+16                    167.15
+32                    314.84
+64                    635.86
+128                  1198.91
+256                  2188.47
+512                  4866.59
+1024                 9133.78
+2048                13331.62
+4096                17443.41
+8192                17816.88
+16384               21099.09
+32768               26581.04
+65536               31098.22
+131072              35222.01
+262144              26683.43
+524288              16749.95
+1048576             11896.27
+2097152             10778.78
+4194304             10130.32
+8388608             10129.99
+16777216            10148.79
+  [run 3/6] recording — 00:34:54
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.38
+slurmstepd: error: *** STEP 18638324.38 ON nid007977 CANCELLED AT 2026-05-15T00:35:16 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.38
+  [run 3/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.67
+2                      19.40
+4                      38.23
+8                      77.63
+16                    165.76
+32                    331.79
+64                    632.68
+128                  1257.07
+256                  2483.26
+512                  4872.60
+1024                 8987.95
+2048                14887.47
+4096                16771.83
+8192                17560.14
+16384               20411.37
+32768               24844.76
+65536               30867.49
+131072              33584.75
+262144              25717.72
+524288              15809.10
+1048576             13251.02
+2097152             12043.77
+4194304             11494.45
+8388608             11309.55
+16777216            11436.89
+  [run 4/6] recording — 00:35:16
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.39
+slurmstepd: error: *** STEP 18638324.39 ON nid007977 CANCELLED AT 2026-05-15T00:35:40 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.39
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      19.34
+4                      40.15
+8                      77.78
+16                    166.97
+32                    329.14
+64                    634.34
+128                  1263.46
+256                  2495.23
+512                  4880.61
+1024                 9059.65
+2048                15341.60
+4096                19164.35
+8192                17270.76
+16384               20622.98
+32768               26432.30
+65536               31516.68
+131072              35218.29
+262144              26433.09
+524288              15580.71
+1048576             11987.99
+2097152             10803.98
+4194304             10108.15
+8388608             10104.50
+16777216            10176.17
+  [run 5/6] recording — 00:35:40
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.40
+slurmstepd: error: *** STEP 18638324.40 ON nid007977 CANCELLED AT 2026-05-15T00:36:04 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.40
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.72
+2                      19.34
+4                      34.08
+8                      71.90
+16                    158.74
+32                    328.36
+64                    558.87
+128                  1111.11
+256                  2353.41
+512                  4594.61
+1024                 9122.46
+2048                15658.91
+4096                20524.79
+8192                17086.18
+16384               20767.78
+32768               26735.39
+65536               30870.45
+131072              33766.47
+262144              24781.17
+524288              15655.69
+1048576             12048.76
+2097152             10841.18
+4194304             10122.39
+8388608             10153.59
+16777216            10151.09
+  [run 6/6] recording — 00:36:04
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.41
+slurmstepd: error: *** STEP 18638324.41 ON nid007977 CANCELLED AT 2026-05-15T00:36:28 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.41
+  [run 6/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      20.40
+4                      38.38
+8                      78.12
+16                    161.11
+32                    332.49
+64                    597.00
+128                  1261.22
+256                  2499.08
+512                  4863.33
+1024                 8737.49
+2048                15327.39
+4096                16393.83
+8192                16853.18
+16384               20698.20
+32768               26210.14
+65536               32403.67
+131072              34209.25
+262144              27102.67
+524288              15804.07
+1048576             11951.59
+2097152             10818.86
+4194304              9951.46
+8388608              9974.79
+16777216            10153.82
+
+# [native sdma=0] inter_pkg_1link_37  GCD(3,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:36:28
+  [run 1/6] warm-up done in 23s
+  [run 2/6] recording — 00:36:51
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.43
+slurmstepd: error: *** STEP 18638324.43 ON nid007977 CANCELLED AT 2026-05-15T00:37:16 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.43
+  [run 2/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.73
+2                      19.13
+4                      38.34
+8                      82.07
+16                    167.34
+32                    328.14
+64                    634.27
+128                  1257.98
+256                  2498.47
+512                  4653.71
+1024                 8908.86
+2048                15303.37
+4096                13697.91
+8192                17716.80
+16384               21330.63
+32768               26836.99
+65536               32841.51
+131072              34161.53
+262144              26344.82
+524288              15547.69
+1048576             11950.16
+2097152             10805.87
+4194304             10078.42
+8388608             10083.76
+16777216            10131.10
+  [run 3/6] recording — 00:37:16
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.44
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.44 ON nid007977 CANCELLED AT 2026-05-15T00:37:41 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.23
+2                      20.02
+4                      33.75
+8                      75.88
+16                    158.45
+32                    328.69
+64                    634.90
+128                  1258.17
+256                  2485.03
+512                  4862.46
+1024                 9120.67
+2048                15653.12
+4096                17334.44
+8192                16215.56
+16384               20738.31
+32768               26424.73
+65536               32038.96
+131072              33962.21
+262144              25889.88
+524288              15740.41
+1048576             11957.83
+2097152             10786.94
+4194304             10105.08
+8388608             10116.99
+16777216             9989.27
+  [run 4/6] recording — 00:37:41
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.45
+slurmstepd: error: *** STEP 18638324.45 ON nid007977 CANCELLED AT 2026-05-15T00:38:05 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.45
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.97
+2                      17.89
+4                      40.34
+8                      78.84
+16                    166.78
+32                    330.41
+64                    634.15
+128                  1259.92
+256                  2490.89
+512                  4877.04
+1024                 9132.77
+2048                14497.13
+4096                13529.75
+8192                18359.49
+16384               21553.79
+32768               26207.88
+65536               31864.01
+131072              33611.19
+262144              25294.70
+524288              15550.63
+1048576             11970.72
+2097152             10677.94
+4194304              9920.22
+8388608             10110.99
+16777216            10162.60
+  [run 5/6] recording — 00:38:05
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.46
+slurmstepd: error: *** STEP 18638324.46 ON nid007977 CANCELLED AT 2026-05-15T00:38:29 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.46
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.12
+2                      19.29
+4                      35.30
+8                      79.18
+16                    166.25
+32                    332.65
+64                    633.59
+128                  1252.39
+256                  2465.13
+512                  4798.40
+1024                 8770.19
+2048                14861.60
+4096                15255.89
+8192                17389.27
+16384               20926.99
+32768               26081.73
+65536               31073.85
+131072              35635.36
+262144              27547.55
+524288              16538.13
+1048576             11981.73
+2097152             10806.40
+4194304             10043.95
+8388608             10141.37
+16777216            10131.41
+  [run 6/6] recording — 00:38:29
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.47
+slurmstepd: error: *** STEP 18638324.47 ON nid007977 CANCELLED AT 2026-05-15T00:38:51 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.47
+  [run 6/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.18
+2                      20.40
+4                      37.82
+8                      77.85
+16                    167.32
+32                    312.82
+64                    591.30
+128                  1053.45
+256                  2370.13
+512                  4870.43
+1024                 7854.10
+2048                14970.78
+4096                18344.17
+8192                17928.29
+16384               21134.50
+32768               26541.57
+65536               32028.18
+131072              34098.89
+262144              26248.83
+524288              16569.12
+1048576             13296.69
+2097152             12048.36
+4194304             11451.32
+8388608             11366.07
+16777216            11394.37
+
+# [native sdma=0] inter_pkg_1link_57  GCD(5,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:38:51
+  [run 1/6] warm-up done in 23s
+  [run 2/6] recording — 00:39:14
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.49
+slurmstepd: error: *** STEP 18638324.49 ON nid007977 CANCELLED AT 2026-05-15T00:39:38 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.49
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.70
+2                      20.38
+4                      38.33
+8                      82.14
+16                    165.15
+32                    332.22
+64                    632.40
+128                  1256.70
+256                  2362.80
+512                  4881.55
+1024                 9086.96
+2048                15014.44
+4096                16451.14
+8192                17345.70
+16384               20405.29
+32768               26607.60
+65536               31484.42
+131072              35092.20
+262144              26390.23
+524288              15659.01
+1048576             11990.48
+2097152             10670.78
+4194304             10106.28
+8388608             10154.33
+16777216            10172.27
+  [run 3/6] recording — 00:39:38
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.50
+slurmstepd: error: *** STEP 18638324.50 ON nid007977 CANCELLED AT 2026-05-15T00:40:00 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.50
+  [run 3/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.54
+2                      20.39
+4                      40.24
+8                      78.40
+16                    167.21
+32                    315.44
+64                    596.28
+128                  1233.78
+256                  2485.55
+512                  4855.60
+1024                 9134.17
+2048                13745.98
+4096                13514.24
+8192                17044.50
+16384               20336.09
+32768               25534.98
+65536               30518.11
+131072              33677.68
+262144              26527.81
+524288              16726.45
+1048576             13243.82
+2097152             12033.92
+4194304             11530.65
+8388608             11379.32
+16777216            11403.51
+  [run 4/6] recording — 00:40:00
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.51
+slurmstepd: error: *** STEP 18638324.51 ON nid007977 CANCELLED AT 2026-05-15T00:40:24 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.51
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.20
+2                      20.40
+4                      37.88
+8                      68.58
+16                    145.50
+32                    331.85
+64                    611.13
+128                  1256.28
+256                  2494.31
+512                  4876.09
+1024                 9091.51
+2048                14943.09
+4096                15471.51
+8192                17254.93
+16384               21411.10
+32768               26580.27
+65536               32119.86
+131072              33979.17
+262144              27281.64
+524288              15728.20
+1048576             12001.53
+2097152             10791.89
+4194304             10060.64
+8388608             10135.68
+16777216            10052.88
+  [run 5/6] recording — 00:40:24
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.52
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 5/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.69
+2                      19.30
+4                      40.30
+8                      81.97
+16                    167.04
+32                    331.36
+64                    636.15
+128                  1257.57
+256                  2497.52
+512                  4884.61
+1024                 9053.88
+2048                15415.16
+4096                16675.73
+8192                17214.11
+16384               21543.81
+32768               26152.28
+65536               32123.81
+131072              34045.46
+262144              27267.63
+524288              16599.39
+1048576             13301.03
+2097152             12072.02
+4194304             11438.78
+8388608             10135.74
+16777216            10089.00
+  [run 6/6] recording — 00:40:49
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.53
+slurmstepd: error: *** STEP 18638324.53 ON nid007977 CANCELLED AT 2026-05-15T00:41:14 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.53
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.22
+2                      20.38
+4                      38.38
+8                      78.12
+16                    166.74
+32                    292.79
+64                    633.94
+128                  1258.10
+256                  2486.39
+512                  4869.70
+1024                 9119.28
+2048                15678.08
+4096                13087.67
+8192                17042.88
+16384               20310.95
+32768               26485.05
+65536               30446.04
+131072              32546.18
+262144              25487.18
+524288              15799.67
+1048576             11751.61
+2097152             10707.62
+4194304             10079.99
+8388608              9953.80
+16777216            10074.78
+
+# [native sdma=0] routed_07  GCD(0,7) tier=routed
+  [run 1/6] warm-up — 00:41:14
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 00:41:38
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.55
+slurmstepd: error: *** STEP 18638324.55 ON nid007977 CANCELLED AT 2026-05-15T00:42:02 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.55
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.78
+2                      18.90
+4                      38.36
+8                      79.84
+16                    167.23
+32                    315.24
+64                    606.53
+128                  1231.92
+256                  2434.27
+512                  4789.61
+1024                 8816.89
+2048                14507.59
+4096                16293.26
+8192                17880.14
+16384               21338.63
+32768               26823.17
+65536               31687.26
+131072              33934.55
+262144              26811.94
+524288              15324.78
+1048576             11946.02
+2097152             10782.07
+4194304             10046.58
+8388608             10149.56
+16777216            10135.46
+  [run 3/6] recording — 00:42:02
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.56
+slurmstepd: error: *** STEP 18638324.56 ON nid007977 CANCELLED AT 2026-05-15T00:42:24 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.56
+  [run 3/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.56
+2                      20.40
+4                      38.35
+8                      68.59
+16                    157.57
+32                    330.94
+64                    626.35
+128                  1109.53
+256                  2496.94
+512                  4872.75
+1024                 8562.60
+2048                13852.67
+4096                19954.05
+8192                18061.89
+16384               20490.98
+32768               26433.74
+65536               30980.84
+131072              33680.28
+262144              26120.51
+524288              16478.44
+1048576             13357.20
+2097152             12073.37
+4194304             11521.17
+8388608             11428.34
+16777216            11448.25
+  [run 4/6] recording — 00:42:24
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.57
+slurmstepd: error: *** STEP 18638324.57 ON nid007977 CANCELLED AT 2026-05-15T00:42:48 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.57
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.09
+2                      19.94
+4                      37.80
+8                      76.52
+16                    165.65
+32                    314.22
+64                    628.10
+128                  1248.22
+256                  2478.96
+512                  4826.16
+1024                 9027.64
+2048                14928.93
+4096                13397.08
+8192                16940.48
+16384               20874.90
+32768               26460.01
+65536               31383.89
+131072              34089.31
+262144              26054.76
+524288              15886.25
+1048576             12029.38
+2097152             10766.91
+4194304              9967.21
+8388608             10131.25
+16777216            10154.46
+  [run 5/6] recording — 00:42:48
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.58
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.58 ON nid007977 CANCELLED AT 2026-05-15T00:43:13 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 5/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.97
+2                      20.24
+4                      40.31
+8                      80.40
+16                    146.93
+32                    331.77
+64                    603.39
+128                  1139.01
+256                  2077.29
+512                  4869.12
+1024                 9029.76
+2048                13384.54
+4096                16971.80
+8192                16597.13
+16384               20430.42
+32768               26059.51
+65536               30895.05
+131072              33956.92
+262144              27061.15
+524288              15715.12
+1048576             11886.55
+2097152             10807.67
+4194304             10063.42
+8388608             10128.28
+16777216            10131.10
+  [run 6/6] recording — 00:43:13
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.59
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 6/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.71
+2                      19.97
+4                      38.46
+8                      80.54
+16                    164.53
+32                    314.54
+64                    626.30
+128                  1263.34
+256                  2482.61
+512                  4858.27
+1024                 9049.62
+2048                14544.03
+4096                16269.96
+8192                17663.04
+16384               21681.37
+32768               26518.77
+65536               31384.04
+131072              33923.78
+262144              26689.12
+524288              15595.41
+1048576             13358.57
+2097152             12046.46
+4194304             11442.60
+8388608             10101.66
+16777216            10091.23
+
+# [native sdma=0] routed_03  GCD(0,3) tier=routed
+  [run 1/6] warm-up — 00:43:37
+  [run 1/6] warm-up done in 22s
+  [run 2/6] recording — 00:43:59
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.61
+slurmstepd: error: *** STEP 18638324.61 ON nid007977 CANCELLED AT 2026-05-15T00:44:23 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.61
+  [run 2/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.64
+2                      19.37
+4                      40.16
+8                      76.71
+16                    166.05
+32                    330.81
+64                    636.15
+128                  1250.84
+256                  2498.35
+512                  4882.50
+1024                 9128.19
+2048                14916.68
+4096                16577.88
+8192                17245.71
+16384               20696.23
+32768               25219.86
+65536               31330.20
+131072              35187.37
+262144              25676.55
+524288              15629.66
+1048576             11860.50
+2097152             10786.49
+4194304             10105.65
+8388608             10120.02
+16777216            10167.78
+  [run 3/6] recording — 00:44:23
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.62
+slurmstepd: error: *** STEP 18638324.62 ON nid007977 CANCELLED AT 2026-05-15T00:44:47 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.62
+  [run 3/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.14
+2                      17.47
+4                      36.33
+8                      72.86
+16                    149.90
+32                    301.09
+64                    627.41
+128                  1246.05
+256                  2240.55
+512                  4115.01
+1024                 7312.91
+2048                11679.95
+4096                12910.39
+8192                15854.97
+16384               19457.45
+32768               25051.51
+65536               31540.83
+131072              35452.45
+262144              27383.28
+524288              16614.16
+1048576             11966.37
+2097152             10785.03
+4194304             10113.27
+8388608             10121.03
+16777216            10108.16
+  [run 4/6] recording — 00:44:47
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.63
+slurmstepd: error: *** STEP 18638324.63 ON nid007977 CANCELLED AT 2026-05-15T00:45:11 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.63
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.05
+2                      20.10
+4                      39.79
+8                      76.47
+16                    163.88
+32                    311.08
+64                    625.60
+128                  1239.67
+256                  2465.21
+512                  4814.58
+1024                 9069.57
+2048                15677.14
+4096                20211.00
+8192                17201.38
+16384               20953.27
+32768               26383.23
+65536               31994.52
+131072              34111.88
+262144              27681.58
+524288              15673.71
+1048576             12067.43
+2097152             10777.46
+4194304             10085.36
+8388608             10146.19
+16777216            10157.66
+  [run 5/6] recording — 00:45:11
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.64
+slurmstepd: error: *** STEP 18638324.64 ON nid007977 CANCELLED AT 2026-05-15T00:45:36 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.64
+  [run 5/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.73
+2                      19.41
+4                      37.85
+8                      81.93
+16                    167.18
+32                    331.81
+64                    628.90
+128                  1261.67
+256                  2493.82
+512                  4655.31
+1024                 9135.83
+2048                14583.42
+4096                13878.69
+8192                17826.53
+16384               21064.68
+32768               26859.07
+65536               32680.74
+131072              34980.69
+262144              26630.64
+524288              15650.56
+1048576             12006.33
+2097152             10777.67
+4194304             10103.00
+8388608             10106.33
+16777216             9936.32
+  [run 6/6] recording — 00:45:36
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.65
+slurmstepd: error: *** STEP 18638324.65 ON nid007977 CANCELLED AT 2026-05-15T00:46:00 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.65
+  [run 6/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       8.96
+2                      19.88
+4                      38.35
+8                      78.38
+16                    146.44
+32                    332.78
+64                    636.18
+128                  1259.76
+256                  2491.58
+512                  4868.32
+1024                 9138.89
+2048                12989.55
+4096                16568.44
+8192                17021.27
+16384               20921.88
+32768               25538.93
+65536               30917.46
+131072              33632.62
+262144              25985.95
+524288              15665.62
+1048576             12020.36
+2097152             10815.79
+4194304             10104.40
+8388608             10148.19
+16777216            10156.11
+
+# [native sdma=0] routed_17  GCD(1,7) tier=routed
+  [run 1/6] warm-up — 00:46:00
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 00:46:24
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.67
+slurmstepd: error: *** STEP 18638324.67 ON nid007977 CANCELLED AT 2026-05-15T00:46:46 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.67
+  [run 2/6] done in 22s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.19
+2                      20.09
+4                      33.70
+8                      73.73
+16                    167.25
+32                    319.33
+64                    636.14
+128                  1262.27
+256                  2500.30
+512                  4822.88
+1024                 9013.84
+2048                14768.49
+4096                13524.29
+8192                17218.98
+16384               20417.43
+32768               25471.37
+65536               30927.03
+131072              35020.00
+262144              26995.66
+524288              15286.40
+1048576             13336.64
+2097152             12054.86
+4194304             11439.61
+8388608             11402.29
+16777216            11505.64
+  [run 3/6] recording — 00:46:46
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.68
+[../../../util/osu_util_mpi.c:2879] function call failed with 12 
+slurmstepd: error: *** STEP 18638324.68 ON nid007977 CANCELLED AT 2026-05-15T00:47:09 ***
+srun: error: nid007977: task 0: Exited with exit code 1
+  [run 3/6] done in 23s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.22
+2                      20.09
+4                      38.16
+8                      82.03
+16                    167.24
+32                    313.78
+64                    560.75
+128                  1261.26
+256                  2351.99
+512                  4882.57
+1024                 9140.55
+2048                13215.51
+4096                19495.22
+8192                17358.82
+16384               20451.02
+32768               25296.67
+65536               31857.87
+131072              34203.43
+262144              26282.49
+524288              15757.35
+1048576             13261.84
+2097152             12112.80
+4194304             11549.69
+8388608             11604.51
+16777216            11533.12
+  [run 4/6] recording — 00:47:09
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.69
+slurmstepd: error: *** STEP 18638324.69 ON nid007977 CANCELLED AT 2026-05-15T00:47:33 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.69
+  [run 4/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                      10.23
+2                      17.77
+4                      36.45
+8                      82.04
+16                    162.44
+32                    331.79
+64                    636.23
+128                  1263.42
+256                  2486.99
+512                  4876.23
+1024                 8711.20
+2048                13369.89
+4096                17450.74
+8192                17878.30
+16384               21145.51
+32768               25877.16
+65536               31772.37
+131072              35052.46
+262144              26323.03
+524288              15526.41
+1048576             12017.03
+2097152             10772.48
+4194304             10121.79
+8388608              9964.93
+16777216            10175.39
+  [run 5/6] recording — 00:47:33
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.70
+slurmstepd: error: *** STEP 18638324.70 ON nid007977 CANCELLED AT 2026-05-15T00:47:57 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.70
+  [run 5/6] done in 24s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.71
+2                      19.40
+4                      40.28
+8                      80.11
+16                    167.13
+32                    316.12
+64                    634.24
+128                  1259.74
+256                  2489.30
+512                  4881.99
+1024                 9160.66
+2048                14607.70
+4096                14652.28
+8192                17718.12
+16384               21332.32
+32768               26836.03
+65536               32307.51
+131072              35679.19
+262144              27953.66
+524288              15568.38
+1048576             11991.12
+2097152             10732.77
+4194304             10107.22
+8388608             10091.47
+16777216             9987.78
+  [run 6/6] recording — 00:47:57
+[../../../util/osu_util_mpi.c:2897] function call failed with 12 
+srun: error: nid007977: task 1: Exited with exit code 1
+srun: Terminating StepId=18638324.71
+slurmstepd: error: *** STEP 18638324.71 ON nid007977 CANCELLED AT 2026-05-15T00:48:22 ***
+srun: error: nid007977: task 0: Terminated
+srun: Force Terminated StepId=18638324.71
+  [run 6/6] done in 25s
+# OSU MPI_Get-ROCM Bandwidth Test v7.5
+# Window creation: MPI_Win_allocate
+# Synchronization: MPI_Win_flush
+# Datatype: MPI_CHAR.
+# Rank 0 Memory on HOST (H) and Rank 1 Memory on HOST (H)
+# Size      Bandwidth (MB/s)
+1                       9.71
+2                      20.37
+4                      33.51
+8                      73.56
+16                    166.56
+32                    318.71
+64                    633.98
+128                  1255.12
+256                  2484.20
+512                  4809.47
+1024                 9108.61
+2048                15144.10
+4096                18772.60
+8192                17057.22
+16384               20392.32
+32768               25370.13
+65536               31069.44
+131072              35541.95
+262144              26616.55
+524288              15566.51
+1048576             12003.34
+2097152             10747.25
+4194304             10085.39
+8388608             10113.76
+16777216            10124.32
+ALL BENCHMARKS COMPLETE  CSV=results/osu_get_bw_native_18638324.csv

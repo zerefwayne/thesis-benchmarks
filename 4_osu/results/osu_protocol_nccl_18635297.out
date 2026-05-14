@@ -1,0 +1,171 @@
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+=== CFG baseline: NCH=unset AFF=unset GDR=unset ===
+
+# [eessi_xccl cfg=baseline] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:42:01
+  [run 1/6] warm-up done in 18s
+  [run 2/6] recording — 21:42:19
+  [run 2/6] done in 6s
+  [run 3/6] recording — 21:42:25
+  [run 3/6] done in 7s
+  [run 4/6] recording — 21:42:32
+  [run 4/6] done in 6s
+  [run 5/6] recording — 21:42:38
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:42:45
+  [run 6/6] done in 6s
+
+# [eessi_xccl cfg=baseline] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:42:51
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:42:57
+  [run 2/6] done in 7s
+  [run 3/6] recording — 21:43:04
+  [run 3/6] done in 6s
+  [run 4/6] recording — 21:43:10
+  [run 4/6] done in 7s
+  [run 5/6] recording — 21:43:17
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:43:23
+  [run 6/6] done in 7s
+=== CFG channels32: NCH=32 AFF=unset GDR=unset ===
+
+# [eessi_xccl cfg=channels32] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:43:30
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:43:36
+  [run 2/6] done in 7s
+  [run 3/6] recording — 21:43:43
+  [run 3/6] done in 6s
+  [run 4/6] recording — 21:43:49
+  [run 4/6] done in 6s
+  [run 5/6] recording — 21:43:55
+  [run 5/6] done in 7s
+  [run 6/6] recording — 21:44:02
+  [run 6/6] done in 6s
+
+# [eessi_xccl cfg=channels32] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:44:08
+  [run 1/6] warm-up done in 9s
+  [run 2/6] recording — 21:44:17
+  [run 2/6] done in 9s
+  [run 3/6] recording — 21:44:26
+  [run 3/6] done in 9s
+  [run 4/6] recording — 21:44:35
+  [run 4/6] done in 9s
+  [run 5/6] recording — 21:44:44
+  [run 5/6] done in 9s
+  [run 6/6] recording — 21:44:53
+  [run 6/6] done in 9s
+=== CFG affinity: NCH=unset AFF=1 GDR=unset ===
+
+# [eessi_xccl cfg=affinity] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:45:02
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:45:08
+  [run 2/6] done in 6s
+  [run 3/6] recording — 21:45:14
+  [run 3/6] done in 7s
+  [run 4/6] recording — 21:45:21
+  [run 4/6] done in 6s
+  [run 5/6] recording — 21:45:27
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:45:33
+  [run 6/6] done in 7s
+
+# [eessi_xccl cfg=affinity] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:45:40
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:45:46
+  [run 2/6] done in 7s
+  [run 3/6] recording — 21:45:53
+  [run 3/6] done in 6s
+  [run 4/6] recording — 21:45:59
+  [run 4/6] done in 7s
+  [run 5/6] recording — 21:46:06
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:46:12
+  [run 6/6] done in 6s
+=== CFG gdr3: NCH=unset AFF=unset GDR=3 ===
+
+# [eessi_xccl cfg=gdr3] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:46:18
+  [run 1/6] warm-up done in 7s
+  [run 2/6] recording — 21:46:25
+  [run 2/6] done in 6s
+  [run 3/6] recording — 21:46:31
+  [run 3/6] done in 6s
+  [run 4/6] recording — 21:46:37
+  [run 4/6] done in 7s
+  [run 5/6] recording — 21:46:44
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:46:50
+  [run 6/6] done in 7s
+
+# [eessi_xccl cfg=gdr3] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:46:57
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:47:03
+  [run 2/6] done in 7s
+  [run 3/6] recording — 21:47:10
+  [run 3/6] done in 6s
+  [run 4/6] recording — 21:47:16
+  [run 4/6] done in 7s
+  [run 5/6] recording — 21:47:23
+  [run 5/6] done in 6s
+  [run 6/6] recording — 21:47:29
+  [run 6/6] done in 6s
+=== CFG paper_full: NCH=32 AFF=1 GDR=3 ===
+
+# [eessi_xccl cfg=paper_full] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:47:36
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:47:42
+  [run 2/6] done in 6s
+  [run 3/6] recording — 21:47:48
+  [run 3/6] done in 7s
+  [run 4/6] recording — 21:47:55
+  [run 4/6] done in 6s
+  [run 5/6] recording — 21:48:01
+  [run 5/6] done in 7s
+  [run 6/6] recording — 21:48:08
+  [run 6/6] done in 6s
+
+# [eessi_xccl cfg=paper_full] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:48:14
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 21:48:22
+  [run 2/6] done in 9s
+  [run 3/6] recording — 21:48:31
+  [run 3/6] done in 8s
+  [run 4/6] recording — 21:48:39
+  [run 4/6] done in 8s
+  [run 5/6] recording — 21:48:47
+  [run 5/6] done in 9s
+  [run 6/6] recording — 21:48:56
+  [run 6/6] done in 8s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_protocol_nccl_18635297.csv

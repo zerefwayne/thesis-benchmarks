@@ -1,0 +1,1696 @@
+=== CFG baseline: NCH=unset AFF=unset GDR=unset ===
+
+# [eessi_xccl cfg=baseline] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:42:01
+  [run 1/6] warm-up done in 18s
+  [run 2/6] recording — 21:42:19
+  [run 2/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.85
+8                      36.57
+16                     36.43
+32                     38.22
+64                     41.47
+128                    47.19
+256                    47.14
+512                    47.59
+1024                   47.88
+2048                   48.58
+4096                   49.75
+8192                   50.69
+16384                  51.95
+32768                  51.24
+65536                  51.51
+131072                 52.49
+262144                 85.57
+524288                108.72
+1048576               120.96
+  [run 3/6] recording — 21:42:25
+  [run 3/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      38.00
+8                      36.70
+16                     36.61
+32                     38.36
+64                     41.62
+128                    46.39
+256                    46.38
+512                    46.77
+1024                   47.29
+2048                   47.94
+4096                   48.65
+8192                   49.90
+16384                  50.87
+32768                  51.52
+65536                  51.15
+131072                 52.42
+262144                 83.45
+524288                107.19
+1048576               118.97
+  [run 4/6] recording — 21:42:32
+  [run 4/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.44
+8                      37.04
+16                     36.89
+32                     38.18
+64                     41.07
+128                    47.53
+256                    47.49
+512                    47.79
+1024                   48.17
+2048                   49.00
+4096                   49.79
+8192                   51.03
+16384                  52.12
+32768                  51.72
+65536                  51.86
+131072                 52.71
+262144                 85.01
+524288                108.13
+1048576               119.92
+  [run 5/6] recording — 21:42:38
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      34.80
+8                      34.61
+16                     34.39
+32                     36.33
+64                     39.50
+128                    45.17
+256                    45.15
+512                    45.54
+1024                   46.03
+2048                   46.69
+4096                   47.51
+8192                   48.75
+16384                  49.81
+32768                  49.83
+65536                  49.48
+131072                 50.17
+262144                 83.53
+524288                107.29
+1048576               119.58
+  [run 6/6] recording — 21:42:45
+  [run 6/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.49
+8                      36.84
+16                     36.70
+32                     37.88
+64                     40.84
+128                    46.88
+256                    46.90
+512                    47.33
+1024                   47.79
+2048                   48.60
+4096                   49.26
+8192                   50.40
+16384                  51.59
+32768                  51.45
+65536                  51.62
+131072                 52.05
+262144                 85.07
+524288                108.83
+1048576               120.72
+
+# [eessi_xccl cfg=baseline] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:42:51
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:42:57
+  [run 2/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      33.00
+2                      32.47
+4                      32.51
+8                      32.62
+16                     32.59
+32                     32.66
+64                     32.71
+128                    32.82
+256                    32.96
+512                    33.13
+1024                   33.41
+2048                   34.00
+4096                   35.44
+8192                   35.64
+16384                  38.77
+32768                  45.19
+65536                  45.16
+131072                 50.67
+262144                 67.22
+524288                100.03
+1048576               166.93
+  [run 3/6] recording — 21:43:04
+  [run 3/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      26.99
+2                      26.54
+4                      26.46
+8                      26.48
+16                     26.44
+32                     26.60
+64                     26.70
+128                    26.65
+256                    26.76
+512                    27.02
+1024                   27.33
+2048                   28.06
+4096                   29.71
+8192                   30.38
+16384                  33.70
+32768                  40.81
+65536                  39.51
+131072                 46.66
+262144                 64.71
+524288                 98.45
+1048576               166.23
+  [run 4/6] recording — 21:43:10
+  [run 4/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      26.58
+2                      26.49
+4                      26.38
+8                      26.45
+16                     26.42
+32                     26.54
+64                     26.68
+128                    26.68
+256                    26.92
+512                    27.02
+1024                   27.28
+2048                   28.11
+4096                   29.72
+8192                   30.47
+16384                  33.83
+32768                  40.78
+65536                  39.65
+131072                 46.56
+262144                 64.60
+524288                 98.48
+1048576               165.99
+  [run 5/6] recording — 21:43:17
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      33.34
+2                      33.21
+4                      33.22
+8                      33.25
+16                     33.23
+32                     33.32
+64                     33.40
+128                    33.33
+256                    33.51
+512                    33.71
+1024                   33.96
+2048                   34.73
+4096                   35.97
+8192                   36.59
+16384                  39.78
+32768                  46.54
+65536                  46.05
+131072                 51.75
+262144                 68.21
+524288                100.20
+1048576               166.25
+  [run 6/6] recording — 21:43:23
+  [run 6/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      32.04
+2                      31.87
+4                      32.07
+8                      32.62
+16                     32.62
+32                     32.70
+64                     32.80
+128                    32.76
+256                    32.94
+512                    33.01
+1024                   33.35
+2048                   33.74
+4096                   35.43
+8192                   36.12
+16384                  39.20
+32768                  46.06
+65536                  46.14
+131072                 51.80
+262144                 67.93
+524288                100.07
+1048576               166.26
+=== CFG channels32: NCH=32 AFF=unset GDR=unset ===
+
+# [eessi_xccl cfg=channels32] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:43:30
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:43:36
+  [run 2/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.39
+8                      37.03
+16                     36.82
+32                     37.71
+64                     40.04
+128                    46.32
+256                    46.37
+512                    46.84
+1024                   46.95
+2048                   47.97
+4096                   48.63
+8192                   49.79
+16384                  50.93
+32768                  50.39
+65536                  51.13
+131072                 51.92
+262144                 83.17
+524288                107.00
+1048576               118.95
+  [run 3/6] recording — 21:43:43
+  [run 3/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.61
+8                      36.82
+16                     36.72
+32                     38.58
+64                     42.06
+128                    47.83
+256                    47.82
+512                    48.28
+1024                   48.65
+2048                   49.35
+4096                   50.19
+8192                   51.43
+16384                  52.41
+32768                  52.18
+65536                  52.18
+131072                 52.99
+262144                 84.12
+524288                107.30
+1048576               119.33
+  [run 4/6] recording — 21:43:49
+  [run 4/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      43.17
+8                      36.45
+16                     36.39
+32                     38.04
+64                     41.33
+128                    46.99
+256                    46.98
+512                    47.22
+1024                   47.69
+2048                   48.61
+4096                   49.41
+8192                   50.77
+16384                  51.86
+32768                  52.03
+65536                  51.47
+131072                 52.52
+262144                 85.08
+524288                108.69
+1048576               120.67
+  [run 5/6] recording — 21:43:55
+  [run 5/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.93
+8                      36.54
+16                     36.41
+32                     38.26
+64                     41.33
+128                    47.25
+256                    47.26
+512                    47.56
+1024                   48.08
+2048                   48.84
+4096                   49.56
+8192                   50.86
+16384                  52.02
+32768                  51.63
+65536                  51.46
+131072                 52.32
+262144                 85.76
+524288                109.35
+1048576               121.61
+  [run 6/6] recording — 21:44:02
+  [run 6/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.37
+8                      37.01
+16                     36.96
+32                     38.73
+64                     41.98
+128                    47.01
+256                    47.10
+512                    47.41
+1024                   47.87
+2048                   48.70
+4096                   49.29
+8192                   50.58
+16384                  51.79
+32768                  51.86
+65536                  52.31
+131072                 52.77
+262144                 83.98
+524288                107.34
+1048576               119.26
+
+# [eessi_xccl cfg=channels32] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:44:08
+  [run 1/6] warm-up done in 9s
+  [run 2/6] recording — 21:44:17
+  [run 2/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      84.12
+2                      84.01
+4                      84.17
+8                      84.61
+16                     84.53
+32                     84.83
+64                     85.66
+128                    86.13
+256                    87.16
+512                    88.39
+1024                   89.83
+2048                   95.72
+4096                  107.55
+8192                  102.68
+16384                 125.43
+32768                 173.42
+65536                 273.22
+131072                475.57
+262144                877.24
+524288               1679.61
+1048576               722.53
+  [run 3/6] recording — 21:44:26
+  [run 3/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      84.45
+2                      84.29
+4                      84.46
+8                      84.88
+16                     84.77
+32                     85.03
+64                     85.73
+128                    86.43
+256                    87.59
+512                    88.76
+1024                   89.96
+2048                   95.99
+4096                  108.11
+8192                  102.83
+16384                 125.81
+32768                 173.89
+65536                 273.37
+131072                476.40
+262144                878.74
+524288               1682.99
+1048576               721.68
+  [run 4/6] recording — 21:44:35
+  [run 4/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      84.26
+2                      84.10
+4                      84.25
+8                      84.68
+16                     84.51
+32                     84.81
+64                     85.45
+128                    86.23
+256                    87.17
+512                    88.23
+1024                   89.45
+2048                   95.58
+4096                  107.20
+8192                  102.52
+16384                 125.58
+32768                 173.71
+65536                 273.49
+131072                475.83
+262144                877.75
+524288               1682.13
+1048576               718.66
+  [run 5/6] recording — 21:44:44
+  [run 5/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      84.35
+2                      84.17
+4                      84.23
+8                      84.68
+16                     84.59
+32                     84.91
+64                     85.63
+128                    86.22
+256                    87.30
+512                    88.36
+1024                   89.71
+2048                   95.50
+4096                  107.67
+8192                  102.95
+16384                 125.71
+32768                 173.56
+65536                 273.30
+131072                475.84
+262144                878.36
+524288               1681.13
+1048576               721.42
+  [run 6/6] recording — 21:44:53
+  [run 6/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      84.33
+2                      84.17
+4                      84.31
+8                      84.86
+16                     84.67
+32                     84.88
+64                     85.74
+128                    86.30
+256                    87.48
+512                    88.82
+1024                   90.23
+2048                   95.72
+4096                  107.72
+8192                  102.94
+16384                 125.73
+32768                 173.74
+65536                 273.43
+131072                475.93
+262144                878.34
+524288               1681.84
+1048576               723.90
+=== CFG affinity: NCH=unset AFF=1 GDR=unset ===
+
+# [eessi_xccl cfg=affinity] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:45:02
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:45:08
+  [run 2/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.70
+8                      36.46
+16                     36.31
+32                     37.76
+64                     40.73
+128                    46.89
+256                    46.91
+512                    47.31
+1024                   47.46
+2048                   48.42
+4096                   49.45
+8192                   50.53
+16384                  51.68
+32768                  51.54
+65536                  51.37
+131072                 52.13
+262144                 85.80
+524288                109.34
+1048576               121.47
+  [run 3/6] recording — 21:45:14
+  [run 3/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.48
+8                      36.25
+16                     36.07
+32                     37.79
+64                     41.00
+128                    46.98
+256                    46.98
+512                    47.34
+1024                   47.85
+2048                   48.47
+4096                   49.34
+8192                   50.68
+16384                  51.86
+32768                  51.75
+65536                  51.37
+131072                 52.14
+262144                 85.70
+524288                109.40
+1048576               121.42
+  [run 4/6] recording — 21:45:21
+  [run 4/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.30
+8                      36.32
+16                     36.19
+32                     37.85
+64                     41.15
+128                    47.28
+256                    47.24
+512                    47.52
+1024                   48.01
+2048                   48.65
+4096                   49.44
+8192                   50.71
+16384                  51.81
+32768                  52.12
+65536                  52.25
+131072                 52.74
+262144                 86.16
+524288                109.22
+1048576               121.37
+  [run 5/6] recording — 21:45:27
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.59
+8                      36.19
+16                     36.05
+32                     37.84
+64                     41.00
+128                    46.82
+256                    46.79
+512                    47.16
+1024                   47.72
+2048                   48.32
+4096                   49.26
+8192                   50.39
+16384                  51.55
+32768                  51.07
+65536                  51.19
+131072                 52.26
+262144                 85.40
+524288                108.97
+1048576               121.15
+  [run 6/6] recording — 21:45:33
+  [run 6/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.09
+8                      36.84
+16                     36.73
+32                     38.97
+64                     41.35
+128                    47.27
+256                    47.73
+512                    47.77
+1024                   48.02
+2048                   48.89
+4096                   49.64
+8192                   50.85
+16384                  51.82
+32768                  51.63
+65536                  52.01
+131072                 52.88
+262144                 84.30
+524288                107.96
+1048576               119.91
+
+# [eessi_xccl cfg=affinity] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:45:40
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:45:46
+  [run 2/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      31.88
+2                      31.79
+4                      31.78
+8                      31.81
+16                     31.82
+32                     31.99
+64                     32.07
+128                    32.09
+256                    32.20
+512                    32.40
+1024                   32.60
+2048                   33.20
+4096                   34.69
+8192                   35.25
+16384                  38.41
+32768                  44.79
+65536                  44.66
+131072                 50.51
+262144                 67.40
+524288                100.37
+1048576               167.59
+  [run 3/6] recording — 21:45:53
+  [run 3/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      31.97
+2                      31.95
+4                      31.96
+8                      32.04
+16                     32.05
+32                     32.11
+64                     32.17
+128                    32.16
+256                    32.28
+512                    32.43
+1024                   32.79
+2048                   33.47
+4096                   34.88
+8192                   35.46
+16384                  38.72
+32768                  45.15
+65536                  44.93
+131072                 50.69
+262144                 67.37
+524288                100.60
+1048576               167.44
+  [run 4/6] recording — 21:45:59
+  [run 4/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      32.35
+2                      32.28
+4                      32.20
+8                      32.25
+16                     32.28
+32                     32.41
+64                     32.45
+128                    32.45
+256                    32.46
+512                    32.70
+1024                   32.84
+2048                   33.56
+4096                   34.86
+8192                   35.42
+16384                  38.46
+32768                  44.98
+65536                  44.49
+131072                 50.73
+262144                 67.18
+524288                100.16
+1048576               167.13
+  [run 5/6] recording — 21:46:06
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      32.04
+2                      32.76
+4                      32.83
+8                      32.81
+16                     32.85
+32                     32.93
+64                     33.03
+128                    33.03
+256                    33.04
+512                    33.16
+1024                   33.42
+2048                   34.13
+4096                   35.56
+8192                   36.03
+16384                  39.03
+32768                  45.30
+65536                  44.57
+131072                 51.30
+262144                 68.25
+524288                100.56
+1048576               167.65
+  [run 6/6] recording — 21:46:12
+  [run 6/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      32.89
+2                      32.57
+4                      32.56
+8                      32.58
+16                     32.57
+32                     32.63
+64                     32.78
+128                    32.77
+256                    32.85
+512                    33.05
+1024                   33.55
+2048                   34.23
+4096                   35.75
+8192                   36.21
+16384                  39.52
+32768                  46.15
+65536                  45.48
+131072                 51.81
+262144                 68.39
+524288                100.94
+1048576               166.76
+=== CFG gdr3: NCH=unset AFF=unset GDR=3 ===
+
+# [eessi_xccl cfg=gdr3] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:46:18
+  [run 1/6] warm-up done in 7s
+  [run 2/6] recording — 21:46:25
+  [run 2/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      38.02
+8                      37.69
+16                     37.52
+32                     38.40
+64                     40.98
+128                    46.86
+256                    46.86
+512                    47.28
+1024                   47.69
+2048                   48.62
+4096                   49.48
+8192                   50.60
+16384                  51.61
+32768                  51.14
+65536                  51.62
+131072                 52.11
+262144                 84.55
+524288                108.50
+1048576               120.13
+  [run 3/6] recording — 21:46:31
+  [run 3/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      39.43
+8                      37.13
+16                     36.91
+32                     38.11
+64                     41.31
+128                    46.98
+256                    46.99
+512                    47.43
+1024                   47.62
+2048                   48.54
+4096                   49.40
+8192                   50.49
+16384                  51.67
+32768                  51.08
+65536                  51.42
+131072                 52.04
+262144                 83.95
+524288                107.51
+1048576               119.19
+  [run 4/6] recording — 21:46:37
+  [run 4/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      37.97
+8                      37.21
+16                     37.02
+32                     38.01
+64                     40.73
+128                    47.30
+256                    47.36
+512                    47.84
+1024                   47.72
+2048                   48.37
+4096                   49.34
+8192                   50.80
+16384                  51.75
+32768                  51.11
+65536                  51.98
+131072                 52.45
+262144                 84.29
+524288                107.97
+1048576               120.09
+  [run 5/6] recording — 21:46:44
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.07
+8                      34.78
+16                     34.69
+32                     36.38
+64                     39.61
+128                    45.69
+256                    45.72
+512                    46.30
+1024                   46.34
+2048                   47.17
+4096                   48.11
+8192                   49.09
+16384                  50.33
+32768                  49.66
+65536                  50.33
+131072                 51.23
+262144                 84.18
+524288                107.66
+1048576               119.54
+  [run 6/6] recording — 21:46:50
+  [run 6/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      35.83
+8                      34.77
+16                     34.57
+32                     36.58
+64                     39.34
+128                    45.20
+256                    45.18
+512                    45.51
+1024                   46.06
+2048                   46.82
+4096                   47.61
+8192                   48.56
+16384                  49.83
+32768                  49.05
+65536                  49.38
+131072                 50.17
+262144                 83.38
+524288                107.10
+1048576               118.97
+
+# [eessi_xccl cfg=gdr3] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:46:57
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:47:03
+  [run 2/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      26.92
+2                      26.57
+4                      26.48
+8                      26.59
+16                     26.54
+32                     26.61
+64                     26.74
+128                    26.72
+256                    26.86
+512                    27.03
+1024                   27.38
+2048                   28.15
+4096                   29.74
+8192                   30.44
+16384                  33.78
+32768                  40.82
+65536                  39.69
+131072                 46.70
+262144                 64.67
+524288                 98.52
+1048576               166.13
+  [run 3/6] recording — 21:47:10
+  [run 3/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      26.67
+2                      26.54
+4                      26.45
+8                      26.48
+16                     26.46
+32                     26.60
+64                     26.72
+128                    26.71
+256                    26.82
+512                    26.97
+1024                   27.24
+2048                   28.05
+4096                   29.72
+8192                   30.45
+16384                  33.75
+32768                  40.82
+65536                  39.52
+131072                 46.47
+262144                 64.50
+524288                 98.32
+1048576               165.63
+  [run 4/6] recording — 21:47:16
+  [run 4/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      27.20
+2                      26.69
+4                      26.47
+8                      28.55
+16                     31.02
+32                     31.06
+64                     27.61
+128                    26.83
+256                    26.91
+512                    27.16
+1024                   27.42
+2048                   28.12
+4096                   29.78
+8192                   30.53
+16384                  33.80
+32768                  40.90
+65536                  39.66
+131072                 46.76
+262144                 64.73
+524288                 98.60
+1048576               166.09
+  [run 5/6] recording — 21:47:23
+  [run 5/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      33.03
+2                      32.81
+4                      32.87
+8                      32.90
+16                     32.88
+32                     32.98
+64                     33.11
+128                    33.08
+256                    33.25
+512                    33.20
+1024                   33.63
+2048                   34.24
+4096                   35.72
+8192                   35.94
+16384                  38.94
+32768                  46.13
+65536                  44.68
+131072                 49.14
+262144                 66.08
+524288                 99.29
+1048576               166.28
+  [run 6/6] recording — 21:47:29
+  [run 6/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      26.58
+2                      26.50
+4                      26.39
+8                      26.48
+16                     26.42
+32                     26.54
+64                     26.74
+128                    26.63
+256                    26.86
+512                    26.96
+1024                   27.35
+2048                   28.11
+4096                   29.70
+8192                   30.49
+16384                  33.71
+32768                  40.78
+65536                  39.46
+131072                 46.57
+262144                 64.43
+524288                 98.47
+1048576               166.17
+=== CFG paper_full: NCH=32 AFF=1 GDR=3 ===
+
+# [eessi_xccl cfg=paper_full] osu_xccl_allreduce
+  [run 1/6] warm-up — 21:47:36
+  [run 1/6] warm-up done in 6s
+  [run 2/6] recording — 21:47:42
+  [run 2/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.69
+8                      36.30
+16                     36.12
+32                     37.92
+64                     41.05
+128                    46.90
+256                    46.92
+512                    47.38
+1024                   47.46
+2048                   48.55
+4096                   49.34
+8192                   50.51
+16384                  51.52
+32768                  51.21
+65536                  51.24
+131072                 52.19
+262144                 85.69
+524288                109.14
+1048576               121.65
+  [run 3/6] recording — 21:47:48
+  [run 3/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.58
+8                      36.34
+16                     36.26
+32                     38.22
+64                     41.13
+128                    46.98
+256                    46.97
+512                    47.43
+1024                   47.64
+2048                   48.09
+4096                   49.30
+8192                   50.48
+16384                  51.59
+32768                  51.15
+65536                  51.55
+131072                 52.23
+262144                 85.52
+524288                109.25
+1048576               121.24
+  [run 4/6] recording — 21:47:55
+  [run 4/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.54
+8                      36.17
+16                     36.04
+32                     38.07
+64                     40.90
+128                    46.83
+256                    46.81
+512                    47.25
+1024                   47.90
+2048                   48.29
+4096                   49.06
+8192                   50.57
+16384                  51.37
+32768                  50.69
+65536                  50.79
+131072                 51.68
+262144                 84.82
+524288                108.65
+1048576               120.67
+  [run 5/6] recording — 21:48:01
+  [run 5/6] done in 7s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.32
+8                      36.05
+16                     35.89
+32                     37.76
+64                     40.97
+128                    46.79
+256                    46.79
+512                    47.12
+1024                   47.59
+2048                   48.47
+4096                   49.06
+8192                   50.29
+16384                  51.45
+32768                  51.28
+65536                  51.28
+131072                 52.17
+262144                 85.77
+524288                109.59
+1048576               121.62
+  [run 6/6] recording — 21:48:08
+  [run 6/6] done in 6s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM Allreduce Latency Test v7.5
+# Size       Avg Latency(us)
+4                      36.56
+8                      36.31
+16                     36.24
+32                     38.28
+64                     41.46
+128                    47.07
+256                    47.13
+512                    47.51
+1024                   47.98
+2048                   48.68
+4096                   49.38
+8192                   50.68
+16384                  51.91
+32768                  51.57
+65536                  51.42
+131072                 52.57
+262144                 86.12
+524288                109.73
+1048576               122.06
+
+# [eessi_xccl cfg=paper_full] osu_xccl_alltoall
+  [run 1/6] warm-up — 21:48:14
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 21:48:22
+  [run 2/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      89.41
+2                      89.31
+4                      89.30
+8                      89.61
+16                     89.89
+32                     90.41
+64                     90.82
+128                    91.43
+256                    92.21
+512                    93.71
+1024                   95.16
+2048                  100.97
+4096                  113.21
+8192                  108.23
+16384                 130.91
+32768                 178.20
+65536                 278.01
+131072                479.69
+262144                881.72
+524288               1684.58
+1048576               749.78
+  [run 3/6] recording — 21:48:31
+  [run 3/6] done in 8s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      87.75
+2                      87.63
+4                      87.60
+8                      88.06
+16                     87.77
+32                     87.93
+64                     88.72
+128                    89.48
+256                    90.46
+512                    91.72
+1024                   92.79
+2048                   99.76
+4096                  111.79
+8192                  107.10
+16384                 129.60
+32768                 177.74
+65536                 277.66
+131072                479.74
+262144                880.95
+524288               1683.08
+1048576               721.77
+  [run 4/6] recording — 21:48:39
+  [run 4/6] done in 8s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      88.02
+2                      87.87
+4                      87.99
+8                      88.24
+16                     88.19
+32                     88.47
+64                     89.33
+128                    89.86
+256                    90.91
+512                    92.39
+1024                   95.31
+2048                  100.27
+4096                  111.79
+8192                  107.12
+16384                 129.81
+32768                 177.85
+65536                 277.21
+131072                480.09
+262144                882.10
+524288               1685.02
+1048576               722.65
+  [run 5/6] recording — 21:48:47
+  [run 5/6] done in 9s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      89.08
+2                      88.87
+4                      88.94
+8                      89.43
+16                     89.29
+32                     89.60
+64                     90.34
+128                    91.00
+256                    91.99
+512                    93.13
+1024                   94.93
+2048                  100.34
+4096                  112.76
+8192                  107.48
+16384                 130.46
+32768                 178.53
+65536                 277.48
+131072                480.23
+262144                882.97
+524288               1686.19
+1048576               726.51
+  [run 6/6] recording — 21:48:56
+  [run 6/6] done in 8s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# OSU RCCL-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Size       Avg Latency(us)
+1                      87.07
+2                      86.83
+4                      86.94
+8                      87.43
+16                     87.37
+32                     87.71
+64                     88.62
+128                    89.31
+256                    90.47
+512                    91.63
+1024                   92.93
+2048                   98.89
+4096                  110.98
+8192                  105.71
+16384                 128.83
+32768                 176.95
+65536                 276.38
+131072                478.79
+262144                881.74
+524288               1685.16
+1048576               733.87
+ALL BENCHMARKS COMPLETE  CSV=results/osu_protocol_nccl_18635297.csv

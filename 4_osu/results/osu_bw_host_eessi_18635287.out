@@ -1,0 +1,83 @@
+################# EESSI STACK (HSA_ENABLE_SDMA=0) ##################
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+
+# [eessi sdma=0 host_buf] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg
+  [run 1/6] warm-up — 21:39:29
+  [run 1/6] warm-up done in 48s
+  [run 2/6] recording — 21:40:17
+  [run 2/6] done in 44s
+  [run 3/6] recording — 21:41:01
+  [run 3/6] done in 43s
+  [run 4/6] recording — 21:41:44
+  [run 4/6] done in 43s
+  [run 5/6] recording — 21:42:27
+  [run 5/6] done in 43s
+  [run 6/6] recording — 21:43:10
+  [run 6/6] done in 43s
+
+# [eessi sdma=0 host_buf] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link
+  [run 1/6] warm-up — 21:43:53
+  [run 1/6] warm-up done in 43s
+  [run 2/6] recording — 21:44:36
+  [run 2/6] done in 42s
+  [run 3/6] recording — 21:45:18
+  [run 3/6] done in 43s
+  [run 4/6] recording — 21:46:01
+  [run 4/6] done in 43s
+  [run 5/6] recording — 21:46:44
+  [run 5/6] done in 43s
+  [run 6/6] recording — 21:47:27
+  [run 6/6] done in 43s
+
+# [eessi sdma=0 host_buf] inter_pkg_1link_02  GCD(0,2) tier=inter_pkg_1link
+  [run 1/6] warm-up — 21:48:10
+  [run 1/6] warm-up done in 43s
+  [run 2/6] recording — 21:48:53
+  [run 2/6] done in 43s
+  [run 3/6] recording — 21:49:36
+  [run 3/6] done in 43s
+  [run 4/6] recording — 21:50:19
+  [run 4/6] done in 43s
+  [run 5/6] recording — 21:51:02
+  [run 5/6] done in 43s
+  [run 6/6] recording — 21:51:45
+  [run 6/6] done in 43s
+
+# [eessi sdma=0 host_buf] routed_07  GCD(0,7) tier=routed
+  [run 1/6] warm-up — 21:52:28
+  [run 1/6] warm-up done in 43s
+  [run 2/6] recording — 21:53:11
+  [run 2/6] done in 43s
+  [run 3/6] recording — 21:53:54
+  [run 3/6] done in 43s
+  [run 4/6] recording — 21:54:37
+  [run 4/6] done in 43s
+  [run 5/6] recording — 21:55:20
+  [run 5/6] done in 43s
+  [run 6/6] recording — 21:56:03
+  [run 6/6] done in 43s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_bw_host_eessi_18635287.csv

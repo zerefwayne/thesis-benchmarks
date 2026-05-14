@@ -1,0 +1,419 @@
+
+################################################################
+# NODES (stack=native)
+################################################################
+NODE_A=nid005061  NODE_B=nid005062  STACK=native
+## hostnames on both nodes
+nid005061: xname=x1100c3s6b1n0
+nid005062: xname=x1100c3s7b0n0
+## end hostnames on both nodes (exit=0)
+
+
+################################################################
+# NATIVE SECTION — Cray PE / libfabric
+################################################################
+## loaded modules
+
+Currently Loaded Modules:
+  1) perftools-base/25.03.0              10) LUMI/25.03              (S)
+  2) ModuleLabel/label              (S)  11) amd/6.3.4
+  3) lumi-tools/24.05               (S)  12) craype/2.7.34
+  4) init-lumi/0.2                  (S)  13) cray-dsmml/0.3.1
+  5) craype-x86-trento                   14) cray-mpich/8.1.32
+  6) libfabric/1.22.0                    15) cray-libsci/25.03.0
+  7) craype-network-ofi                  16) PrgEnv-amd/8.6.0
+  8) xpmem/2.11.5-1.3_g73ade43320bc      17) rocm/6.3.4
+  9) partition/G                    (S)  18) craype-accel-amd-gfx90a
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+## end loaded modules
+
+## fi_info (all providers)
+=== nid005061 ===
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+=== nid005062 ===
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI_RNR
+provider: cxi
+    fabric: cxi
+## end fi_info (all providers) (exit=0)
+
+## fi_info -p cxi (Slingshot details)
+=== nid005062 ===
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi2
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi3
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+=== nid005061 ===
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi2
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi3
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+## end fi_info -p cxi (Slingshot details) (exit=0)
+
+## ip a (network interfaces)
+=== nid005061 ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+nmn0             UP             10.120.24.67/22 fe80::240:a6ff:fe86:ec25/64 
+hsn0             UP             10.253.36.76/16 fe80::ff:fe00:6bd3/64 
+hsn1             UP             10.253.36.75/16 fe80::ff:fe00:6bd2/64 
+hsn2             UP             10.253.36.91/16 fe80::ff:fe00:6b92/64 
+hsn3             UP             10.253.36.92/16 fe80::ff:fe00:6b93/64 
+=== nid005062 ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+nmn0             UP             10.120.24.125/22 fe80::240:a6ff:fe85:e113/64 
+hsn0             UP             10.253.46.62/16 fe80::ff:fe00:6b43/64 
+hsn1             UP             10.253.46.61/16 fe80::ff:fe00:6b42/64 
+hsn2             UP             10.253.41.189/16 fe80::ff:fe00:6b02/64 
+hsn3             UP             10.253.41.190/16 fe80::ff:fe00:6b03/64 
+## end ip a (network interfaces) (exit=0)
+
+## Cray/SLURM env vars
+CRAY_ACCEL_TARGET=amd_gfx90a
+CRAY_ACCEL_VENDOR=amd
+CRAY_AMD_COMPILER_PREFIX=/opt/rocm-6.3.4
+CRAY_AMD_COMPILER_VERSION=6.3.4
+CRAY_CPU_TARGET=x86-trento
+CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.3.1
+CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.3.1/dsmml
+CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.3.1/dsmml
+CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.3.1
+CRAY_DSMML_VER=0.3.1
+CRAY_DSMML_VERSION=0.3.1
+CRAY_LD_LIBRARY_PATH=/opt/cray/pe/libsci/25.03.0/AMD/6.0/x86_64/lib:/opt/cray/pe/mpich/8.1.32/ofi/amd/6.0/lib:/opt/cray/pe/mpich/8.1.32/gtl/lib:/opt/cray/pe/dsmml/0.3.1/dsmml/lib:/opt/cray/pe/perftools/25.03.0/lib64
+CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/25.03.0
+CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/25.03.0/AMD/6.0/x86_64
+CRAY_LIBSCI_PREFIX=/opt/cray/pe/libsci/25.03.0/AMD/6.0/x86_64
+CRAY_LIBSCI_VERSION=25.03.0
+CRAY_LMOD_COMPILER=amd/4.0
+CRAY_LMOD_CPU=x86-trento/1.0
+CRAY_LMOD_MPI=cray-mpich/8.0
+CRAY_LMOD_NET=ofi/1.0
+CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.32/ofi
+CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.32/ofi/amd/6.0
+CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.32/ofi/amd/6.0
+CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.32
+CRAY_MPICH_VER=8.1.32
+CRAY_MPICH_VERSION=8.1.32
+CRAY_PERFTOOLS_PREFIX=/opt/cray/pe/perftools/25.03.0
+CRAY_PERFTOOLS_VERSION=25.03.0
+CRAY_ROCM_DIR=/opt/rocm-6.3.4
+CRAY_ROCM_INCLUDE_OPTS=-I/opt/rocm-6.3.4/include -I/opt/rocm-6.3.4/include/rocprofiler -I/opt/rocm-6.3.4/include/roctracer -I/opt/rocm-6.3.4/include/hip -D__HIP_PLATFORM_AMD__
+CRAY_ROCM_POST_LINK_OPTS= -L/opt/rocm-6.3.4/lib -L/opt/rocm-6.3.4/lib/rocprofiler -L/opt/rocm-6.3.4/lib/roctracer -lamdhip64
+CRAY_ROCM_PREFIX=/opt/rocm-6.3.4
+CRAY_ROCM_VERSION=6.3.4
+CRAY_TCMALLOC_MEMFS_FORCE=1
+CRAY_XPMEM_INCLUDE_OPTS=-I/usr/include
+CRAY_XPMEM_POST_LINK_OPTS=-L/usr/lib64
+MPICH_DIR=/opt/cray/pe/mpich/8.1.32/ofi/amd/6.0
+MPICH_GPU_SUPPORT_ENABLED=1
+SLURM_CLUSTER_NAME=lumi
+SLURM_CONF=/etc/slurm/slurm.conf
+SLURM_CPUS_ON_NODE=7
+SLURM_CPUS_PER_TASK=7
+SLURM_GPUS_ON_NODE=1
+SLURM_GPUS_PER_NODE=1
+SLURM_GTIDS=0
+SLURM_HINT=nomultithread
+SLURM_JOB_ACCOUNT=project_462000226
+SLURM_JOB_CPUS_PER_NODE=7(x2)
+SLURM_JOB_END_TIME=1778780747
+SLURM_JOB_GID=10035545
+SLURM_JOB_GPUS=3
+SLURM_JOB_ID=18633652
+SLURM_JOBID=18633652
+SLURM_JOB_NAME=diagnostics_internode
+SLURM_JOB_NODELIST=nid[005061-005062]
+SLURM_JOB_NUM_NODES=2
+SLURM_JOB_PARTITION=small-g
+SLURM_JOB_QOS=normal
+SLURM_JOB_START_TIME=1778779847
+SLURM_JOB_UID=10035545
+SLURM_JOB_USER=joglekar
+SLURM_LOCALID=0
+SLURM_MEM_PER_NODE=65536
+SLURM_NNODES=2
+SLURM_NODEID=0
+SLURM_NODELIST=nid[005061-005062]
+SLURM_NPROCS=2
+SLURM_NTASKS=2
+SLURM_NTASKS_PER_NODE=1
+SLURM_PRIO_PROCESS=0
+SLURM_PROCID=0
+SLURM_SUBMIT_DIR=/pfs/lustrep2/users/joglekar/code/thesis-benchmarks/5_osu_internode
+SLURM_SUBMIT_HOST=uan04
+SLURM_TASK_PID=15071
+SLURM_TASKS_PER_NODE=1(x2)
+SLURM_THREADS_PER_CORE=1
+SLURM_TOPOLOGY_ADDR=nid005061
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_TRES_PER_TASK=cpu=7
+## end Cray/SLURM env vars (exit=0)
+
+## native osu_latency 2-node H H smoke test
+
+# OSU MPI Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+8                       2.40
+16                      2.45
+32                      2.45
+64                      2.44
+128                     3.00
+256                     3.03
+512                     3.08
+1024                    3.20
+2048                    3.34
+4096                    3.45
+8192                    3.86
+16384                   4.59
+## end native osu_latency 2-node H H smoke test (exit=0)
+
+## native osu_latency 2-node D D (GPU-aware) smoke test
+
+# OSU MPI-ROCM Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+8                       2.55
+16                      2.56
+32                      2.56
+64                      2.57
+128                     3.11
+256                     3.32
+512                     3.42
+1024                    3.50
+2048                    3.62
+4096                    3.72
+8192                    4.13
+16384                   4.72
+## end native osu_latency 2-node D D (GPU-aware) smoke test (exit=0)
+
+## native osu_bw 2-node D D smoke test (1KiB-256MiB)
+
+# OSU MPI-ROCM Bandwidth Test v7.5
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+1024                 1410.00
+2048                 2831.57
+4096                 5697.28
+8192                11250.38
+16384               20009.60
+32768               19186.41
+65536               22361.40
+131072              23160.94
+262144              23885.67
+524288              24069.03
+1048576             24170.65
+2097152             24225.51
+4194304             24258.16
+8388608             24273.23
+16777216            24277.62
+33554432            24282.36
+67108864            24281.11
+134217728           24284.64
+268435456           24283.67
+## end native osu_bw 2-node D D smoke test (1KiB-256MiB) (exit=0)
+
+
+################################################################
+# DIAGNOSTICS COMPLETE (stack=native)
+################################################################
+Log:  results/diagnostics_internode_native_18633652.log
+Meta: results/diagnostics_internode_native_18633652.meta
+Out:  results/diagnostics_internode_native_18633652.out (copy of results/diagnostics_internode_18633652.out, made by EXIT trap)

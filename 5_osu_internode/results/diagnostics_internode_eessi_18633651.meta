@@ -1,0 +1,14 @@
+# === node metadata @ 2026-05-14T20:30:41+03:00 ===
+hostname=nid005056
+slurm_job_id=18633651
+slurm_nodelist=nid[005056-005057]
+cray_xname=x1100c3s4b0n0
+kernel=6.4.0-150600.23.73_15.0.14-cray_shasta_c
+# rocm-smi topology:
+  
+  
+  ============================ ROCm System Management Interface ============================
+  ======================================= Numa Nodes =======================================
+  GPU[0]		: (Topology) Numa Node: 0
+  GPU[0]		: (Topology) Numa Affinity: 0
+  ================================== End of ROCm SMI Log ===================================

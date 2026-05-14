@@ -1,0 +1,195 @@
+## EESSI STACK (HSA_ENABLE_SDMA=0, UCC=ucp+self, UCX_RNDV_THRESH=1024) ##
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+
+# [eessi sdma=0 rndv=1024] osu_allreduce  N=2  devices=0,1
+  [run 1/6] warm-up — 23:20:53
+  [run 1/6] warm-up done in 16s
+  [run 2/6] recording — 23:21:09
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:21:12
+  [run 3/6] done in 3s
+  [run 4/6] recording — 23:21:15
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:21:19
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:21:22
+  [run 6/6] done in 3s
+
+# [eessi sdma=0 rndv=1024] osu_allreduce  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:26
+  [run 1/6] warm-up done in 4s
+  [run 2/6] recording — 23:21:29
+  [run 2/6] done in 4s
+  [run 3/6] recording — 23:21:33
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:21:37
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:21:40
+  [run 5/6] done in 4s
+  [run 6/6] recording — 23:21:44
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_allreduce  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:48
+  [run 1/6] warm-up done in 4s
+  [run 2/6] recording — 23:21:52
+  [run 2/6] done in 5s
+  [run 3/6] recording — 23:21:57
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:22:01
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:22:05
+  [run 5/6] done in 5s
+  [run 6/6] recording — 23:22:10
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_alltoall  N=2  devices=0,1
+  [run 1/6] warm-up — 23:22:14
+  [run 1/6] warm-up done in 3s
+  [run 2/6] recording — 23:22:17
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:22:20
+  [run 3/6] done in 3s
+  [run 4/6] recording — 23:22:23
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:22:27
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:22:30
+  [run 6/6] done in 3s
+
+# [eessi sdma=0 rndv=1024] osu_alltoall  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:22:33
+  [run 1/6] warm-up done in 4s
+  [run 2/6] recording — 23:22:37
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:22:40
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:22:44
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:22:47
+  [run 5/6] done in 4s
+  [run 6/6] recording — 23:22:51
+  [run 6/6] done in 3s
+
+# [eessi sdma=0 rndv=1024] osu_alltoall  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:22:54
+  [run 1/6] warm-up done in 5s
+  [run 2/6] recording — 23:22:59
+  [run 2/6] done in 4s
+  [run 3/6] recording — 23:23:03
+  [run 3/6] done in 5s
+  [run 4/6] recording — 23:23:08
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:23:12
+  [run 5/6] done in 5s
+  [run 6/6] recording — 23:23:17
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_bcast  N=2  devices=0,1
+  [run 1/6] warm-up — 23:23:21
+  [run 1/6] warm-up done in 3s
+  [run 2/6] recording — 23:23:24
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:23:27
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:23:31
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:23:34
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:23:37
+  [run 6/6] done in 3s
+
+# [eessi sdma=0 rndv=1024] osu_bcast  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:23:40
+  [run 1/6] warm-up done in 3s
+  [run 2/6] recording — 23:23:43
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:23:46
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:23:50
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:23:53
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:23:56
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_bcast  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:24:00
+  [run 1/6] warm-up done in 3s
+  [run 2/6] recording — 23:24:03
+  [run 2/6] done in 4s
+  [run 3/6] recording — 23:24:07
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:24:11
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:24:15
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:24:18
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_allgather  N=2  devices=0,1
+  [run 1/6] warm-up — 23:24:22
+  [run 1/6] warm-up done in 4s
+  [run 2/6] recording — 23:24:26
+  [run 2/6] done in 3s
+  [run 3/6] recording — 23:24:29
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:24:33
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:24:36
+  [run 5/6] done in 3s
+  [run 6/6] recording — 23:24:39
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_allgather  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:24:43
+  [run 1/6] warm-up done in 3s
+  [run 2/6] recording — 23:24:46
+  [run 2/6] done in 4s
+  [run 3/6] recording — 23:24:50
+  [run 3/6] done in 4s
+  [run 4/6] recording — 23:24:54
+  [run 4/6] done in 3s
+  [run 5/6] recording — 23:24:57
+  [run 5/6] done in 4s
+  [run 6/6] recording — 23:25:01
+  [run 6/6] done in 4s
+
+# [eessi sdma=0 rndv=1024] osu_allgather  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:25:05
+  [run 1/6] warm-up done in 4s
+  [run 2/6] recording — 23:25:09
+  [run 2/6] done in 4s
+  [run 3/6] recording — 23:25:13
+  [run 3/6] done in 5s
+  [run 4/6] recording — 23:25:18
+  [run 4/6] done in 4s
+  [run 5/6] recording — 23:25:22
+  [run 5/6] done in 4s
+  [run 6/6] recording — 23:25:26
+  [run 6/6] done in 4s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_collectives_fixed_rndv_eessi_18637053.csv

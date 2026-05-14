@@ -1,0 +1,195 @@
+################# EESSI STACK (HSA_ENABLE_SDMA=0) ##################
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+
+# [eessi sdma=0] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg
+  [run 1/6] warm-up — 00:19:54
+  [run 1/6] warm-up done in 32s
+  [run 2/6] recording — 00:20:26
+  [run 2/6] done in 27s
+  [run 3/6] recording — 00:20:53
+  [run 3/6] done in 25s
+  [run 4/6] recording — 00:21:18
+  [run 4/6] done in 26s
+  [run 5/6] recording — 00:21:44
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:22:10
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] intra_pkg_OAM1  GCD(2,3) tier=intra_pkg
+  [run 1/6] warm-up — 00:22:36
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:23:02
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:23:28
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:23:54
+  [run 4/6] done in 27s
+  [run 5/6] recording — 00:24:21
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:24:47
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] intra_pkg_OAM2  GCD(4,5) tier=intra_pkg
+  [run 1/6] warm-up — 00:25:13
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:25:39
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:26:05
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:26:31
+  [run 4/6] done in 26s
+  [run 5/6] recording — 00:26:57
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:27:23
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:27:49
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:28:16
+  [run 2/6] done in 25s
+  [run 3/6] recording — 00:28:41
+  [run 3/6] done in 27s
+  [run 4/6] recording — 00:29:08
+  [run 4/6] done in 25s
+  [run 5/6] recording — 00:29:33
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:29:59
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] inter_pkg_2link_24  GCD(2,4) tier=inter_pkg_2link
+  [run 1/6] warm-up — 00:30:25
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:30:51
+  [run 2/6] done in 27s
+  [run 3/6] recording — 00:31:18
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:31:44
+  [run 4/6] done in 25s
+  [run 5/6] recording — 00:32:09
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:32:35
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] inter_pkg_1link_02  GCD(0,2) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:33:01
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:33:27
+  [run 2/6] done in 25s
+  [run 3/6] recording — 00:33:52
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:34:18
+  [run 4/6] done in 27s
+  [run 5/6] recording — 00:34:45
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:35:11
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] inter_pkg_1link_15  GCD(1,5) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:35:37
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:36:03
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:36:29
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:36:55
+  [run 4/6] done in 26s
+  [run 5/6] recording — 00:37:21
+  [run 5/6] done in 27s
+  [run 6/6] recording — 00:37:48
+  [run 6/6] done in 25s
+
+# [eessi sdma=0] inter_pkg_1link_37  GCD(3,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:38:13
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:38:40
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:39:06
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:39:32
+  [run 4/6] done in 26s
+  [run 5/6] recording — 00:39:58
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:40:24
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] inter_pkg_1link_57  GCD(5,7) tier=inter_pkg_1link
+  [run 1/6] warm-up — 00:40:50
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:41:16
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:41:42
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:42:08
+  [run 4/6] done in 27s
+  [run 5/6] recording — 00:42:35
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:43:01
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] routed_07  GCD(0,7) tier=routed
+  [run 1/6] warm-up — 00:43:27
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:43:53
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:44:19
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:44:45
+  [run 4/6] done in 25s
+  [run 5/6] recording — 00:45:10
+  [run 5/6] done in 27s
+  [run 6/6] recording — 00:45:37
+  [run 6/6] done in 25s
+
+# [eessi sdma=0] routed_03  GCD(0,3) tier=routed
+  [run 1/6] warm-up — 00:46:02
+  [run 1/6] warm-up done in 27s
+  [run 2/6] recording — 00:46:29
+  [run 2/6] done in 26s
+  [run 3/6] recording — 00:46:55
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:47:21
+  [run 4/6] done in 25s
+  [run 5/6] recording — 00:47:46
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:48:12
+  [run 6/6] done in 26s
+
+# [eessi sdma=0] routed_17  GCD(1,7) tier=routed
+  [run 1/6] warm-up — 00:48:38
+  [run 1/6] warm-up done in 26s
+  [run 2/6] recording — 00:49:04
+  [run 2/6] done in 27s
+  [run 3/6] recording — 00:49:31
+  [run 3/6] done in 26s
+  [run 4/6] recording — 00:49:57
+  [run 4/6] done in 26s
+  [run 5/6] recording — 00:50:23
+  [run 5/6] done in 26s
+  [run 6/6] recording — 00:50:49
+  [run 6/6] done in 26s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_get_bw_eessi_18638323.csv

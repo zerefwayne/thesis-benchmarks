@@ -1,0 +1,1643 @@
+############ NATIVE STACK (HSA_ENABLE_SDMA=0, default IPC) ############
+
+# [native sdma=0] osu_allreduce  N=2  devices=0,1
+  [run 1/6] warm-up — 23:20:49
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:20:50
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       0.94
+8                       0.96
+16                      0.94
+32                      0.98
+64                      0.95
+128                     0.94
+256                     3.41
+512                     3.65
+1024                    4.11
+2048                    3.87
+4096                    6.36
+8192                   43.01
+16384                  44.62
+32768                  51.07
+65536                  61.51
+131072                 86.11
+262144                 90.44
+524288                 93.88
+1048576                99.19
+  [run 3/6] recording — 23:20:51
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       0.97
+8                       0.96
+16                      0.96
+32                      0.94
+64                      0.94
+128                     0.98
+256                     3.28
+512                     3.45
+1024                    3.97
+2048                    3.79
+4096                    6.38
+8192                   43.07
+16384                  45.22
+32768                  51.78
+65536                  60.71
+131072                 86.68
+262144                 90.08
+524288                 93.58
+1048576                99.14
+  [run 4/6] recording — 23:20:52
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       0.94
+8                       0.95
+16                      0.94
+32                      0.94
+64                      0.94
+128                     0.96
+256                     3.30
+512                     3.49
+1024                    4.09
+2048                    3.92
+4096                    6.22
+8192                   42.71
+16384                  45.24
+32768                  51.19
+65536                  60.05
+131072                 86.89
+262144                 90.09
+524288                 94.20
+1048576                99.16
+  [run 5/6] recording — 23:20:53
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       0.96
+8                       0.95
+16                      0.94
+32                      0.94
+64                      0.94
+128                     0.97
+256                     3.33
+512                     3.52
+1024                    4.13
+2048                    3.80
+4096                    6.27
+8192                   42.67
+16384                  44.19
+32768                  50.75
+65536                  61.78
+131072                 86.34
+262144                 89.64
+524288                 93.65
+1048576                99.10
+  [run 6/6] recording — 23:20:54
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       0.95
+8                       0.95
+16                      0.95
+32                      0.93
+64                      0.95
+128                     0.97
+256                     3.34
+512                     3.54
+1024                    4.05
+2048                    3.86
+4096                    6.21
+8192                   42.60
+16384                  44.96
+32768                  54.51
+65536                  60.44
+131072                 86.60
+262144                 90.31
+524288                 93.47
+1048576                99.37
+
+# [native sdma=0] osu_allreduce  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:20:55
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:20:56
+srun: Step created for StepId=18637055.7
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       1.63
+8                       1.47
+16                      1.45
+32                      1.48
+64                      1.48
+128                     1.55
+256                     5.60
+512                     5.85
+1024                    6.50
+2048                    6.77
+4096                   12.15
+8192                   48.59
+16384                  53.13
+32768                  59.49
+65536                  75.18
+131072                144.67
+262144                155.25
+524288                175.27
+1048576               218.76
+  [run 3/6] recording — 23:20:57
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       1.55
+8                       1.53
+16                      1.46
+32                      1.47
+64                      1.48
+128                     1.59
+256                     5.35
+512                     5.80
+1024                    6.53
+2048                    6.89
+4096                   12.12
+8192                   49.27
+16384                  56.48
+32768                  60.20
+65536                  74.80
+131072                153.98
+262144                161.26
+524288                181.31
+1048576               220.94
+  [run 4/6] recording — 23:20:58
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       1.55
+8                       1.53
+16                      1.47
+32                      1.47
+64                      1.49
+128                     1.59
+256                     5.44
+512                     5.92
+1024                    6.47
+2048                    6.72
+4096                   11.95
+8192                   49.58
+16384                  53.11
+32768                  59.86
+65536                  74.71
+131072                144.61
+262144                153.74
+524288                174.14
+1048576               218.75
+  [run 5/6] recording — 23:20:59
+  [run 5/6] done in 2s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       1.56
+8                       1.48
+16                      1.47
+32                      1.49
+64                      1.48
+128                     1.58
+256                     5.46
+512                     5.91
+1024                    6.67
+2048                    6.93
+4096                   11.75
+8192                   48.85
+16384                  51.84
+32768                  60.17
+65536                  76.84
+131072                145.24
+262144                155.17
+524288                175.17
+1048576               217.41
+  [run 6/6] recording — 23:21:01
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       1.55
+8                       1.49
+16                      1.46
+32                      1.49
+64                      1.48
+128                     1.61
+256                     5.36
+512                     5.82
+1024                    6.64
+2048                    6.69
+4096                   11.73
+8192                   48.52
+16384                  54.01
+32768                  58.63
+65536                  73.99
+131072                144.32
+262144                155.41
+524288                175.30
+1048576               217.60
+
+# [native sdma=0] osu_allreduce  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:02
+  [run 1/6] warm-up done in 2s
+  [run 2/6] recording — 23:21:04
+  [run 2/6] done in 2s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       2.68
+8                       2.51
+16                      2.50
+32                      2.47
+64                      2.53
+128                     2.66
+256                     8.28
+512                     9.04
+1024                    9.79
+2048                   11.24
+4096                   17.47
+8192                   59.27
+16384                  64.77
+32768                  75.20
+65536                  93.54
+131072                215.33
+262144                227.81
+524288                254.55
+1048576               324.25
+  [run 3/6] recording — 23:21:06
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       2.63
+8                       2.53
+16                      2.42
+32                      2.43
+64                      2.51
+128                     2.68
+256                     8.03
+512                     9.15
+1024                    9.98
+2048                   11.61
+4096                   18.17
+8192                   59.37
+16384                  64.12
+32768                  74.07
+65536                  92.89
+131072                214.86
+262144                227.61
+524288                254.96
+1048576               325.93
+  [run 4/6] recording — 23:21:07
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       2.67
+8                       2.51
+16                      2.50
+32                      2.46
+64                      2.57
+128                     2.66
+256                     8.43
+512                     8.97
+1024                    9.79
+2048                   11.19
+4096                   17.52
+8192                   59.28
+16384                  64.28
+32768                  74.54
+65536                  91.39
+131072                215.12
+262144                227.65
+524288                255.03
+1048576               326.86
+  [run 5/6] recording — 23:21:08
+  [run 5/6] done in 2s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       2.64
+8                       2.48
+16                      2.41
+32                      2.48
+64                      2.49
+128                     2.61
+256                     8.16
+512                     8.92
+1024                    9.58
+2048                   11.21
+4096                   17.51
+8192                   59.04
+16384                  64.49
+32768                  74.79
+65536                  92.50
+131072                214.95
+262144                227.17
+524288                255.11
+1048576               325.43
+  [run 6/6] recording — 23:21:10
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                       2.68
+8                       2.53
+16                      2.45
+32                      2.46
+64                      2.50
+128                     2.67
+256                     8.14
+512                     9.13
+1024                    9.92
+2048                   11.30
+4096                   18.09
+8192                   59.31
+16384                  64.08
+32768                  73.75
+65536                  92.59
+131072                215.71
+262144                228.61
+524288                255.87
+1048576               327.65
+
+# [native sdma=0] osu_alltoall  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:11
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:12
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.73
+2                       0.73
+4                       0.72
+8                       0.73
+16                      0.71
+32                      0.75
+64                      0.77
+128                     0.79
+256                     1.80
+512                     1.90
+1024                    3.83
+2048                    4.09
+4096                    4.07
+8192                   32.48
+16384                  32.43
+32768                  33.31
+65536                  33.73
+131072                 34.68
+262144                 37.35
+524288                 39.22
+1048576                44.20
+  [run 3/6] recording — 23:21:13
+  [run 3/6] done in 0s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.72
+2                       0.72
+4                       0.72
+8                       0.72
+16                      0.71
+32                      0.77
+64                      0.81
+128                     0.85
+256                     1.79
+512                     1.91
+1024                    3.87
+2048                    3.97
+4096                    4.12
+8192                   32.53
+16384                  32.50
+32768                  33.47
+65536                  33.89
+131072                 34.66
+262144                 37.44
+524288                 39.11
+1048576                44.18
+  [run 4/6] recording — 23:21:13
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.71
+2                       0.72
+4                       0.71
+8                       0.72
+16                      0.72
+32                      0.74
+64                      0.77
+128                     0.81
+256                     1.79
+512                     1.92
+1024                    3.82
+2048                    3.93
+4096                    3.98
+8192                   32.54
+16384                  32.46
+32768                  33.52
+65536                  33.74
+131072                 34.65
+262144                 37.38
+524288                 39.08
+1048576                44.29
+  [run 5/6] recording — 23:21:14
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.72
+2                       0.73
+4                       0.74
+8                       0.73
+16                      0.72
+32                      0.75
+64                      0.78
+128                     0.80
+256                     1.81
+512                     1.92
+1024                    3.90
+2048                    3.99
+4096                    4.08
+8192                   32.51
+16384                  32.42
+32768                  33.40
+65536                  33.69
+131072                 34.66
+262144                 37.35
+524288                 38.98
+1048576                44.20
+  [run 6/6] recording — 23:21:15
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.73
+2                       0.74
+4                       0.72
+8                       0.73
+16                      0.72
+32                      0.77
+64                      0.80
+128                     0.82
+256                     1.82
+512                     1.94
+1024                    3.93
+2048                    4.02
+4096                    4.11
+8192                   32.44
+16384                  32.37
+32768                  33.30
+65536                  33.80
+131072                 34.76
+262144                 37.41
+524288                 39.06
+1048576                43.94
+
+# [native sdma=0] osu_alltoall  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:16
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:17
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.21
+2                       3.22
+4                       3.22
+8                       3.21
+16                      3.24
+32                      3.50
+64                      3.48
+128                     3.58
+256                     8.60
+512                     8.84
+1024                   13.56
+2048                   14.00
+4096                   14.14
+8192                   87.85
+16384                  88.81
+32768                  91.23
+65536                  92.91
+131072                 97.14
+262144                109.46
+524288                124.80
+1048576               169.27
+  [run 3/6] recording — 23:21:18
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.17
+2                       3.19
+4                       3.17
+8                       3.19
+16                      3.19
+32                      3.35
+64                      3.46
+128                     3.55
+256                     8.71
+512                     8.98
+1024                   13.49
+2048                   13.62
+4096                   13.97
+8192                   81.23
+16384                  82.20
+32768                  84.34
+65536                  86.86
+131072                 92.18
+262144                103.19
+524288                119.01
+1048576               158.57
+  [run 4/6] recording — 23:21:19
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.17
+2                       3.21
+4                       3.20
+8                       3.22
+16                      3.22
+32                      3.35
+64                      3.46
+128                     3.57
+256                     8.62
+512                     8.78
+1024                   13.66
+2048                   14.07
+4096                   14.21
+8192                   81.02
+16384                  81.61
+32768                  84.91
+65536                  87.56
+131072                 92.82
+262144                103.27
+524288                119.10
+1048576               158.83
+  [run 5/6] recording — 23:21:20
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.22
+2                       3.25
+4                       3.23
+8                       3.23
+16                      3.22
+32                      3.34
+64                      3.47
+128                     3.52
+256                     8.50
+512                     8.77
+1024                   13.29
+2048                   13.65
+4096                   13.83
+8192                   81.35
+16384                  81.76
+32768                  85.23
+65536                  86.91
+131072                 91.81
+262144                103.59
+524288                119.53
+1048576               158.21
+  [run 6/6] recording — 23:21:21
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.21
+2                       3.24
+4                       3.24
+8                       3.24
+16                      3.26
+32                      3.43
+64                      3.49
+128                     3.55
+256                     8.58
+512                     8.97
+1024                   13.66
+2048                   13.79
+4096                   14.18
+8192                   81.10
+16384                  81.76
+32768                  84.52
+65536                  87.37
+131072                 92.44
+262144                103.26
+524288                119.49
+1048576               158.42
+
+# [native sdma=0] osu_alltoall  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:22
+  [run 1/6] warm-up done in 2s
+  [run 2/6] recording — 23:21:24
+  [run 2/6] done in 2s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       5.68
+2                       5.71
+4                       5.78
+8                       6.05
+16                      6.19
+32                      6.15
+64                      7.06
+128                     7.52
+256                    10.64
+512                    11.72
+1024                   39.66
+2048                   39.66
+4096                   43.45
+8192                  180.69
+16384                 181.82
+32768                 187.67
+65536                 201.37
+131072                205.43
+262144                237.07
+524288                291.56
+1048576               429.77
+  [run 3/6] recording — 23:21:26
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       5.76
+2                       5.83
+4                       5.79
+8                       6.08
+16                      6.21
+32                      6.25
+64                      7.03
+128                     7.70
+256                    11.02
+512                    12.08
+1024                   43.10
+2048                   43.38
+4096                   46.89
+8192                  180.68
+16384                 180.55
+32768                 187.95
+65536                 201.60
+131072                205.80
+262144                236.05
+524288                291.06
+1048576               429.58
+  [run 4/6] recording — 23:21:27
+  [run 4/6] done in 2s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       5.70
+2                       5.71
+4                       5.67
+8                       6.00
+16                      6.10
+32                      6.22
+64                      7.07
+128                     7.76
+256                    10.97
+512                    12.11
+1024                   40.12
+2048                   39.75
+4096                   42.48
+8192                  181.04
+16384                 182.02
+32768                 187.77
+65536                 202.54
+131072                206.78
+262144                238.62
+524288                292.30
+1048576               433.68
+  [run 5/6] recording — 23:21:29
+  [run 5/6] done in 2s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       5.83
+2                       5.81
+4                       5.76
+8                       6.01
+16                      6.20
+32                      6.27
+64                      7.05
+128                     7.83
+256                    10.97
+512                    12.02
+1024                   40.59
+2048                   40.47
+4096                   44.85
+8192                  180.63
+16384                 181.87
+32768                 187.20
+65536                 201.23
+131072                206.02
+262144                238.16
+524288                293.06
+1048576               430.71
+  [run 6/6] recording — 23:21:31
+  [run 6/6] done in 2s
+
+# OSU MPI-ROCM All-to-All Personalized Exchange Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       5.81
+2                       5.86
+4                       5.91
+8                       5.99
+16                      6.18
+32                      6.28
+64                      7.06
+128                     7.73
+256                    11.02
+512                    12.15
+1024                   41.94
+2048                   42.12
+4096                   44.22
+8192                  183.80
+16384                 184.67
+32768                 189.75
+65536                 203.78
+131072                207.66
+262144                241.72
+524288                296.20
+1048576               434.24
+
+# [native sdma=0] osu_bcast  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:33
+  [run 1/6] warm-up done in 0s
+  [run 2/6] recording — 23:21:33
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.25
+2                       0.25
+4                       0.25
+8                       0.25
+16                      0.25
+32                      0.25
+64                      0.25
+128                     0.25
+256                     0.31
+512                     0.83
+1024                    2.55
+2048                    2.57
+4096                    2.57
+8192                   14.49
+16384                  14.45
+32768                  15.03
+65536                  15.19
+131072                 15.68
+262144                 17.32
+524288                 18.81
+1048576                23.13
+  [run 3/6] recording — 23:21:34
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.25
+2                       0.25
+4                       0.25
+8                       0.25
+16                      0.25
+32                      0.25
+64                      0.25
+128                     0.26
+256                     0.31
+512                     0.84
+1024                    2.51
+2048                    2.50
+4096                    2.54
+8192                   14.48
+16384                  15.15
+32768                  15.17
+65536                  15.33
+131072                 15.77
+262144                 17.46
+524288                 18.91
+1048576                23.22
+  [run 4/6] recording — 23:21:35
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.25
+2                       0.25
+4                       0.25
+8                       0.25
+16                      0.25
+32                      0.25
+64                      0.25
+128                     0.25
+256                     0.31
+512                     0.85
+1024                    2.50
+2048                    2.50
+4096                    2.52
+8192                   14.32
+16384                  14.43
+32768                  14.86
+65536                  15.09
+131072                 15.61
+262144                 17.31
+524288                 18.73
+1048576                22.94
+  [run 5/6] recording — 23:21:36
+  [run 5/6] done in 0s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.25
+2                       0.25
+4                       0.25
+8                       0.25
+16                      0.25
+32                      0.25
+64                      0.25
+128                     0.25
+256                     0.31
+512                     0.85
+1024                    2.53
+2048                    2.53
+4096                    2.58
+8192                   14.53
+16384                  14.54
+32768                  15.03
+65536                  15.28
+131072                 16.29
+262144                 17.39
+524288                 18.96
+1048576                23.16
+  [run 6/6] recording — 23:21:36
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.25
+2                       0.25
+4                       0.25
+8                       0.25
+16                      0.25
+32                      0.25
+64                      0.25
+128                     0.25
+256                     0.31
+512                     0.86
+1024                    2.58
+2048                    2.57
+4096                    2.57
+8192                   14.54
+16384                  14.97
+32768                  15.02
+65536                  15.28
+131072                 15.69
+262144                 18.15
+524288                 18.88
+1048576                23.10
+
+# [native sdma=0] osu_bcast  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:37
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:38
+  [run 2/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.35
+2                       0.35
+4                       0.35
+8                       0.34
+16                      0.34
+32                      0.35
+64                      0.34
+128                     0.35
+256                     0.39
+512                     1.58
+1024                    5.08
+2048                    5.25
+4096                    5.88
+8192                   24.43
+16384                  25.79
+32768                  25.75
+65536                  27.14
+131072                 30.05
+262144                 36.24
+524288                 47.33
+1048576                70.29
+  [run 3/6] recording — 23:21:39
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.35
+2                       0.35
+4                       0.35
+8                       0.35
+16                      0.34
+32                      0.34
+64                      0.35
+128                     0.35
+256                     0.39
+512                     1.58
+1024                    5.12
+2048                    5.38
+4096                    5.85
+8192                   24.98
+16384                  25.81
+32768                  26.36
+65536                  27.28
+131072                 30.09
+262144                 36.08
+524288                 47.83
+1048576                71.15
+  [run 4/6] recording — 23:21:40
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.35
+2                       0.34
+4                       0.34
+8                       0.35
+16                      0.35
+32                      0.35
+64                      0.35
+128                     0.35
+256                     0.40
+512                     1.58
+1024                    5.04
+2048                    5.29
+4096                    5.83
+8192                   24.15
+16384                  24.60
+32768                  25.16
+65536                  26.67
+131072                 29.47
+262144                 35.59
+524288                 46.48
+1048576                71.46
+  [run 5/6] recording — 23:21:41
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.35
+2                       0.34
+4                       0.35
+8                       0.35
+16                      0.34
+32                      0.35
+64                      0.37
+128                     0.35
+256                     0.39
+512                     1.59
+1024                    5.09
+2048                    5.36
+4096                    6.12
+8192                   24.25
+16384                  25.19
+32768                  25.75
+65536                  26.90
+131072                 29.90
+262144                 35.38
+524288                 47.19
+1048576                70.99
+  [run 6/6] recording — 23:21:42
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.34
+2                       0.34
+4                       0.34
+8                       0.35
+16                      0.35
+32                      0.35
+64                      0.34
+128                     0.36
+256                     0.40
+512                     1.65
+1024                    5.11
+2048                    5.45
+4096                    5.85
+8192                   25.39
+16384                  25.46
+32768                  27.18
+65536                  27.52
+131072                 31.26
+262144                 36.60
+524288                 47.42
+1048576                71.33
+
+# [native sdma=0] osu_bcast  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:43
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:44
+  [run 2/6] done in 2s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.47
+2                       0.48
+4                       0.49
+8                       0.47
+16                      0.47
+32                      0.47
+64                      0.48
+128                     0.49
+256                     0.56
+512                     2.46
+1024                    8.19
+2048                    8.83
+4096                    9.94
+8192                   50.33
+16384                  50.42
+32768                  50.19
+65536                  51.80
+131072                 55.92
+262144                 70.51
+524288                 95.07
+1048576               141.01
+  [run 3/6] recording — 23:21:46
+srun: Step created for StepId=18637055.50
+  [run 3/6] done in 2s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.47
+2                       0.47
+4                       0.49
+8                       0.47
+16                      0.47
+32                      0.47
+64                      0.48
+128                     0.48
+256                     0.56
+512                     2.54
+1024                    8.43
+2048                    9.00
+4096                    9.90
+8192                   50.95
+16384                  51.39
+32768                  52.13
+65536                  53.01
+131072                 56.66
+262144                 69.37
+524288                 93.18
+1048576               134.40
+  [run 4/6] recording — 23:21:48
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.48
+2                       0.48
+4                       0.48
+8                       0.48
+16                      0.48
+32                      0.49
+64                      0.48
+128                     0.49
+256                     0.57
+512                     2.54
+1024                    8.25
+2048                    8.79
+4096                    9.76
+8192                   51.11
+16384                  52.35
+32768                  52.46
+65536                  52.68
+131072                 56.95
+262144                 69.30
+524288                 92.90
+1048576               133.99
+  [run 5/6] recording — 23:21:49
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.46
+2                       0.48
+4                       0.47
+8                       0.47
+16                      0.48
+32                      0.48
+64                      0.47
+128                     0.48
+256                     0.56
+512                     2.54
+1024                    8.35
+2048                    9.09
+4096                    9.92
+8192                   49.26
+16384                  50.42
+32768                  51.05
+65536                  52.77
+131072                 58.18
+262144                 72.25
+524288                 99.37
+1048576               145.01
+  [run 6/6] recording — 23:21:50
+  [run 6/6] done in 2s
+
+# OSU MPI-ROCM Broadcast Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.46
+2                       0.47
+4                       0.48
+8                       0.48
+16                      0.48
+32                      0.48
+64                      0.48
+128                     0.50
+256                     0.59
+512                     2.58
+1024                    8.18
+2048                    8.88
+4096                    9.75
+8192                   49.64
+16384                  50.11
+32768                  50.61
+65536                  52.45
+131072                 56.75
+262144                 71.19
+524288                 96.41
+1048576               139.88
+
+# [native sdma=0] osu_allgather  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:52
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:53
+  [run 2/6] done in 0s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.72
+2                       0.73
+4                       0.72
+8                       0.73
+16                      0.72
+32                      0.81
+64                      0.86
+128                     0.88
+256                     2.12
+512                     2.22
+1024                    5.08
+2048                    6.11
+4096                    7.28
+8192                   32.55
+16384                  32.58
+32768                  34.14
+65536                  33.87
+131072                 34.92
+262144                 37.43
+524288                 39.04
+1048576                44.19
+  [run 3/6] recording — 23:21:53
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.74
+2                       0.73
+4                       0.73
+8                       0.74
+16                      0.73
+32                      0.80
+64                      0.87
+128                     0.89
+256                     2.16
+512                     2.22
+1024                    5.10
+2048                    6.01
+4096                    7.15
+8192                   32.23
+16384                  32.17
+32768                  33.18
+65536                  33.71
+131072                 34.41
+262144                 37.15
+524288                 38.94
+1048576                43.84
+  [run 4/6] recording — 23:21:54
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.73
+2                       0.73
+4                       0.73
+8                       0.73
+16                      0.73
+32                      0.80
+64                      0.85
+128                     0.88
+256                     2.13
+512                     2.21
+1024                    5.07
+2048                    6.10
+4096                    7.23
+8192                   32.25
+16384                  32.14
+32768                  33.09
+65536                  33.53
+131072                 34.37
+262144                 37.15
+524288                 38.83
+1048576                43.94
+  [run 5/6] recording — 23:21:55
+  [run 5/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.72
+2                       0.72
+4                       0.72
+8                       0.73
+16                      0.73
+32                      0.78
+64                      0.84
+128                     0.89
+256                     2.11
+512                     2.19
+1024                    5.06
+2048                    5.96
+4096                    7.13
+8192                   32.32
+16384                  32.34
+32768                  33.38
+65536                  33.68
+131072                 34.27
+262144                 37.20
+524288                 38.97
+1048576                43.95
+  [run 6/6] recording — 23:21:56
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       0.72
+2                       0.73
+4                       0.72
+8                       0.74
+16                      0.72
+32                      0.79
+64                      0.86
+128                     0.89
+256                     2.13
+512                     2.20
+1024                    5.00
+2048                    5.99
+4096                    7.13
+8192                   32.30
+16384                  32.18
+32768                  33.12
+65536                  33.59
+131072                 34.36
+262144                 37.19
+524288                 38.83
+1048576                43.83
+
+# [native sdma=0] osu_allgather  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:57
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:58
+srun: Step created for StepId=18637055.61
+  [run 2/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       2.09
+2                       2.06
+4                       2.05
+8                       2.05
+16                      2.06
+32                      2.13
+64                      2.28
+128                     3.77
+256                     5.60
+512                     8.30
+1024                   11.30
+2048                   12.86
+4096                   26.79
+8192                   50.76
+16384                  51.40
+32768                  53.06
+65536                  55.59
+131072                 97.43
+262144                110.32
+524288                127.85
+1048576               174.66
+  [run 3/6] recording — 23:22:00
+  [run 3/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       2.12
+2                       2.07
+4                       2.07
+8                       2.07
+16                      2.07
+32                      2.10
+64                      2.20
+128                     3.74
+256                     5.79
+512                     8.56
+1024                   11.17
+2048                   12.90
+4096                   26.84
+8192                   50.84
+16384                  51.11
+32768                  53.03
+65536                  56.42
+131072                 98.47
+262144                110.91
+524288                128.84
+1048576               176.05
+  [run 4/6] recording — 23:22:01
+  [run 4/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       2.09
+2                       2.05
+4                       2.05
+8                       2.05
+16                      2.05
+32                      2.12
+64                      2.27
+128                     3.77
+256                     5.56
+512                     8.49
+1024                   11.22
+2048                   12.76
+4096                   26.84
+8192                   50.64
+16384                  51.15
+32768                  53.54
+65536                  55.65
+131072                 97.33
+262144                117.35
+524288                128.43
+1048576               175.19
+  [run 5/6] recording — 23:22:02
+  [run 5/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       2.12
+2                       2.06
+4                       2.06
+8                       2.06
+16                      2.06
+32                      2.15
+64                      2.19
+128                     3.68
+256                     5.61
+512                     8.30
+1024                   11.34
+2048                   12.82
+4096                   26.75
+8192                   51.24
+16384                  51.18
+32768                  53.01
+65536                  55.60
+131072                 97.62
+262144                110.28
+524288                128.44
+1048576               175.85
+  [run 6/6] recording — 23:22:04
+  [run 6/6] done in 1s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       2.19
+2                       2.11
+4                       2.13
+8                       2.11
+16                      2.06
+32                      2.10
+64                      2.19
+128                     3.79
+256                     5.63
+512                     8.37
+1024                   11.59
+2048                   12.88
+4096                   26.98
+8192                   51.29
+16384                  52.76
+32768                  52.91
+65536                  56.00
+131072                 97.53
+262144                110.37
+524288                127.83
+1048576               175.38
+
+# [native sdma=0] osu_allgather  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:22:05
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:22:06
+  [run 2/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.95
+2                       3.65
+4                       3.59
+8                       3.60
+16                      3.64
+32                      3.82
+64                      6.13
+128                     8.57
+256                    14.16
+512                    16.96
+1024                   20.47
+2048                   36.50
+4096                   50.54
+8192                   87.40
+16384                  88.82
+32768                  92.73
+65536                 184.17
+131072                187.16
+262144                210.18
+524288                257.52
+1048576               369.63
+  [run 3/6] recording — 23:22:08
+  [run 3/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.86
+2                       3.57
+4                       3.58
+8                       3.57
+16                      3.69
+32                      3.93
+64                      6.26
+128                     8.61
+256                    14.60
+512                    17.24
+1024                   20.96
+2048                   36.97
+4096                   50.73
+8192                   87.51
+16384                  89.06
+32768                  92.92
+65536                 185.39
+131072                187.29
+262144                210.72
+524288                257.44
+1048576               369.71
+  [run 4/6] recording — 23:22:10
+  [run 4/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.92
+2                       3.60
+4                       3.56
+8                       3.54
+16                      3.70
+32                      3.91
+64                      6.11
+128                     8.38
+256                    14.25
+512                    17.04
+1024                   20.66
+2048                   36.74
+4096                   50.92
+8192                   87.53
+16384                  88.90
+32768                  92.73
+65536                 184.20
+131072                187.66
+262144                210.03
+524288                257.76
+1048576               369.94
+  [run 5/6] recording — 23:22:12
+  [run 5/6] done in 2s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.99
+2                       3.65
+4                       3.61
+8                       3.57
+16                      3.77
+32                      3.89
+64                      6.30
+128                     8.65
+256                    14.65
+512                    17.52
+1024                   21.39
+2048                   36.90
+4096                   50.77
+8192                   87.47
+16384                  88.95
+32768                  92.77
+65536                 184.06
+131072                186.48
+262144                211.09
+524288                258.20
+1048576               370.92
+  [run 6/6] recording — 23:22:14
+  [run 6/6] done in 3s
+
+# OSU MPI-ROCM Allgather Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       3.92
+2                       3.64
+4                       3.56
+8                       3.66
+16                      3.67
+32                      3.95
+64                      6.20
+128                     8.65
+256                    14.51
+512                    17.55
+1024                   21.26
+2048                   37.13
+4096                   51.03
+8192                   87.37
+16384                  89.13
+32768                  93.03
+65536                 184.59
+131072                188.02
+262144                210.80
+524288                258.05
+1048576               369.88
+ALL BENCHMARKS COMPLETE  CSV=results/osu_collectives_fixed_rndv_native_18637055.csv

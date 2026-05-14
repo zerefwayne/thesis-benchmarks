@@ -12,6 +12,7 @@ env/
 ENV/
 *-env/
 *-venv/
+plotenv/
 
 # Packaging / build artifacts
 *.egg-info/

@@ -1,0 +1,185 @@
+############ NATIVE STACK (HSA_ENABLE_SDMA=0, default IPC) ############
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+
+# [native sdma=0] osu_allreduce  N=2  devices=0,1
+  [run 1/6] warm-up — 23:20:49
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:20:50
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:20:51
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:20:52
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:20:53
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:20:54
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_allreduce  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:20:55
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:20:56
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:20:57
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:20:58
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:20:59
+  [run 5/6] done in 2s
+  [run 6/6] recording — 23:21:01
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_allreduce  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:02
+  [run 1/6] warm-up done in 2s
+  [run 2/6] recording — 23:21:04
+  [run 2/6] done in 2s
+  [run 3/6] recording — 23:21:06
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:07
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:08
+  [run 5/6] done in 2s
+  [run 6/6] recording — 23:21:10
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_alltoall  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:11
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:12
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:21:13
+  [run 3/6] done in 0s
+  [run 4/6] recording — 23:21:13
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:14
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:21:15
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_alltoall  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:16
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:17
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:21:18
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:19
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:20
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:21:21
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_alltoall  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:22
+  [run 1/6] warm-up done in 2s
+  [run 2/6] recording — 23:21:24
+  [run 2/6] done in 2s
+  [run 3/6] recording — 23:21:26
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:27
+  [run 4/6] done in 2s
+  [run 5/6] recording — 23:21:29
+  [run 5/6] done in 2s
+  [run 6/6] recording — 23:21:31
+  [run 6/6] done in 2s
+
+# [native sdma=0] osu_bcast  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:33
+  [run 1/6] warm-up done in 0s
+  [run 2/6] recording — 23:21:33
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:21:34
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:35
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:36
+  [run 5/6] done in 0s
+  [run 6/6] recording — 23:21:36
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_bcast  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:37
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:38
+  [run 2/6] done in 1s
+  [run 3/6] recording — 23:21:39
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:40
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:41
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:21:42
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_bcast  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:21:43
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:44
+  [run 2/6] done in 2s
+  [run 3/6] recording — 23:21:46
+  [run 3/6] done in 2s
+  [run 4/6] recording — 23:21:48
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:49
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:21:50
+  [run 6/6] done in 2s
+
+# [native sdma=0] osu_allgather  N=2  devices=0,1
+  [run 1/6] warm-up — 23:21:52
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:53
+  [run 2/6] done in 0s
+  [run 3/6] recording — 23:21:53
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:21:54
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:21:55
+  [run 5/6] done in 1s
+  [run 6/6] recording — 23:21:56
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_allgather  N=4  devices=0,1,2,3
+  [run 1/6] warm-up — 23:21:57
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:21:58
+  [run 2/6] done in 2s
+  [run 3/6] recording — 23:22:00
+  [run 3/6] done in 1s
+  [run 4/6] recording — 23:22:01
+  [run 4/6] done in 1s
+  [run 5/6] recording — 23:22:02
+  [run 5/6] done in 2s
+  [run 6/6] recording — 23:22:04
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_allgather  N=8  devices=0,1,2,3,4,5,6,7
+  [run 1/6] warm-up — 23:22:05
+  [run 1/6] warm-up done in 1s
+  [run 2/6] recording — 23:22:06
+  [run 2/6] done in 2s
+  [run 3/6] recording — 23:22:08
+  [run 3/6] done in 2s
+  [run 4/6] recording — 23:22:10
+  [run 4/6] done in 2s
+  [run 5/6] recording — 23:22:12
+  [run 5/6] done in 2s
+  [run 6/6] recording — 23:22:14
+  [run 6/6] done in 3s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_collectives_fixed_rndv_native_18637055.csv

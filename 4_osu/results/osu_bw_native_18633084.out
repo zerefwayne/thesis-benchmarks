@@ -1,0 +1,289 @@
+################# NATIVE STACK #################
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+--- NATIVE / HSA_ENABLE_SDMA=0 ---
+
+################################################################
+# [native sdma=0] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:20:12
+  [run 1/6] warm-up done in 10s
+  [run 2/6] recording — 20:20:22
+  [run 2/6] done in 7s
+  [run 3/6] recording — 20:20:29
+  [run 3/6] done in 7s
+  [run 4/6] recording — 20:20:36
+  [run 4/6] done in 7s
+  [run 5/6] recording — 20:20:43
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:20:51
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=0] intra_pkg_OAM1  GCD(2,3) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:20:59
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 20:21:07
+  [run 2/6] done in 8s
+  [run 3/6] recording — 20:21:15
+  [run 3/6] done in 8s
+  [run 4/6] recording — 20:21:23
+  [run 4/6] done in 8s
+  [run 5/6] recording — 20:21:31
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:21:39
+  [run 6/6] done in 9s
+
+################################################################
+# [native sdma=0] intra_pkg_OAM2  GCD(4,5) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:21:48
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 20:21:56
+  [run 2/6] done in 8s
+  [run 3/6] recording — 20:22:04
+  [run 3/6] done in 8s
+  [run 4/6] recording — 20:22:12
+  [run 4/6] done in 8s
+  [run 5/6] recording — 20:22:20
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:22:28
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=0] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link links=2
+################################################################
+  [run 1/6] warm-up — 20:22:36
+  [run 1/6] warm-up done in 14s
+  [run 2/6] recording — 20:22:50
+  [run 2/6] done in 12s
+  [run 3/6] recording — 20:23:02
+  [run 3/6] done in 13s
+  [run 4/6] recording — 20:23:15
+  [run 4/6] done in 13s
+  [run 5/6] recording — 20:23:28
+  [run 5/6] done in 12s
+  [run 6/6] recording — 20:23:40
+  [run 6/6] done in 14s
+
+################################################################
+# [native sdma=0] inter_pkg_2link_24  GCD(2,4) tier=inter_pkg_2link links=2
+################################################################
+  [run 1/6] warm-up — 20:23:54
+  [run 1/6] warm-up done in 13s
+  [run 2/6] recording — 20:24:07
+  [run 2/6] done in 12s
+  [run 3/6] recording — 20:24:19
+  [run 3/6] done in 13s
+  [run 4/6] recording — 20:24:32
+  [run 4/6] done in 13s
+  [run 5/6] recording — 20:24:45
+  [run 5/6] done in 13s
+  [run 6/6] recording — 20:24:58
+  [run 6/6] done in 12s
+
+################################################################
+# [native sdma=0] inter_pkg_1link_02  GCD(0,2) tier=inter_pkg_1link links=1
+################################################################
+  [run 1/6] warm-up — 20:25:10
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 20:25:34
+  [run 2/6] done in 24s
+  [run 3/6] recording — 20:25:58
+  [run 3/6] done in 24s
+  [run 4/6] recording — 20:26:22
+  [run 4/6] done in 23s
+  [run 5/6] recording — 20:26:45
+  [run 5/6] done in 25s
+  [run 6/6] recording — 20:27:10
+  [run 6/6] done in 24s
+
+################################################################
+# [native sdma=0] inter_pkg_1link_15  GCD(1,5) tier=inter_pkg_1link links=1
+################################################################
+  [run 1/6] warm-up — 20:27:34
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 20:27:58
+  [run 2/6] done in 24s
+  [run 3/6] recording — 20:28:22
+  [run 3/6] done in 24s
+  [run 4/6] recording — 20:28:46
+  [run 4/6] done in 24s
+  [run 5/6] recording — 20:29:10
+  [run 5/6] done in 25s
+  [run 6/6] recording — 20:29:35
+  [run 6/6] done in 24s
+
+################################################################
+# [native sdma=0] inter_pkg_1link_37  GCD(3,7) tier=inter_pkg_1link links=1
+################################################################
+  [run 1/6] warm-up — 20:29:59
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 20:30:23
+  [run 2/6] done in 24s
+  [run 3/6] recording — 20:30:47
+  [run 3/6] done in 24s
+  [run 4/6] recording — 20:31:11
+  [run 4/6] done in 24s
+  [run 5/6] recording — 20:31:35
+  [run 5/6] done in 24s
+  [run 6/6] recording — 20:31:59
+  [run 6/6] done in 24s
+
+################################################################
+# [native sdma=0] inter_pkg_1link_57  GCD(5,7) tier=inter_pkg_1link links=1
+################################################################
+  [run 1/6] warm-up — 20:32:23
+  [run 1/6] warm-up done in 24s
+  [run 2/6] recording — 20:32:47
+  [run 2/6] done in 24s
+  [run 3/6] recording — 20:33:11
+  [run 3/6] done in 24s
+  [run 4/6] recording — 20:33:35
+  [run 4/6] done in 24s
+  [run 5/6] recording — 20:33:59
+  [run 5/6] done in 24s
+  [run 6/6] recording — 20:34:23
+  [run 6/6] done in 24s
+
+################################################################
+# [native sdma=0] routed_07  GCD(0,7) tier=routed links=0
+################################################################
+  [run 1/6] warm-up — 20:34:47
+  [run 1/6] warm-up done in 14s
+  [run 2/6] recording — 20:35:01
+  [run 2/6] done in 14s
+  [run 3/6] recording — 20:35:15
+  [run 3/6] done in 15s
+  [run 4/6] recording — 20:35:30
+  [run 4/6] done in 14s
+  [run 5/6] recording — 20:35:44
+  [run 5/6] done in 14s
+  [run 6/6] recording — 20:35:58
+  [run 6/6] done in 14s
+
+################################################################
+# [native sdma=0] routed_03  GCD(0,3) tier=routed links=0
+################################################################
+  [run 1/6] warm-up — 20:36:12
+  [run 1/6] warm-up done in 25s
+  [run 2/6] recording — 20:36:37
+  [run 2/6] done in 25s
+  [run 3/6] recording — 20:37:02
+  [run 3/6] done in 25s
+  [run 4/6] recording — 20:37:27
+  [run 4/6] done in 24s
+  [run 5/6] recording — 20:37:52
+  [run 5/6] done in 25s
+  [run 6/6] recording — 20:38:16
+  [run 6/6] done in 26s
+
+################################################################
+# [native sdma=0] routed_17  GCD(1,7) tier=routed links=0
+################################################################
+  [run 1/6] warm-up — 20:38:42
+  [run 1/6] warm-up done in 14s
+  [run 2/6] recording — 20:38:56
+  [run 2/6] done in 14s
+  [run 3/6] recording — 20:39:10
+  [run 3/6] done in 14s
+  [run 4/6] recording — 20:39:24
+  [run 4/6] done in 13s
+  [run 5/6] recording — 20:39:37
+  [run 5/6] done in 14s
+  [run 6/6] recording — 20:39:51
+  [run 6/6] done in 14s
+--- NATIVE / HSA_ENABLE_SDMA=1 ---
+
+################################################################
+# [native sdma=1] intra_pkg_OAM0  GCD(0,1) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:40:05
+  [run 1/6] warm-up done in 9s
+  [run 2/6] recording — 20:40:14
+  [run 2/6] done in 8s
+  [run 3/6] recording — 20:40:22
+  [run 3/6] done in 8s
+  [run 4/6] recording — 20:40:30
+  [run 4/6] done in 8s
+  [run 5/6] recording — 20:40:38
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:40:46
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=1] intra_pkg_OAM1  GCD(2,3) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:40:54
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 20:41:02
+  [run 2/6] done in 7s
+  [run 3/6] recording — 20:41:09
+  [run 3/6] done in 8s
+  [run 4/6] recording — 20:41:17
+  [run 4/6] done in 8s
+  [run 5/6] recording — 20:41:25
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:41:33
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=1] intra_pkg_OAM2  GCD(4,5) tier=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up — 20:41:41
+  [run 1/6] warm-up done in 8s
+  [run 2/6] recording — 20:41:49
+  [run 2/6] done in 8s
+  [run 3/6] recording — 20:41:57
+  [run 3/6] done in 8s
+  [run 4/6] recording — 20:42:05
+  [run 4/6] done in 8s
+  [run 5/6] recording — 20:42:13
+  [run 5/6] done in 8s
+  [run 6/6] recording — 20:42:21
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=1] inter_pkg_2link_06  GCD(0,6) tier=inter_pkg_2link links=2
+################################################################
+  [run 1/6] warm-up — 20:42:29
+  [run 1/6] warm-up done in 15s
+  [run 2/6] recording — 20:42:44
+  [run 2/6] done in 14s
+  [run 3/6] recording — 20:42:58
+  [run 3/6] done in 15s
+  [run 4/6] recording — 20:43:13
+  [run 4/6] done in 16s
+  [run 5/6] recording — 20:43:29
+  [run 5/6] done in 14s
+  [run 6/6] recording — 20:43:43
+  [run 6/6] done in 15s
+
+################################################################
+# [native sdma=1] inter_pkg_2link_24  GCD(2,4) tier=inter_pkg_2link links=2
+################################################################
+  [run 1/6] warm-up — 20:43:58
+  [run 1/6] warm-up done in 14s
+  [run 2/6] recording — 20:44:12
+  [run 2/6] done in 13s
+  [run 3/6] recording — 20:44:25
+  [run 3/6] done in 13s
+  [run 4/6] recording — 20:44:38
+  [run 4/6] done in 14s
+  [run 5/6] recording — 20:44:52
+  [run 5/6] done in 13s
+  [run 6/6] recording — 20:45:05
+slurmstepd: error: *** JOB 18633084 ON nid007955 CANCELLED AT 2026-05-14T20:45:14 ***
