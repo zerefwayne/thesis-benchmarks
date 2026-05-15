@@ -18,6 +18,7 @@ pure-ratio panels.
 | [per_pair_curves.py](per_pair_curves.py) | B3a, B3b, B3c | 4x3 small multiples — bw, bibw, latency curves with EESSI+Native overlaid |
 | [per_pair_curves_fixed_rndv.py](per_pair_curves_fixed_rndv.py) | B3d | same 2x2 layout as B3a but uses the fixed_rndv osu_bw runs (EESSI UCX_RNDV_THRESH=1024) |
 | [per_pair_curves_rma.py](per_pair_curves_rma.py) | B3e, B3f | same 2x2 layout for the MPI one-sided RMA primitives — osu_put_bw and osu_get_bw |
+| [rndv_128_compare.py](rndv_128_compare.py) | B3g | single panel on intra_pkg_OAM0: baseline vs UCX_RNDV_THRESH=128 for both stacks |
 | [protocol_sweep_eessi.py](protocol_sweep_eessi.py) | E1 | UCX_RNDV_THRESH sweep on intra_pkg_OAM0 — shows that thresholds above 1024 widen the eager-path cliff zone |
 | [distributions.py](distributions.py)   | B5, B6 | per-run strip plots — 5 dots per pair-stack, median bar; "is the noise small?" |
 | [delta_curves.py](delta_curves.py)     | D1 | signed % delta vs message size for bw, bibw, latency (positive = EESSI advantage) |
@@ -78,6 +79,7 @@ pngs/
   B3d_perpair_bw_curves_fixed_rndv.png
   B3e_perpair_put_bw_curves.png
   B3f_perpair_get_bw_curves.png
+  B3g_rndv_128_vs_baseline_OAM0.png
   E1_protocol_sweep_eessi.png
   B4_tier_aggregated_bw.png
   B5_strip_bw_1MiB.png

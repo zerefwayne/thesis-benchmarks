@@ -17,6 +17,7 @@ SCRIPTS=(
     per_pair_curves.py  # B3 (small multiples: bw, bibw, latency)
     per_pair_curves_fixed_rndv.py  # B3d (bw small multiples, fixed_rndv)
     per_pair_curves_rma.py  # B3e/B3f (osu_put_bw, osu_get_bw small multiples)
+    rndv_128_compare.py     # B3g (baseline vs RNDV_THRESH=128 on intra_pkg_OAM0)
     protocol_sweep_eessi.py # E1 (UCX_RNDV_THRESH sweep)
     distributions.py    # B5, B6 (per-run strip plots)
     delta_curves.py     # D1 (signed % delta vs message size)

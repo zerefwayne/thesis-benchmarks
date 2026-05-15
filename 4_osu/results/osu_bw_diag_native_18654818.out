@@ -1,0 +1,57 @@
+
+================================================================
+# NATIVE STACK (HSA_ENABLE_SDMA=0) — pair (0,1) intra_pkg
+================================================================
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+
+================================================================
+# MPICH_VERSION_DISPLAY=1 MPICH_ENV_DISPLAY=1 (default IPC threshold)
+================================================================
+  wrote results/osu_bw_diag_native_18654818/mpich_env.txt
+
+================================================================
+# NATIVE run @ MPICH_GPU_IPC_THRESHOLD=DEFAULT
+================================================================
+  [warmup 18:06:23]
+  [recorded 18:06:30]
+  wrote results/osu_bw_diag_native_18654818/mpich_thresh_DEFAULT.log
+
+================================================================
+# NATIVE run @ MPICH_GPU_IPC_THRESHOLD=1024
+================================================================
+  [warmup 18:06:38]
+  [recorded 18:06:45]
+  wrote results/osu_bw_diag_native_18654818/mpich_thresh_1024.log
+
+================================================================
+# NATIVE run @ MPICH_GPU_IPC_THRESHOLD=8192
+================================================================
+  [warmup 18:06:52]
+  [recorded 18:06:59]
+  wrote results/osu_bw_diag_native_18654818/mpich_thresh_8192.log
+
+================================================================
+# ALL DIAGNOSTIC RUNS COMPLETE
+================================================================
+  diag dir: results/osu_bw_diag_native_18654818
+  summary : results/osu_bw_diag_native_18654818.log
+total 33
+drwxrwx--- 2 joglekar pepr_joglekar  4096 May 15 18:06 .
+drwxr-x--- 4 joglekar pepr_joglekar 16384 May 15 18:06 ..
+-rw-rw---- 1 joglekar pepr_joglekar  7852 May 15 18:06 mpich_env.txt
+-rw-rw---- 1 joglekar pepr_joglekar  1106 May 15 18:06 mpich_thresh_1024.log
+-rw-rw---- 1 joglekar pepr_joglekar  1106 May 15 18:07 mpich_thresh_8192.log
+-rw-rw---- 1 joglekar pepr_joglekar  1109 May 15 18:06 mpich_thresh_DEFAULT.log

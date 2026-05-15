@@ -1,0 +1,49 @@
+
+================================================================
+# EESSI STACK (HSA_ENABLE_SDMA=0) — pair (0,1) intra_pkg
+================================================================
+
+================================================================
+# ucx_info -d -u t  (per-transport caps; expect rocm_copy and rocm_ipc)
+================================================================
+  wrote results/osu_bw_diag_eessi_18654817/ucxinfo_devices.txt
+
+================================================================
+# ucx_info -c  (PROTO_ENABLE / RNDV / ROCM / MEMTYPE defaults)
+================================================================
+  wrote results/osu_bw_diag_eessi_18654817/ucxinfo_config.txt
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=DEFAULT
+================================================================
+  [warmup 18:06:24]
+  [recorded 18:06:46]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_DEFAULT.log
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=128
+================================================================
+  [warmup 18:06:56]
+  [recorded 18:07:06]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_128.log
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=1024
+================================================================
+  [warmup 18:07:16]
+  [recorded 18:07:26]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_1024.log
+
+================================================================
+# ALL DIAGNOSTIC RUNS COMPLETE
+================================================================
+  diag dir: results/osu_bw_diag_eessi_18654817
+  summary : results/osu_bw_diag_eessi_18654817.log
+total 81
+drwxrwx--- 2 10035545 10035545  4096 May 15 18:07 .
+drwxr-x--- 4 10035545 10035545 16384 May 15 18:07 ..
+-rw-rw---- 1 10035545 10035545 17662 May 15 18:07 proto_thresh_1024.log
+-rw-rw---- 1 10035545 10035545 17659 May 15 18:07 proto_thresh_128.log
+-rw-rw---- 1 10035545 10035545 18203 May 15 18:06 proto_thresh_DEFAULT.log
+-rw-rw---- 1 10035545 10035545  1384 May 15 18:06 ucxinfo_config.txt
+-rw-rw---- 1 10035545 10035545 13070 May 15 18:06 ucxinfo_devices.txt

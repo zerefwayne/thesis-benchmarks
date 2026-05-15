@@ -1,0 +1,73 @@
+
+================================================================
+# EESSI STACK (HSA_ENABLE_SDMA=0) — pair (0,1) intra_pkg
+================================================================
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+
+================================================================
+# ucx_info -d -u t  (per-transport caps; expect rocm_copy and rocm_ipc)
+================================================================
+  wrote results/osu_bw_diag_eessi_18654817/ucxinfo_devices.txt
+
+================================================================
+# ucx_info -c  (PROTO_ENABLE / RNDV / ROCM / MEMTYPE defaults)
+================================================================
+  wrote results/osu_bw_diag_eessi_18654817/ucxinfo_config.txt
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=DEFAULT
+================================================================
+  [warmup 18:06:24]
+  [recorded 18:06:46]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_DEFAULT.log
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=128
+================================================================
+  [warmup 18:06:56]
+  [recorded 18:07:06]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_128.log
+
+================================================================
+# EESSI run @ UCX_RNDV_THRESH=1024
+================================================================
+  [warmup 18:07:16]
+  [recorded 18:07:26]
+  wrote results/osu_bw_diag_eessi_18654817/proto_thresh_1024.log
+
+================================================================
+# ALL DIAGNOSTIC RUNS COMPLETE
+================================================================
+  diag dir: results/osu_bw_diag_eessi_18654817
+  summary : results/osu_bw_diag_eessi_18654817.log
+total 81
+drwxrwx--- 2 10035545 10035545  4096 May 15 18:07 .
+drwxr-x--- 4 10035545 10035545 16384 May 15 18:07 ..
+-rw-rw---- 1 10035545 10035545 17662 May 15 18:07 proto_thresh_1024.log
+-rw-rw---- 1 10035545 10035545 17659 May 15 18:07 proto_thresh_128.log
+-rw-rw---- 1 10035545 10035545 18203 May 15 18:06 proto_thresh_DEFAULT.log
+-rw-rw---- 1 10035545 10035545  1384 May 15 18:06 ucxinfo_config.txt
+-rw-rw---- 1 10035545 10035545 13070 May 15 18:06 ucxinfo_devices.txt
