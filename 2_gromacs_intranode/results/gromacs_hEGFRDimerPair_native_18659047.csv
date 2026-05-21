@@ -1,0 +1,7 @@
+benchmark,stack,jobid,run,perf_ns_per_day,wall_s,core_s,ntmpi,toolchain
+hEGFRDimerPair,native,18659047,2,51.987,265.915,14878.928,8,cpeAMD-25.03-VkFFT-rocm
+hEGFRDimerPair,native,18659047,3,52.087,265.404,14848.653,8,cpeAMD-25.03-VkFFT-rocm
+hEGFRDimerPair,native,18659047,4,52.072,265.483,14854.600,8,cpeAMD-25.03-VkFFT-rocm
+hEGFRDimerPair,native,18659047,5,51.802,266.864,14932.191,8,cpeAMD-25.03-VkFFT-rocm
+hEGFRDimerPair,native,18659047,6,52.124,265.219,14840.496,8,cpeAMD-25.03-VkFFT-rocm
+hEGFRDimerPair,native,18659047,7,51.837,266.683,14921.190,8,cpeAMD-25.03-VkFFT-rocm

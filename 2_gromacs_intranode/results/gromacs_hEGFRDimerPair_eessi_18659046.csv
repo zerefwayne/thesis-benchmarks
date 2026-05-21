@@ -1,0 +1,7 @@
+benchmark,stack,jobid,run,perf_ns_per_day,wall_s,core_s,ntmpi,toolchain
+hEGFRDimerPair,eessi,18659046,2,50.158,275.614,15430.296,8,rfoss-2025a-SYCL
+hEGFRDimerPair,eessi,18659046,3,50.025,276.345,15470.624,8,rfoss-2025a-SYCL
+hEGFRDimerPair,eessi,18659046,4,48.589,284.515,15928.158,8,rfoss-2025a-SYCL
+hEGFRDimerPair,eessi,18659046,5,50.517,273.656,15320.061,8,rfoss-2025a-SYCL
+hEGFRDimerPair,eessi,18659046,6,50.415,274.206,15351.798,8,rfoss-2025a-SYCL
+hEGFRDimerPair,eessi,18659046,7,51.067,270.707,15155.642,8,rfoss-2025a-SYCL

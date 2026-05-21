@@ -1,0 +1,747 @@
+NODE_A=nid007956  NODE_B=nid007957
+
+# [eessi_xccl sdma=0] osu_xccl_allreduce  N=16  nodes=2
+  [run 1/6] warm-up - 19:18:41
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-81675@1,10]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 1/6] done in 28s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 2/6] recording - 19:19:09
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-81832@1,12]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 3s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 3/6] recording - 19:19:12
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82002@1,8]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 3s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 4/6] recording - 19:19:15
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82182@1,12]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 5/6] recording - 19:19:19
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82354@1,15]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 3s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 6/6] recording - 19:19:22
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82532@1,7]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+
+# [eessi_xccl sdma=0] osu_xccl_alltoall  N=16  nodes=2
+  [run 1/6] warm-up - 19:19:26
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82714@1,5]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 1/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 2/6] recording - 19:19:30
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-82886@1,13]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 3/6] recording - 19:19:34
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83069@1,9]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 4/6] recording - 19:19:38
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83251@1,15]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 5/6] recording - 19:19:42
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83426@1,6]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 6/6] recording - 19:19:46
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83604@1,15]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [skip] osu_xccl_broadcast not in /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a/libexec/osu-micro-benchmarks/xccl/collective
+
+# [eessi_xccl sdma=0] osu_xccl_allgather  N=16  nodes=2
+  [run 1/6] warm-up - 19:19:50
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83789@1,9]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 1/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 2/6] recording - 19:19:54
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-83967@1,5]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 2/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 3/6] recording - 19:19:58
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-84139@1,7]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 3/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 4/6] recording - 19:20:02
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-84314@1,8]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 4/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 5/6] recording - 19:20:06
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-84482@1,3]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 5/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+  [run 6/6] recording - 19:20:10
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+Failed: RCCL Error ../../../c/xccl/util/rccl/osu_util_rccl_impl.c: 50 'unhandled system error (run with NCCL_DEBUG=INFO for details)'
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-nid007956-84660@1,9]
+   Exit code:    1
+--------------------------------------------------------------------------
+  [run 6/6] done in 4s
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+#Using RCCL
+ALL BENCHMARKS COMPLETE  CSV=results/osu_xccl_eessi_18751009.csv

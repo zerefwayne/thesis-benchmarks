@@ -1,0 +1,5 @@
+STACK=eessi  NODE_A=nid005006  NODE_B=nid005007
+################# EESSI STACK (HSA_ENABLE_SDMA=0) ##################
+
+# [eessi sdma=0] osu_allreduce  N=16  nodes=2
+  [run 1/6] warm-up - 18:38:16

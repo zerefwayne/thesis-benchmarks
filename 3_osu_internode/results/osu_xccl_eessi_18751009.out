@@ -1,0 +1,71 @@
+NODE_A=nid007956  NODE_B=nid007957
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+[setup_eessi] FI_PROVIDER=cxi  OMPI_MCA_pml=cm/ofi
+
+# [eessi_xccl sdma=0] osu_xccl_allreduce  N=16  nodes=2
+  [run 1/6] warm-up - 19:18:41
+  [run 1/6] done in 28s
+  [run 2/6] recording - 19:19:09
+  [run 2/6] done in 3s
+  [run 3/6] recording - 19:19:12
+  [run 3/6] done in 3s
+  [run 4/6] recording - 19:19:15
+  [run 4/6] done in 4s
+  [run 5/6] recording - 19:19:19
+  [run 5/6] done in 3s
+  [run 6/6] recording - 19:19:22
+  [run 6/6] done in 4s
+
+# [eessi_xccl sdma=0] osu_xccl_alltoall  N=16  nodes=2
+  [run 1/6] warm-up - 19:19:26
+  [run 1/6] done in 4s
+  [run 2/6] recording - 19:19:30
+  [run 2/6] done in 4s
+  [run 3/6] recording - 19:19:34
+  [run 3/6] done in 4s
+  [run 4/6] recording - 19:19:38
+  [run 4/6] done in 4s
+  [run 5/6] recording - 19:19:42
+  [run 5/6] done in 4s
+  [run 6/6] recording - 19:19:46
+  [run 6/6] done in 4s
+  [skip] osu_xccl_broadcast not in /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a/libexec/osu-micro-benchmarks/xccl/collective
+
+# [eessi_xccl sdma=0] osu_xccl_allgather  N=16  nodes=2
+  [run 1/6] warm-up - 19:19:50
+  [run 1/6] done in 4s
+  [run 2/6] recording - 19:19:54
+  [run 2/6] done in 4s
+  [run 3/6] recording - 19:19:58
+  [run 3/6] done in 4s
+  [run 4/6] recording - 19:20:02
+  [run 4/6] done in 4s
+  [run 5/6] recording - 19:20:06
+  [run 5/6] done in 4s
+  [run 6/6] recording - 19:20:10
+  [run 6/6] done in 4s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_xccl_eessi_18751009.csv

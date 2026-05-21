@@ -1,0 +1,7 @@
+benchmark,stack,jobid,run,perf_ns_per_day,wall_s,core_s,ntmpi,toolchain
+stmv,native,18656108,2,95.745,144.385,8074.517,8,cpeAMD-25.03-VkFFT-rocm
+stmv,native,18656108,3,96.183,143.727,8038.109,8,cpeAMD-25.03-VkFFT-rocm
+stmv,native,18656108,4,95.854,144.221,8065.225,8,cpeAMD-25.03-VkFFT-rocm
+stmv,native,18656108,5,94.608,146.121,8171.703,8,cpeAMD-25.03-VkFFT-rocm
+stmv,native,18656108,6,94.580,146.164,8174.119,8,cpeAMD-25.03-VkFFT-rocm
+stmv,native,18656108,7,95.222,145.178,8119.065,8,cpeAMD-25.03-VkFFT-rocm

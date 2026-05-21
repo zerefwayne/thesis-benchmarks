@@ -1,0 +1,443 @@
+################# NATIVE STACK #################
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  gmx_mpi=/users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+
+################################################################
+# [native] stmv  run 1/7  WARM-UP (discarded)  @ 2026-05-15T20:20:50+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run1 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 1.7%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.7%.
+ Average PME mesh/force load: 0.579
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.8 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8072.700      144.347     5592.6
+                 (ns/day)    (hour/ns)
+Performance:       95.770        0.251
+
+GROMACS reminds you: "Furious activity is no substitute for understanding." (H.H. Williams)
+
+  [run 1] elapsed 222s
+
+################################################################
+# [native] stmv  run 2/7  recorded 1/6  @ 2026-05-15T20:24:32+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run2 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 2.1%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.9%.
+ Average PME mesh/force load: 0.578
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.8 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8074.517      144.385     5592.3
+                 (ns/day)    (hour/ns)
+Performance:       95.745        0.251
+
+GROMACS reminds you: "My greatest contribution to the field of science is that I never entered it." (Colin Powell)
+
+  [run 2] elapsed 219s
+
+################################################################
+# [native] stmv  run 3/7  recorded 2/6  @ 2026-05-15T20:28:11+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run3 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 1.2%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.5%.
+ Average PME mesh/force load: 0.612
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.6 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8038.109      143.727     5592.6
+                 (ns/day)    (hour/ns)
+Performance:       96.183        0.250
+
+GROMACS reminds you: "No One Could Foresee the End That Came So Fast" (Slayer)
+
+  [run 3] elapsed 224s
+
+################################################################
+# [native] stmv  run 4/7  recorded 3/6  @ 2026-05-15T20:31:55+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run4 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 3.3%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 1.3%.
+ Average PME mesh/force load: 0.616
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.5 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8065.225      144.221     5592.3
+                 (ns/day)    (hour/ns)
+Performance:       95.854        0.250
+
+GROMACS reminds you: "It's Unacceptable That Chocolate Makes You Fat" (MI 3)
+
+  [run 4] elapsed 220s
+
+################################################################
+# [native] stmv  run 5/7  recorded 4/6  @ 2026-05-15T20:35:35+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run5 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 2.2%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.9%.
+ Average PME mesh/force load: 0.591
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.7 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8171.703      146.121     5592.4
+                 (ns/day)    (hour/ns)
+Performance:       94.608        0.254
+
+GROMACS reminds you: "I invented the term 'Object-Oriented', and I can tell you I did not have C++ in mind." (Alan Kay, author of Smalltalk)
+
+  [run 5] elapsed 221s
+
+################################################################
+# [native] stmv  run 6/7  recorded 5/6  @ 2026-05-15T20:39:16+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run6 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 2.2%.
+ The balanceable part of the MD step is 40%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.9%.
+ Average PME mesh/force load: 0.594
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.7 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8174.119      146.164     5592.4
+                 (ns/day)    (hour/ns)
+Performance:       94.580        0.254
+
+GROMACS reminds you: "Raw data is like raw sewage, it requires some processing before it can be spread around. The opposite is true of theories." (Jim Carr)
+
+  [run 6] elapsed 222s
+
+################################################################
+# [native] stmv  run 7/7  recorded 6/6  @ 2026-05-15T20:42:58+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work/run7 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/STMV/benchmark.tpr, VERSION 2018.1 (single precision)
+Note: file tpx version 112, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.339
+
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid005024 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'ConvertedSystem'
+100000 steps,    200.0 ps.
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 2.6%.
+ The balanceable part of the MD step is 41%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 1.0%.
+ Average PME mesh/force load: 0.580
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.8 %
+
+
+NOTE: 11 % of the run time was spent in domain decomposition,
+      5 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     8119.065      145.178     5592.5
+                 (ns/day)    (hour/ns)
+Performance:       95.222        0.252
+
+GROMACS reminds you: "If I could remember the names of all these particles, I'd be a botanist." (Albert Einstein)
+
+  [run 7] elapsed 221s
+
+================================================================
+ALL RUNS COMPLETE
+  CSV : results/gromacs_stmv_native_18656108.csv
+  Log : results/gromacs_stmv_native_18656108.log
+  Meta: results/gromacs_stmv_native_18656108.meta
+  Work: /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_stmv_native_18656108_work
+================================================================

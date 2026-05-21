@@ -1,0 +1,156 @@
+STACK=native  NODE_A=nid005014  NODE_B=nid007968
+################# NATIVE STACK (HSA_ENABLE_SDMA=0) #################
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+
+################################################################
+# [native sdma=0] intra_pkg_OAM0_ref  intra_node  GCD(0,1)  nic=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up - 17:41:28
+  [run 1/6] done in 10s
+  [run 2/6] recording - 17:41:37
+  [run 2/6] done in 7s
+  [run 3/6] recording - 17:41:44
+  [run 3/6] done in 8s
+  [run 4/6] recording - 17:41:52
+  [run 4/6] done in 7s
+  [run 5/6] recording - 17:41:59
+  [run 5/6] done in 8s
+  [run 6/6] recording - 17:42:07
+  [run 6/6] done in 8s
+
+################################################################
+# [native sdma=0] inter_GCD0_GCD0  inter_node  GCD(0,0)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:42:15
+  [run 1/6] done in 41s
+  [run 2/6] recording - 17:42:56
+  [run 2/6] done in 39s
+  [run 3/6] recording - 17:43:35
+  [run 3/6] done in 38s
+  [run 4/6] recording - 17:44:13
+  [run 4/6] done in 38s
+  [run 5/6] recording - 17:44:51
+  [run 5/6] done in 38s
+  [run 6/6] recording - 17:45:29
+  [run 6/6] done in 39s
+
+################################################################
+# [native sdma=0] inter_GCD2_GCD2  inter_node  GCD(2,2)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:46:08
+  [run 1/6] done in 39s
+  [run 2/6] recording - 17:46:47
+  [run 2/6] done in 40s
+  [run 3/6] recording - 17:47:27
+  [run 3/6] done in 38s
+  [run 4/6] recording - 17:48:05
+  [run 4/6] done in 40s
+  [run 5/6] recording - 17:48:45
+  [run 5/6] done in 39s
+  [run 6/6] recording - 17:49:24
+  [run 6/6] done in 39s
+
+################################################################
+# [native sdma=0] inter_GCD4_GCD4  inter_node  GCD(4,4)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:50:03
+  [run 1/6] done in 40s
+  [run 2/6] recording - 17:50:43
+  [run 2/6] done in 39s
+  [run 3/6] recording - 17:51:22
+  [run 3/6] done in 38s
+  [run 4/6] recording - 17:52:00
+  [run 4/6] done in 39s
+  [run 5/6] recording - 17:52:39
+  [run 5/6] done in 39s
+  [run 6/6] recording - 17:53:18
+  [run 6/6] done in 38s
+
+################################################################
+# [native sdma=0] inter_GCD6_GCD6  inter_node  GCD(6,6)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:53:56
+  [run 1/6] done in 41s
+  [run 2/6] recording - 17:54:37
+  [run 2/6] done in 39s
+  [run 3/6] recording - 17:55:16
+  [run 3/6] done in 39s
+  [run 4/6] recording - 17:55:55
+  [run 4/6] done in 39s
+  [run 5/6] recording - 17:56:34
+  [run 5/6] done in 39s
+  [run 6/6] recording - 17:57:13
+  [run 6/6] done in 39s
+
+################################################################
+# [native sdma=0] inter_GCD1_GCD1  inter_node  GCD(1,1)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 17:57:52
+  [run 1/6] done in 37s
+  [run 2/6] recording - 17:58:29
+  [run 2/6] done in 39s
+  [run 3/6] recording - 17:59:08
+  [run 3/6] done in 37s
+  [run 4/6] recording - 17:59:45
+  [run 4/6] done in 38s
+  [run 5/6] recording - 18:00:23
+  [run 5/6] done in 38s
+  [run 6/6] recording - 18:01:01
+  [run 6/6] done in 37s
+
+################################################################
+# [native sdma=0] inter_GCD3_GCD3  inter_node  GCD(3,3)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 18:01:38
+  [run 1/6] done in 38s
+  [run 2/6] recording - 18:02:16
+  [run 2/6] done in 38s
+  [run 3/6] recording - 18:02:54
+  [run 3/6] done in 38s
+  [run 4/6] recording - 18:03:32
+  [run 4/6] done in 39s
+  [run 5/6] recording - 18:04:11
+  [run 5/6] done in 38s
+  [run 6/6] recording - 18:04:49
+  [run 6/6] done in 38s
+
+################################################################
+# [native sdma=0] inter_GCD5_GCD5  inter_node  GCD(5,5)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 18:05:27
+  [run 1/6] done in 37s
+  [run 2/6] recording - 18:06:04
+  [run 2/6] done in 39s
+  [run 3/6] recording - 18:06:43
+  [run 3/6] done in 38s
+  [run 4/6] recording - 18:07:21
+  [run 4/6] done in 39s
+  [run 5/6] recording - 18:08:00
+  [run 5/6] done in 38s
+  [run 6/6] recording - 18:08:38
+  [run 6/6] done in 39s
+
+################################################################
+# [native sdma=0] inter_GCD7_GCD7  inter_node  GCD(7,7)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 18:09:17
+  [run 1/6] done in 41s
+  [run 2/6] recording - 18:09:58
+  [run 2/6] done in 39s
+  [run 3/6] recording - 18:10:37
+  [run 3/6] done in 40s
+  [run 4/6] recording - 18:11:17
+slurmstepd: error: *** JOB 18749733 ON nid005014 CANCELLED AT 2026-05-20T18:11:41 DUE TO TIME LIMIT ***

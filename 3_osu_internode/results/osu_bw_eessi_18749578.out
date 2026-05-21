@@ -1,0 +1,183 @@
+STACK=eessi  NODE_A=nid005020  NODE_B=nid005021
+################# EESSI STACK (HSA_ENABLE_SDMA=0) ##################
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+[setup_eessi] FI_PROVIDER=cxi  OMPI_MCA_pml=cm/ofi
+
+################################################################
+# [eessi sdma=0] intra_pkg_OAM0_ref  intra_node  GCD(0,1)  nic=intra_pkg links=4
+################################################################
+  [run 1/6] warm-up - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 1/6] done in 0s
+  [run 2/6] recording - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 2/6] done in 0s
+  [run 3/6] recording - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 3/6] done in 0s
+  [run 4/6] recording - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 4/6] done in 0s
+  [run 5/6] recording - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 5/6] done in 0s
+  [run 6/6] recording - 17:35:02
+  [eessi intra_pkg_OAM0_ref] SKIPPED — CXI batch-step has no VNI; intra-node deferred.
+  [run 6/6] done in 0s
+
+################################################################
+# [eessi sdma=0] inter_GCD0_GCD0  inter_node  GCD(0,0)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:35:02
+  [run 1/6] done in 55s
+  [run 2/6] recording - 17:35:57
+  [run 2/6] done in 41s
+  [run 3/6] recording - 17:36:38
+  [run 3/6] done in 40s
+  [run 4/6] recording - 17:37:18
+  [run 4/6] done in 40s
+  [run 5/6] recording - 17:37:58
+  [run 5/6] done in 41s
+  [run 6/6] recording - 17:38:39
+  [run 6/6] done in 40s
+
+################################################################
+# [eessi sdma=0] inter_GCD2_GCD2  inter_node  GCD(2,2)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:39:19
+  [run 1/6] done in 40s
+  [run 2/6] recording - 17:39:59
+  [run 2/6] done in 40s
+  [run 3/6] recording - 17:40:39
+  [run 3/6] done in 40s
+  [run 4/6] recording - 17:41:19
+  [run 4/6] done in 40s
+  [run 5/6] recording - 17:41:59
+  [run 5/6] done in 41s
+  [run 6/6] recording - 17:42:40
+  [run 6/6] done in 40s
+
+################################################################
+# [eessi sdma=0] inter_GCD4_GCD4  inter_node  GCD(4,4)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:43:20
+  [run 1/6] done in 40s
+  [run 2/6] recording - 17:44:00
+  [run 2/6] done in 40s
+  [run 3/6] recording - 17:44:40
+  [run 3/6] done in 40s
+  [run 4/6] recording - 17:45:20
+  [run 4/6] done in 41s
+  [run 5/6] recording - 17:46:01
+  [run 5/6] done in 41s
+  [run 6/6] recording - 17:46:42
+  [run 6/6] done in 40s
+
+################################################################
+# [eessi sdma=0] inter_GCD6_GCD6  inter_node  GCD(6,6)  nic=nic_via_xgmi links=NA
+################################################################
+  [run 1/6] warm-up - 17:47:22
+  [run 1/6] done in 40s
+  [run 2/6] recording - 17:48:02
+  [run 2/6] done in 40s
+  [run 3/6] recording - 17:48:42
+  [run 3/6] done in 41s
+  [run 4/6] recording - 17:49:23
+  [run 4/6] done in 40s
+  [run 5/6] recording - 17:50:03
+  [run 5/6] done in 40s
+  [run 6/6] recording - 17:50:43
+  [run 6/6] done in 41s
+
+################################################################
+# [eessi sdma=0] inter_GCD1_GCD1  inter_node  GCD(1,1)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 17:51:24
+  [run 1/6] done in 40s
+  [run 2/6] recording - 17:52:04
+  [run 2/6] done in 40s
+  [run 3/6] recording - 17:52:44
+  [run 3/6] done in 40s
+  [run 4/6] recording - 17:53:24
+  [run 4/6] done in 41s
+  [run 5/6] recording - 17:54:05
+  [run 5/6] done in 40s
+  [run 6/6] recording - 17:54:45
+  [run 6/6] done in 40s
+
+################################################################
+# [eessi sdma=0] inter_GCD3_GCD3  inter_node  GCD(3,3)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 17:55:25
+  [run 1/6] done in 41s
+  [run 2/6] recording - 17:56:06
+  [run 2/6] done in 41s
+  [run 3/6] recording - 17:56:47
+  [run 3/6] done in 41s
+  [run 4/6] recording - 17:57:28
+  [run 4/6] done in 42s
+  [run 5/6] recording - 17:58:10
+  [run 5/6] done in 40s
+  [run 6/6] recording - 17:58:50
+  [run 6/6] done in 41s
+
+################################################################
+# [eessi sdma=0] inter_GCD5_GCD5  inter_node  GCD(5,5)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 17:59:31
+  [run 1/6] done in 40s
+  [run 2/6] recording - 18:00:11
+  [run 2/6] done in 40s
+  [run 3/6] recording - 18:00:51
+  [run 3/6] done in 40s
+  [run 4/6] recording - 18:01:31
+  [run 4/6] done in 41s
+  [run 5/6] recording - 18:02:12
+  [run 5/6] done in 40s
+  [run 6/6] recording - 18:02:52
+  [run 6/6] done in 40s
+
+################################################################
+# [eessi sdma=0] inter_GCD7_GCD7  inter_node  GCD(7,7)  nic=nic_local links=NA
+################################################################
+  [run 1/6] warm-up - 18:03:32
+  [run 1/6] done in 41s
+  [run 2/6] recording - 18:04:13
+  [run 2/6] done in 40s
+  [run 3/6] recording - 18:04:53
+  [run 3/6] done in 1s
+  [run 4/6] recording - 18:04:54
+  [run 4/6] done in 1s
+  [run 5/6] recording - 18:04:55
+  [run 5/6] done in 0s
+  [run 6/6] recording - 18:04:55
+  [run 6/6] done in 1s
+
+================================================================
+ALL BENCHMARKS COMPLETE
+  CSV : results/osu_bw_eessi_18749578.csv
+  Log : results/osu_bw_eessi_18749578.log  Meta: results/osu_bw_eessi_18749578.meta
+================================================================

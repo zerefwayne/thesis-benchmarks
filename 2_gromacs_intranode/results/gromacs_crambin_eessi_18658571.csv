@@ -1,0 +1,7 @@
+benchmark,stack,jobid,run,perf_ns_per_day,wall_s,core_s,ntmpi,toolchain
+crambin,eessi,18658571,2,422.473,20.451,1144.329,8,rfoss-2025a-SYCL
+crambin,eessi,18658571,3,414.943,20.823,1164.994,8,rfoss-2025a-SYCL
+crambin,eessi,18658571,4,414.512,20.844,1166.276,8,rfoss-2025a-SYCL
+crambin,eessi,18658571,5,411.088,21.018,1175.996,8,rfoss-2025a-SYCL
+crambin,eessi,18658571,6,406.241,21.269,1189.884,8,rfoss-2025a-SYCL
+crambin,eessi,18658571,7,403.143,21.432,1199.097,8,rfoss-2025a-SYCL

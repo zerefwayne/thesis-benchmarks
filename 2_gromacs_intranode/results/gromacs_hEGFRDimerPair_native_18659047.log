@@ -1,0 +1,478 @@
+################# NATIVE STACK #################
+
+################################################################
+# [native] hEGFRDimerPair  run 1/7  WARM-UP (discarded)  @ 2026-05-15T23:59:30+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run1 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 20.9%.
+ The balanceable part of the MD step is 52%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 11.0%.
+ Average PME mesh/force load: 0.757
+ Part of the total run time spent waiting due to PP/PME imbalance: 1.2 %
+
+NOTE: 11.0 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14930.303      266.854     5594.9
+                 (ns/day)    (hour/ns)
+Performance:       51.804        0.463
+
+GROMACS reminds you: "I'll Match Your DNA" (Red Hot Chili Peppers)
+
+  [run 1] elapsed 455s
+
+################################################################
+# [native] hEGFRDimerPair  run 2/7  recorded 1/6  @ 2026-05-16T00:07:05+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run2 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 21.7%.
+ The balanceable part of the MD step is 52%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 11.3%.
+ Average PME mesh/force load: 0.760
+ Part of the total run time spent waiting due to PP/PME imbalance: 1.2 %
+
+NOTE: 11.3 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14878.928      265.915     5595.4
+                 (ns/day)    (hour/ns)
+Performance:       51.987        0.462
+
+GROMACS reminds you: "When I asked a younger colleague at the university how he had been able to change his research field several times within a decade or so, he answered: "It's just a question of new software"" (Paul Verhaeghe)
+
+  [run 2] elapsed 448s
+
+################################################################
+# [native] hEGFRDimerPair  run 3/7  recorded 2/6  @ 2026-05-16T00:14:33+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run3 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 20.2%.
+ The balanceable part of the MD step is 52%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 10.4%.
+ Average PME mesh/force load: 0.803
+ Part of the total run time spent waiting due to PP/PME imbalance: 1.0 %
+
+NOTE: 10.4 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14848.653      265.404     5594.7
+                 (ns/day)    (hour/ns)
+Performance:       52.087        0.461
+
+GROMACS reminds you: "A Man Needs a Maid" (N. Young)
+
+  [run 3] elapsed 450s
+
+################################################################
+# [native] hEGFRDimerPair  run 4/7  recorded 3/6  @ 2026-05-16T00:22:03+03:00
+################################################################
+srun: Step created for StepId=18659047.3
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run4 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 20.2%.
+ The balanceable part of the MD step is 51%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 10.4%.
+ Average PME mesh/force load: 0.820
+ Part of the total run time spent waiting due to PP/PME imbalance: 0.9 %
+
+NOTE: 10.4 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14854.600      265.483     5595.3
+                 (ns/day)    (hour/ns)
+Performance:       52.072        0.461
+
+GROMACS reminds you: "Rub It Right Across Your Eyes" (F. Zappa)
+
+  [run 4] elapsed 450s
+
+################################################################
+# [native] hEGFRDimerPair  run 5/7  recorded 4/6  @ 2026-05-16T00:29:33+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run5 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 21.2%.
+ The balanceable part of the MD step is 52%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 11.0%.
+ Average PME mesh/force load: 0.767
+ Part of the total run time spent waiting due to PP/PME imbalance: 1.2 %
+
+NOTE: 11.0 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14932.191      266.864     5595.4
+                 (ns/day)    (hour/ns)
+Performance:       51.802        0.463
+
+GROMACS reminds you: "A protein is a chain of letters." (Julie Bernauer)
+
+  [run 5] elapsed 450s
+
+################################################################
+# [native] hEGFRDimerPair  run 6/7  recorded 5/6  @ 2026-05-16T00:37:03+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run6 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 19.1%.
+ The balanceable part of the MD step is 52%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 9.8%.
+ Average PME mesh/force load: 0.821
+ Part of the total run time spent waiting due to PP/PME imbalance: 0.9 %
+
+NOTE: 9.8 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14840.496      265.219     5595.6
+                 (ns/day)    (hour/ns)
+Performance:       52.124        0.460
+
+GROMACS reminds you: "Furious activity is no substitute for understanding." (H.H. Williams)
+
+  [run 6] elapsed 449s
+
+################################################################
+# [native] hEGFRDimerPair  run 7/7  recorded 6/6  @ 2026-05-16T00:44:32+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+Data prefix:  /users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work/run7 -nb gpu -pme gpu -bonded gpu -nsteps 100000 -resetstep 20000 -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/hEGFRDimerPair/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.333
+
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+This run has forced use of 'GPU-aware MPI'. However, GROMACS cannot determine if underlying MPI is GPU-aware. Check the GROMACS install guide for recommendations for GPU-aware support. If you observe failures at runtime, try unsetting the GMX_FORCE_GPU_AWARE_MPI environment variable.
+
+On host nid006651 1 GPU selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Her1-Her1'
+100000 steps,    200.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+step 20000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 20.3%.
+ The balanceable part of the MD step is 51%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 10.5%.
+ Average PME mesh/force load: 0.808
+ Part of the total run time spent waiting due to PP/PME imbalance: 0.9 %
+
+NOTE: 10.5 % of the available CPU time was lost due to load imbalance
+      in the domain decomposition.
+      You can consider manually changing the decomposition (option -dd);
+      e.g. by using fewer domains along the box dimension in which there is
+      considerable inhomogeneity in the simulated system.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    14921.190      266.683     5595.1
+                 (ns/day)    (hour/ns)
+Performance:       51.837        0.463
+
+GROMACS reminds you: "Take what you want, but just what you need for survival" (Joe Jackson)
+
+  [run 7] elapsed 451s
+================================================================
+ALL RUNS COMPLETE
+  CSV : results/gromacs_hEGFRDimerPair_native_18659047.csv
+  Log : results/gromacs_hEGFRDimerPair_native_18659047.log
+  Meta: results/gromacs_hEGFRDimerPair_native_18659047.meta
+  Work: /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_hEGFRDimerPair_native_18659047_work
+================================================================

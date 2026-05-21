@@ -1,0 +1,74 @@
+STACK=native  NODE_A=nid007956  NODE_B=nid007957
+################# NATIVE STACK (HSA_ENABLE_SDMA=0) #################
+
+Lmod is automatically replacing "craype-x86-rome" with "craype-x86-trento".
+
+
+Lmod is automatically replacing "cce/19.0.0" with "amd/6.3.4".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-amd/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+[setup_native] srun=/usr/bin/srun  OSU=/pfs/lustrep2/users/joglekar/code/osu-native/osu-micro-benchmarks-7.5/c/mpi/pt2pt/standard
+
+# [native sdma=0] osu_allreduce  N=16  nodes=2
+  [run 1/6] warm-up - 18:38:09
+  [run 1/6] done in 6s
+  [run 2/6] recording - 18:38:15
+  [run 2/6] done in 2s
+  [run 3/6] recording - 18:38:17
+  [run 3/6] done in 1s
+  [run 4/6] recording - 18:38:18
+  [run 4/6] done in 2s
+  [run 5/6] recording - 18:38:20
+  [run 5/6] done in 2s
+  [run 6/6] recording - 18:38:22
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_alltoall  N=16  nodes=2
+  [run 1/6] warm-up - 18:38:23
+  [run 1/6] done in 3s
+  [run 2/6] recording - 18:38:26
+  [run 2/6] done in 2s
+  [run 3/6] recording - 18:38:28
+  [run 3/6] done in 3s
+  [run 4/6] recording - 18:38:31
+  [run 4/6] done in 2s
+  [run 5/6] recording - 18:38:33
+  [run 5/6] done in 2s
+  [run 6/6] recording - 18:38:35
+  [run 6/6] done in 4s
+
+# [native sdma=0] osu_bcast  N=16  nodes=2
+  [run 1/6] warm-up - 18:38:39
+  [run 1/6] done in 2s
+  [run 2/6] recording - 18:38:41
+  [run 2/6] done in 1s
+  [run 3/6] recording - 18:38:42
+  [run 3/6] done in 2s
+  [run 4/6] recording - 18:38:44
+  [run 4/6] done in 2s
+  [run 5/6] recording - 18:38:46
+  [run 5/6] done in 2s
+  [run 6/6] recording - 18:38:48
+  [run 6/6] done in 1s
+
+# [native sdma=0] osu_allgather  N=16  nodes=2
+  [run 1/6] warm-up - 18:38:49
+  [run 1/6] done in 2s
+  [run 2/6] recording - 18:38:51
+  [run 2/6] done in 2s
+  [run 3/6] recording - 18:38:53
+  [run 3/6] done in 3s
+  [run 4/6] recording - 18:38:56
+  [run 4/6] done in 2s
+  [run 5/6] recording - 18:38:58
+  [run 5/6] done in 3s
+  [run 6/6] recording - 18:39:01
+  [run 6/6] done in 2s
+
+ALL BENCHMARKS COMPLETE  CSV=results/osu_collectives_native_18750651.csv

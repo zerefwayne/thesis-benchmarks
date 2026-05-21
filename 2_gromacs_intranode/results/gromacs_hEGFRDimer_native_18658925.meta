@@ -1,0 +1,42 @@
+# === node metadata @ 2026-05-15T23:47:02+03:00 ===
+hostname=nid005001
+slurm_job_id=18658925
+slurm_nodelist=nid005001
+cray_xname=x1100c0s0b1n0
+kernel=6.4.0-150600.23.73_15.0.14-cray_shasta_c
+stack=native
+toolchain=cpeAMD-25.03-VkFFT-rocm
+gmx_mpi_bin=/users/joglekar/EasyBuild/SW/LUMI-25.03/G/GROMACS/2025.1-cpeAMD-25.03-VkFFT-rocm/bin/gmx_mpi
+# rocm-smi topology:
+  
+  
+  ============================ ROCm System Management Interface ============================
+  ======================================= Numa Nodes =======================================
+  GPU[0]		: (Topology) Numa Node: 3
+  GPU[0]		: (Topology) Numa Affinity: 3
+  GPU[1]		: (Topology) Numa Node: 3
+  GPU[1]		: (Topology) Numa Affinity: 3
+  GPU[2]		: (Topology) Numa Node: 1
+  GPU[2]		: (Topology) Numa Affinity: 1
+  GPU[3]		: (Topology) Numa Node: 1
+  GPU[3]		: (Topology) Numa Affinity: 1
+  GPU[4]		: (Topology) Numa Node: 0
+  GPU[4]		: (Topology) Numa Affinity: 0
+  GPU[5]		: (Topology) Numa Node: 0
+  GPU[5]		: (Topology) Numa Affinity: 0
+  GPU[6]		: (Topology) Numa Node: 2
+  GPU[6]		: (Topology) Numa Affinity: 2
+  GPU[7]		: (Topology) Numa Node: 2
+  GPU[7]		: (Topology) Numa Affinity: 2
+  ================================== End of ROCm SMI Log ===================================
+# gmx_mpi --version:
+  GROMACS version:     2025.1
+  GPU support:         SYCL (AdaptiveCpp)
+  SIMD instructions:   AVX2_256
+  CPU FFT library:     commercial-fftw-3.3.10-sse2-avx-avx2-avx2_128
+  GPU FFT library:     VkFFT internal (1.3.1) with HIP backend
+  SYCL version:        AdaptiveCpp 25.02.0rocm6
+  SYCL compiler:       /users/joglekar/EasyBuild/SW/LUMI-25.03/G/AdaptiveCpp/25.02.0-cpeAMD-25.03-rocm/lib/cmake/AdaptiveCpp/syclcc-launcher
+  SYCL compiler flags: -Wno-unknown-cuda-version -Wno-unknown-attributes  --acpp-targets="hip:gfx90a" --acpp-clang=/opt/rocm-6.3.4/llvm/bin/clang++ --acpp-rocm-path=/opt/rocm-6.3.4
+  SYCL GPU flags:      -ffast-math -DHIPSYCL_ALLOW_INSTANT_SUBMISSION=1 -DACPP_ALLOW_INSTANT_SUBMISSION=1 -fgpu-inline-threshold=99999 -Wno-deprecated-declarations
+  SYCL targets:        hip:gfx90a

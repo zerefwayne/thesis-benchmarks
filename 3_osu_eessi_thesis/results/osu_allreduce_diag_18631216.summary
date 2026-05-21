@@ -1,9 +1,0 @@
-# Summary of 4-byte allreduce latency by config
-# Generated Thu May 14 18:05:29 EEST 2026 on nid007956
-
-A_ucc_default_verbose                     4B_lat_us=31.55
-B_ucc_no_rccl                             4B_lat_us=2.41
-C_ucc_rccl_only                           ERROR (rc=139)
-D_ucc_no_rccl_ucx_rocm_ipc                4B_lat_us=3.10
-E_no_ucc_baseline                         4B_lat_us=31.57
-xccl_rccl_direct                          4B_lat_us=25.78

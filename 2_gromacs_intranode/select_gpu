@@ -1,0 +1,35 @@
+#!/bin/bash
+# Per-rank GPU selector wrapper — based on the AMD ROCm Blog LUMI GROMACS
+# guide. Maps each MPI rank to exactly one GCD by its local-rank id.
+#
+# Works under both stacks. The fallback chain matters because different
+# launchers set DIFFERENT env vars for "this rank's local id":
+#
+#   - native srun         -> SLURM_LOCALID
+#   - OpenMPI 4.x mpirun  -> OMPI_COMM_WORLD_LOCAL_RANK
+#   - OpenMPI 5.x/PRRTE   -> may set OMPI_COMM_WORLD_NODE_RANK, or only PMIX_RANK
+#   - MPICH/PMI launchers -> PMI_RANK / MPI_LOCALRANKID
+#
+# Empirically observed: under EESSI 2025.06's OpenMPI (5.x + PRRTE) on
+# LUMI, neither SLURM_LOCALID nor OMPI_COMM_WORLD_LOCAL_RANK was set in
+# the wrapped process — every rank fell through to 0 and the mdrun log
+# showed all 8 ranks mapped to GCD 0:
+#   "Mapping of GPU IDs ... PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PP:0,PME:0"
+# Adding the global-rank fallbacks (which equal local rank on a single-node
+# job) is the cleanest fix.
+#
+# For our single-node 8-rank / 8-GCD layout, each rank ends up with one GCD.
+
+LOCAL_ID="${SLURM_LOCALID:-}"
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${OMPI_COMM_WORLD_LOCAL_RANK:-}"
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${OMPI_COMM_WORLD_NODE_RANK:-}"
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${MPI_LOCALRANKID:-}"
+# Global-rank fallbacks — fine on single-node where global == local.
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${OMPI_COMM_WORLD_RANK:-}"
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${PMIX_RANK:-}"
+[[ -z "$LOCAL_ID" ]] && LOCAL_ID="${PMI_RANK:-0}"
+
+GPUS_PER_NODE="${SLURM_GPUS_PER_NODE:-8}"
+
+export ROCR_VISIBLE_DEVICES=$(( LOCAL_ID % GPUS_PER_NODE ))
+exec "$@"

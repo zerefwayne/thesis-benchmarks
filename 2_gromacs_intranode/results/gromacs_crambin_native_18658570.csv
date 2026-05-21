@@ -1,0 +1,7 @@
+benchmark,stack,jobid,run,perf_ns_per_day,wall_s,core_s,ntmpi,toolchain
+crambin,native,18658570,2,413.057,20.918,1163.792,8,cpeAMD-25.03-VkFFT-rocm
+crambin,native,18658570,3,414.003,20.870,1161.024,8,cpeAMD-25.03-VkFFT-rocm
+crambin,native,18658570,4,382.546,22.586,1257.167,8,cpeAMD-25.03-VkFFT-rocm
+crambin,native,18658570,5,408.951,21.128,1175.513,8,cpeAMD-25.03-VkFFT-rocm
+crambin,native,18658570,6,398.681,21.672,1206.017,8,cpeAMD-25.03-VkFFT-rocm
+crambin,native,18658570,7,413.521,20.894,1162.550,8,cpeAMD-25.03-VkFFT-rocm

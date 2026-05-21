@@ -1,7 +1,0 @@
-# allreduce N=6 1MiB cliff diagnostic — Thu May 14 18:35:48 EEST 2026
-
-A_baseline_default_alg                        512KiB=  130.09 us   1MiB=  635.09 us
-B_force_knomial                               512KiB=  152.34 us   1MiB=  353.68 us
-C_force_ring                                  512KiB=  135.40 us   1MiB=  625.30 us
-D_force_sra_knomial                           512KiB=  105.88 us   1MiB=  613.31 us
-E_alt_gcds_0,1,4,5,6,7                        512KiB=  119.46 us   1MiB=  634.20 us

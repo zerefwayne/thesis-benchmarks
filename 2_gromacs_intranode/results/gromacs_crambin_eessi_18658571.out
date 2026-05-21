@@ -1,0 +1,411 @@
+################# EESSI STACK ##################
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  gmx_mpi=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+
+################################################################
+# [eessi] crambin  run 1/7  WARM-UP (discarded)  @ 2026-05-15T23:29:41+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run1 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 6.2%.
+ The balanceable part of the MD step is 73%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 4.5%.
+ Average PME mesh/force load: 0.464
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.7 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1242.429       22.204     5595.6
+                 (ns/day)    (hour/ns)
+Performance:      389.132        0.062
+
+GROMACS reminds you: "Check Your Input" (D. Van Der Spoel)
+
+  [run 1] elapsed 121s
+
+################################################################
+# [eessi] crambin  run 2/7  recorded 1/6  @ 2026-05-15T23:31:42+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run2 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 4.7%.
+ The balanceable part of the MD step is 72%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.4%.
+ Average PME mesh/force load: 0.463
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.4 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1144.329       20.451     5595.4
+                 (ns/day)    (hour/ns)
+Performance:      422.473        0.057
+
+GROMACS reminds you: "Since the mathematicians have invaded the theory of relativity I do not understand it myself any more." (Albert Einstein)
+
+  [run 2] elapsed 104s
+
+################################################################
+# [eessi] crambin  run 3/7  recorded 2/6  @ 2026-05-15T23:33:26+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run3 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 4.9%.
+ The balanceable part of the MD step is 72%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.6%.
+ Average PME mesh/force load: 0.409
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.7 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1164.994       20.823     5594.9
+                 (ns/day)    (hour/ns)
+Performance:      414.943        0.058
+
+GROMACS reminds you: "It is Lunchtime" (A.R. Van Buuren)
+
+  [run 3] elapsed 122s
+
+################################################################
+# [eessi] crambin  run 4/7  recorded 3/6  @ 2026-05-15T23:35:28+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run4 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 5.3%.
+ The balanceable part of the MD step is 72%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.8%.
+ Average PME mesh/force load: 0.388
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.9 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1166.276       20.844     5595.2
+                 (ns/day)    (hour/ns)
+Performance:      414.512        0.058
+
+GROMACS reminds you: "Move Over Hogey Bear" (Urban Dance Squad)
+
+  [run 4] elapsed 119s
+
+################################################################
+# [eessi] crambin  run 5/7  recorded 4/6  @ 2026-05-15T23:37:27+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run5 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 4.9%.
+ The balanceable part of the MD step is 72%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.6%.
+ Average PME mesh/force load: 0.408
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.7 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1175.996       21.018     5595.2
+                 (ns/day)    (hour/ns)
+Performance:      411.088        0.058
+
+GROMACS reminds you: "Let us not get carried away with our ideas and take our models too seriously" (Nancy Swanson)
+
+  [run 5] elapsed 104s
+
+################################################################
+# [eessi] crambin  run 6/7  recorded 5/6  @ 2026-05-15T23:39:11+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run6 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 5.2%.
+ The balanceable part of the MD step is 73%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.7%.
+ Average PME mesh/force load: 0.530
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.3 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1189.884       21.269     5594.6
+                 (ns/day)    (hour/ns)
+Performance:      406.241        0.059
+
+GROMACS reminds you: "A good sign these days when you're listening to someone talk about this epidemic is the number of times they say 'We don't know yet'. The more of those, the better." (Derek Lowe)
+
+  [run 6] elapsed 119s
+
+################################################################
+# [eessi] crambin  run 7/7  recorded 6/6  @ 2026-05-15T23:41:11+03:00
+################################################################
+                      :-) GROMACS - gmx mdrun, 2025.1 (-:
+
+Executable:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL/bin/gmx_mpi
+Data prefix:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/GROMACS/2025.1-rfoss-2025a-SYCL
+Working dir:  /pfs/lustrep2/users/joglekar/code/thesis-benchmarks/6_gromacs
+Command line:
+  gmx_mpi mdrun -s /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr -deffnm /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work/run7 -nb gpu -pme gpu -update gpu -bonded gpu -nsteps 100000 -resethway -noconfout -npme 1
+
+Reading file /users/joglekar/code/thesis-benchmarks/6_gromacs/GROMACS_Benchmark_Suite/HECBioSim/Crambin/benchmark.tpr, VERSION 5.1.4 (single precision)
+Note: file tpx version 103, software tpx version 137
+Overriding nsteps with value passed on the command line: 100000 steps, 200 ps
+Changing nstlist from 10 to 100, rlist from 1.2 to 1.347
+
+
+On host nid005001 8 GPUs selected for this run.
+Mapping of GPU IDs to the 8 GPU tasks in the 8 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3,PP:4,PP:5,PP:6,PME:7
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+GPU direct communication will be used between MPI ranks.
+Using 8 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 7 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Owns Many ACres of Sand'
+100000 steps,    200.0 ps.
+
+step 50000: resetting all time and cycle counters
+
+
+Dynamic load balancing report:
+ DLB got disabled because it was unsuitable to use.
+ Average load imbalance: 5.3%.
+ The balanceable part of the MD step is 73%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.8%.
+ Average PME mesh/force load: 0.436
+ Part of the total run time spent waiting due to PP/PME imbalance: 2.5 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1199.097       21.432     5594.9
+                 (ns/day)    (hour/ns)
+Performance:      403.143        0.060
+
+GROMACS reminds you: "As always in life, people want a simple answer... and it's always wrong." (Marie Daly)
+
+  [run 7] elapsed 168s
+
+================================================================
+ALL RUNS COMPLETE
+  CSV : results/gromacs_crambin_eessi_18658571.csv
+  Log : results/gromacs_crambin_eessi_18658571.log
+  Meta: results/gromacs_crambin_eessi_18658571.meta
+  Work: /users/joglekar/code/thesis-benchmarks/6_gromacs/results/gromacs_crambin_eessi_18658571_work
+================================================================
