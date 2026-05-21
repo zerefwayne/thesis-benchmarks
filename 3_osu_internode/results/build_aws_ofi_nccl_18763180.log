@@ -1,0 +1,10 @@
+=== EESSI dependency paths ===
+EBROOTLIBFABRIC=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/libfabric/1.22.0-rocm-compilers-19.0.0-ROCm-6.4.1
+EBROOTHWLOC=/cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/software/hwloc/2.11.2-GCCcore-14.2.0
+EBROOTROCMMINLLVM=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/ROCm-LLVM/19.0.0-GCCcore-14.2.0-ROCm-6.4.1
+EBROOTRCCL=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/RCCL/2.22.3-rocm-compilers-19.0.0-ROCm-6.4.1
+=== locating HIP runtime ===
+ROCM(HIP)=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/HIP/6.4.1-rocm-compilers-19.0.0-ROCm-6.4.1
+  hip_runtime.h: /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/HIP/6.4.1-rocm-compilers-19.0.0-ROCm-6.4.1/include/hip/hip_runtime.h
+  libamdhip64:   /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/HIP/6.4.1-rocm-compilers-19.0.0-ROCm-6.4.1/lib/libamdhip64.so
+  libfabric.so:  /users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/libfabric/1.22.0-rocm-compilers-19.0.0-ROCm-6.4.1/lib/libfabric.so

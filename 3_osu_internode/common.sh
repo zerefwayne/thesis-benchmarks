@@ -95,6 +95,13 @@ setup_eessi() {
     export FI_PROVIDER=cxi
     export FI_CXI_RX_MATCH_MODE=hybrid          # avoid HW match-list exhaustion
     export FI_CXI_DEFAULT_CQ_SIZE=131072        # avoid Cassini EQ overflow
+    # Tiny device-buffer sends (<256 B, the Cassini IDC inline limit) otherwise
+    # take the IDC inline path, which stages the payload GPU->host per send
+    # (~17.5-20.6 us on osu_latency -d rocm D D). Disabling IDC for non-inject
+    # sends routes them through DMA, reading GPU memory directly via ROCr/HMEM:
+    # tiny-msg latency drops to ~2.9-3.2 us (matches/beats native Cray MPICH).
+    # Confirmed jobs 18761810 (noidc) == 18761811 (+inject_size=0, no extra gain).
+    export FI_CXI_DISABLE_NON_INJECT_MSG_IDC=1
     export CXI_FORK_SAFE=1
     # ranks on the allocation head node otherwise fail to get a CXI service
     export PRTE_MCA_ras_base_launch_orted_on_hn=1

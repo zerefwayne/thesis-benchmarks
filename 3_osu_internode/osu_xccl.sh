@@ -39,8 +39,11 @@ NUM_RUNS=6; WARMUP_RUN=1; RUN_TIMEOUT=600
 WRAPPER="${RESULT_DIR}/wrap_xccl_${SLURM_JOB_ID}.sh"
 cat > "$WRAPPER" <<'EOF'
 #!/bin/bash
-local_rank=${SLURM_LOCALID:-${OMPI_COMM_WORLD_LOCAL_RANK:-0}}
-export ROCR_VISIBLE_DEVICES=$local_rank
+# RCCL/OSU-xccl does its OWN hipSetDevice(local_rank), so each rank must SEE all
+# 8 GCDs (unlike the MPI collectives, which use a single ROCR-isolated device).
+# Isolating to one GPU here makes every rank's hipSetDevice land on the same
+# physical device -> "Duplicate GPU detected" -> RCCL init abort. Expose all.
+export ROCR_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 exec "$@"
 EOF
 chmod +x "$WRAPPER"
@@ -83,6 +86,34 @@ run_xccl() {
 XCCL_BINS=(osu_xccl_allreduce osu_xccl_alltoall osu_xccl_broadcast osu_xccl_allgather)
 
 setup_eessi || { echo "ERROR: setup_eessi failed" >&2; exit 1; }
+
+# --- RCCL inter-node network selection ---------------------------------------
+# Job 18751009 failed at RCCL init ("unhandled system error") because NO NCCL_*
+# env was set: RCCL probed for an inter-node net, found no usable transport
+# (LUMI has no IB; the default socket path needs the right interface), and
+# aborted. Point RCCL at the Slingshot HSN NICs and the libfabric cxi provider.
+#
+# RCCL uses a net plugin (librccl-net.so / aws-ofi-rccl) to reach libfabric/cxi.
+# If EESSI provides aws-ofi-rccl, expose it via NCCL_NET_PLUGIN / LD_LIBRARY_PATH
+# (set EBROOTAWSMINOFIMINRCCL below). Without the plugin, RCCL falls back to its
+# socket transport over hsn*, which still needs NCCL_SOCKET_IFNAME.
+export NCCL_SOCKET_IFNAME=hsn0,hsn1,hsn2,hsn3
+export FI_PROVIDER=cxi
+export NCCL_NET_GDR_LEVEL=3            # PHB: GPUDirect RDMA GPU<->NIC
+export NCCL_DEBUG=INFO
+export NCCL_DEBUG_SUBSYS=INIT,NET,COLL
+
+# aws-ofi-nccl plugin (librccl-net.so) — scratch build against the hermetic cxi
+# libfabric (job 18763341). RCCL dlopens it for inter-node transport over cxi.
+AWS_OFI_NCCL_LIB=/users/joglekar/eessi/aws-ofi-nccl-scratch/lib
+if [[ -f "${AWS_OFI_NCCL_LIB}/librccl-net.so" ]]; then
+    export LD_LIBRARY_PATH="${AWS_OFI_NCCL_LIB}:${LD_LIBRARY_PATH}"
+    export NCCL_NET_PLUGIN="${AWS_OFI_NCCL_LIB}/librccl-net.so"
+    echo "[osu_xccl] aws-ofi-nccl plugin: ${NCCL_NET_PLUGIN}" | tee -a "$LOG_FILE"
+else
+    echo "[osu_xccl] WARNING: aws-ofi-nccl plugin missing; RCCL will use socket transport over hsn*" | tee -a "$LOG_FILE"
+fi
+echo "[osu_xccl] NCCL_SOCKET_IFNAME=$NCCL_SOCKET_IFNAME FI_PROVIDER=$FI_PROVIDER NCCL_NET_GDR_LEVEL=$NCCL_NET_GDR_LEVEL" | tee -a "$LOG_FILE"
 
 # XCCL talks to RCCL directly; do not route via UCC. Don't pass -d (XCCL
 # binaries accept accelerator type via build flags — passing -d caused (null)

@@ -1,0 +1,66 @@
+VARIANT=a2a_pairwise  NODE_A=nid005012  NODE_B=nid005013
+############## EESSI coll tune  variant=a2a_pairwise  (SDMA=0) ##############
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+[setup_eessi] FI_PROVIDER=cxi  OMPI_MCA_pml=cm/ofi
+=== fi_info -e | grep -i FI_CXI_ (supported knobs) ===
+grep: (standard input): binary file matches
+=== applied env ===
+  FI_CXI_DEFAULT_CQ_SIZE=131072
+  FI_CXI_DISABLE_NON_INJECT_MSG_IDC=1
+  FI_CXI_RX_MATCH_MODE=hybrid
+  OMPI_MCA_coll_tuned_alltoall_algorithm=2
+  OMPI_MCA_coll_tuned_use_dynamic_rules=1
+  OMPI_MCA_coll_ucc_enable=0
+
+# [a2a_pairwise] osu_allreduce  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:53:08
+  [run 1/4] done in 24s
+  [run 2/4] recording - 14:53:32
+  [run 2/4] done in 5s
+  [run 3/4] recording - 14:53:37
+  [run 3/4] done in 6s
+  [run 4/4] recording - 14:53:43
+  [run 4/4] done in 5s
+
+# [a2a_pairwise] osu_alltoall  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:53:48
+  [run 1/4] done in 8s
+  [run 2/4] recording - 14:53:56
+  [run 2/4] done in 7s
+  [run 3/4] recording - 14:54:03
+  [run 3/4] done in 7s
+  [run 4/4] recording - 14:54:10
+  [run 4/4] done in 8s
+
+# [a2a_pairwise] osu_bcast  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:54:18
+  [run 1/4] done in 5s
+  [run 2/4] recording - 14:54:23
+  [run 2/4] done in 4s
+  [run 3/4] recording - 14:54:27
+  [run 3/4] done in 4s
+  [run 4/4] recording - 14:54:31
+slurmstepd: error: *** JOB 18762835 ON nid005012 CANCELLED AT 2026-05-21T14:54:32 ***

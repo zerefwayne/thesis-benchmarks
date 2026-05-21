@@ -1,0 +1,62 @@
+VARIANT=noidc_noinject  NODE_A=nid007974  NODE_B=nid007975
+############### EESSI STACK  variant=noidc_noinject  (SDMA=0) ###############
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+[setup_eessi] FI_PROVIDER=cxi  OMPI_MCA_pml=cm/ofi
+[variant=noidc_noinject] OSU_MEM='D D'  IDC_DISABLE=1  INJECT=0
+
+################################################################
+# [eessi variant=noidc_noinject] inter_GCD0_GCD0  GCD(0,0)  nic=nic_via_xgmi
+################################################################
+  [run 1/6] warm-up - 13:29:55
+  [run 1/6] done in 21s
+  [run 2/6] recording - 13:30:17
+  [run 2/6] done in 4s
+  [run 3/6] recording - 13:30:20
+  [run 3/6] done in 4s
+  [run 4/6] recording - 13:30:24
+  [run 4/6] done in 4s
+  [run 5/6] recording - 13:30:28
+  [run 5/6] done in 4s
+  [run 6/6] recording - 13:30:32
+  [run 6/6] done in 4s
+
+################################################################
+# [eessi variant=noidc_noinject] inter_GCD7_GCD7  GCD(7,7)  nic=nic_local
+################################################################
+  [run 1/6] warm-up - 13:30:36
+  [run 1/6] done in 4s
+  [run 2/6] recording - 13:30:40
+  [run 2/6] done in 4s
+  [run 3/6] recording - 13:30:44
+  [run 3/6] done in 4s
+  [run 4/6] recording - 13:30:48
+  [run 4/6] done in 4s
+  [run 5/6] recording - 13:30:52
+  [run 5/6] done in 4s
+  [run 6/6] recording - 13:30:56
+  [run 6/6] done in 4s
+
+VARIANT=noidc_noinject COMPLETE  CSV=results/osu_latency_noidc_noinject_eessi_18761811.csv

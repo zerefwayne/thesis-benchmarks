@@ -1,0 +1,93 @@
+VARIANT=verify  NODE_A=nid005017  NODE_B=nid005018
+############### EESSI STACK  variant=verify  (SDMA=0) ###############
+[variant=verify] OSU_MEM='D D'  IDC_DISABLE=unset  INJECT=default
+=== fi_info -p cxi ===
+provider: cxi
+    fabric: cxi
+    domain: cxi0
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi1
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi2
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+provider: cxi
+    fabric: cxi
+    domain: cxi3
+    version: 0.1
+    type: FI_EP_RDM
+    protocol: FI_PROTO_CXI
+=== one verbose run (mtl_base_verbose=100, FI_LOG warn/cxi) ===
+[nid005017:74240] mca: base: components_register: registering framework mtl components
+[nid005017:74240] mca: base: components_register: found loaded component ofi
+[nid005017:74240] mca: base: components_register: component ofi register function successful
+[nid005017:74240] mca: base: components_open: opening mtl components
+[nid005017:74240] mca: base: components_open: found loaded component ofi
+[nid005017:74240] mca: base: components_open: component ofi open function successful
+[nid005018:31661] mca: base: components_register: registering framework mtl components
+[nid005018:31661] mca: base: components_register: found loaded component ofi
+[nid005018:31661] mca: base: components_register: component ofi register function successful
+[nid005018:31661] mca: base: components_open: opening mtl components
+[nid005018:31661] mca: base: components_open: found loaded component ofi
+[nid005018:31661] mca: base: components_open: component ofi open function successful
+[nid005017:74240] mca:base:select: Auto-selecting mtl components
+[nid005017:74240] mca:base:select:(  mtl) Querying component [ofi]
+[nid005017:74240] mca:base:select:(  mtl) Query of component [ofi] set priority to 25
+[nid005017:74240] mca:base:select:(  mtl) Selected component [ofi]
+[nid005017:74240] select: initializing mtl component ofi
+[nid005018:31661] mca:base:select: Auto-selecting mtl components
+[nid005018:31661] mca:base:select:(  mtl) Querying component [ofi]
+[nid005018:31661] mca:base:select:(  mtl) Query of component [ofi] set priority to 25
+[nid005018:31661] mca:base:select:(  mtl) Selected component [ofi]
+[nid005018:31661] select: initializing mtl component ofi
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+[nid005017:74240] select: init returned success
+[nid005017:74240] select: component ofi selected
+libfabric:31661:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359283::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359284::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359284::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359284::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359284::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359284::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+[nid005018:31661] select: init returned success
+[nid005018:31661] select: component ofi selected
+
+# OSU MPI-ROCM Latency Test v7.5
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+libfabric:74240:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:74240:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+libfabric:31661:1779359290::core:core:rocr_is_addr_valid():622<warn> Failed to perform hsa_agent_get_info: HSA_STATUS_ERROR_INVALID_AGENT: The agent is invalid.
+1                      20.58
+2                      20.61
+4                      20.69
+8                      20.54
+16                     20.59
+32                     20.52
+64                     20.72
+128                    21.10
+256                     3.23
+[nid005017:74240] mca: base: close: component ofi closed
+[nid005017:74240] mca: base: close: unloading component ofi
+[nid005018:31661] mca: base: close: component ofi closed
+[nid005018:31661] mca: base: close: unloading component ofi
+VERIFY COMPLETE  LOG=results/osu_latency_verify_eessi_18761764.log

@@ -1,0 +1,81 @@
+VARIANT=bigbuf  NODE_A=nid005025  NODE_B=nid007977
+############## EESSI coll tune  variant=bigbuf  (SDMA=0) ##############
+Found EESSI repo @ /cvmfs/software.eessi.io/versions/2025.06!
+archdetect says x86_64/amd/zen3
+archdetect could not detect any accelerators
+Using x86_64/amd/zen3 as software subdirectory.
+Found Lmod configuration file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/lmodrc.lua
+Found Lmod SitePackage.lua file at /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/.lmod/SitePackage.lua
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3 as the site extension directory for installations.
+Using  as the site extension directory for accelerated installations.
+Using /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all as the directory to be added to MODULEPATH.
+Using /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all as the site extension directory to be added to MODULEPATH.
+Initializing Lmod...
+Prepending /cvmfs/software.eessi.io/versions/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Prepending site path /cvmfs/software.eessi.io/host_injections/2025.06/software/linux/x86_64/amd/zen3/modules/all to $MODULEPATH...
+Environment set up to use EESSI (2025.06), have fun!
+-- Using /tmp/$USER as a temporary working directory for installations, you can
+override this by setting the environment variable WORKING_DIR and reloading the
+module (e.g., /dev/shm is a common option) 
+Configuring for use of EESSI_USER_INSTALL under /users/joglekar/eessi
+-- To create installations for EESSI, you _must_ have write permissions to
+/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3 
+-- You may wish to configure a sources directory for EasyBuild (for example,
+via setting the environment variable EASYBUILD_SOURCEPATH) to allow you to
+reuse existing sources for packages. 
+[setup_eessi] mpirun=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OpenMPI/5.0.7-rocm-compilers-19.0.0-ROCm-6.4.1/bin/mpirun  EBROOT=/users/joglekar/eessi/versions/2025.06/software/linux/x86_64/amd/zen3/software/OSU-Micro-Benchmarks/7.5-rompi-2025a
+[setup_eessi] FI_PROVIDER=cxi  OMPI_MCA_pml=cm/ofi
+=== fi_info -e | grep -i FI_CXI_ (supported knobs) ===
+grep: (standard input): binary file matches
+=== applied env ===
+  FI_CXI_DEFAULT_CQ_SIZE=131072
+  FI_CXI_DEFAULT_TX_SIZE=2048
+  FI_CXI_DISABLE_NON_INJECT_MSG_IDC=1
+  FI_CXI_OFLOW_BUF_MIN_POSTED=16
+  FI_CXI_OFLOW_BUF_SIZE=16777216
+  FI_CXI_REQ_BUF_MIN_POSTED=16
+  FI_CXI_REQ_BUF_SIZE=16777216
+  FI_CXI_RX_MATCH_MODE=hybrid
+  OMPI_MCA_coll_ucc_enable=0
+
+# [bigbuf] osu_allreduce  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:33:18
+  [run 1/4] done in 23s
+  [run 2/4] recording - 14:33:41
+  [run 2/4] done in 6s
+  [run 3/4] recording - 14:33:47
+  [run 3/4] done in 5s
+  [run 4/4] recording - 14:33:52
+  [run 4/4] done in 6s
+
+# [bigbuf] osu_alltoall  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:33:58
+  [run 1/4] done in 17s
+  [run 2/4] recording - 14:34:15
+  [run 2/4] done in 19s
+  [run 3/4] recording - 14:34:34
+  [run 3/4] done in 18s
+  [run 4/4] recording - 14:34:52
+  [run 4/4] done in 19s
+
+# [bigbuf] osu_bcast  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:35:11
+  [run 1/4] done in 5s
+  [run 2/4] recording - 14:35:16
+  [run 2/4] done in 4s
+  [run 3/4] recording - 14:35:20
+  [run 3/4] done in 5s
+  [run 4/4] recording - 14:35:25
+  [run 4/4] done in 4s
+
+# [bigbuf] osu_allgather  N=16  nodes=2  mem='-d rocm'
+  [run 1/4] warm-up - 14:35:29
+  [run 1/4] done in 8s
+  [run 2/4] recording - 14:35:37
+  [run 2/4] done in 8s
+  [run 3/4] recording - 14:35:45
+  [run 3/4] done in 8s
+  [run 4/4] recording - 14:35:53
+  [run 4/4] done in 8s
+
+VARIANT=bigbuf COMPLETE  CSV=results/osu_coll_bigbuf_eessi_18762409.csv
