@@ -1,0 +1,43 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# HPE CXI driver USERSPACE (UAPI) headers — the kernel/userspace ioctl
+# interface for the Slingshot-11 NIC. Build-time dependency of libcxi and of
+# libfabric's `cxi` provider (which looks for uapi/misc/cxi.h).
+#
+# Headers only — the actual kernel module is NOT built; LUMI's running
+# cray-cxi-driver kernel module provides /dev/cxi*. Version 1.0.0 = LUMI's
+# deployed cray-cxi-driver RPM; sourced from the matching SHS 12.0.2 tag so the
+# UAPI struct/ioctl layout is identical to LUMI's loaded module.
+#
+# Hermetic: nothing taken from the host's /usr/include.
+
+easyblock = 'Tarball'
+
+name = 'cxi-driver-headers'
+version = '1.0.0'
+
+homepage = 'https://github.com/HewlettPackard/shs-cxi-driver'
+description = """Userspace (UAPI) headers for the HPE Slingshot-11 CXI driver:
+uapi/misc/cxi.h and linux/cxi.h. The kernel module itself is not built."""
+
+toolchain = {'name': 'system', 'version': 'system'}
+
+# git tag release/shs-12.0.2 matches cray-cxi-driver 1.0.0 on LUMI.
+sources = [
+    {'filename': SOURCE_TAR_GZ, 'git_config': {'url': 'https://github.com/HewlettPackard', 'repo_name': 'shs-cxi-driver', 'tag': 'release/shs-12.0.2', 'keep_git_dir': False}},
+]
+
+
+# The repo carries kernel-module sources too; Tarball copies everything but
+# only include/ is consumed. The cxi-driver `-devel` RPM installs exactly two
+# headers: include/uapi/misc/cxi.h and include/linux/cxi.h. VERIFY after the
+# first build that $EBROOTCXIMINDRIVERMINHEADERS/include/uapi/misc/cxi.h exists;
+# if the repo nests sources under a subdir, set `start_dir` accordingly or
+# prune with postinstallcmds. Do NOT run `make` (no kernel module build).
+
+sanity_check_paths = {
+    'files': ['include/uapi/misc/cxi.h'],
+    'dirs': ['include'],
+}
+
+moduleclass = 'lib'

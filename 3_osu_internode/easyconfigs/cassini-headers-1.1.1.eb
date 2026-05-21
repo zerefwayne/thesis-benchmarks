@@ -1,0 +1,41 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# HPE Cassini (Slingshot-11 NIC) hardware-definition headers — a build-time
+# dependency of libcxi and of libfabric's `cxi` provider.
+#
+# Headers only, no compilation. Version 1.1.1 = LUMI's deployed
+# `cray-cassini-headers-user` RPM; sourced from the matching SHS release tag so
+# the whole CXI stack stays ABI-aligned with LUMI's SHS 12.0.x.
+#
+# Hermetic: built entirely from the HPE source repo, nothing taken from the
+# host's /usr/include.
+
+easyblock = 'Tarball'
+
+name = 'cassini-headers'
+version = '1.1.1'
+
+homepage = 'https://github.com/HewlettPackard/shs-cassini-headers'
+description = """Cassini ASIC register and user-API headers for the HPE
+Slingshot-11 interconnect. Consumed by libcxi and the libfabric cxi provider."""
+
+toolchain = {'name': 'system', 'version': 'system'}
+
+# git tag release/shs-12.0.1 matches cray-cassini-headers-user 1.1.1 on LUMI.
+sources = [
+    {'filename': SOURCE_TAR_GZ, 'git_config': {'url': 'https://github.com/HewlettPackard', 'repo_name': 'shs-%(name)s', 'tag': 'release/shs-12.0.1', 'keep_git_dir': False}},
+]
+
+
+# Tarball copies the extracted repo into installdir. The repo top level carries
+# include/ (cassini_user_defs.h, cxi_prov_hw.h, ...) and share/cassini-headers/
+# (csr_defs.json). VERIFY after first build that $EBROOTCASSINIMINHEADERS/include
+# holds the headers directly; adjust `start_dir` / install_type if the repo
+# nests them under a subdirectory.
+
+sanity_check_paths = {
+    'files': ['include/cassini_user_defs.h', 'include/cxi_prov_hw.h'],
+    'dirs': ['include', 'share/%(name)s'],
+}
+
+moduleclass = 'lib'

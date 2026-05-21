@@ -1,0 +1,93 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# Copy of the stock EESSI OpenMPI-5.0.7 easyconfig — same name, version and
+# toolchain. Two deviations from upstream, both required to build a hermetic
+# CXI stack on a LUMI compute node:
+# 1. the `libfabric` dependency is pinned to 1.22.0 (the CXI-capable
+# shs-libfabric in this directory) instead of stock 2.0.0 — OFI 2.0.0's
+# cxi provider cannot build against a SHS 12.0.2 system (see the libfabric
+# easyconfig);
+# 2. `--without-psm2 --without-usnic` in configopts — stops OpenMPI's
+# configure from linking host /usr/lib64 RDMA libraries (see the configopts
+# comment below).
+# Rebuilding OpenMPI against the CXI libfabric makes its OFI MTL/BTL reach
+# Slingshot; build order + MODULEPATH precedence are handled by
+# build_eessi_cxi.sh.
+#
+# Included here so easyconfigs/ is a complete, self-contained build set. Keep
+# it in sync with the upstream easyconfig (apart from these two deviations).
+
+name = 'OpenMPI'
+version = '5.0.7'
+
+homepage = 'https://www.open-mpi.org/'
+description = "The Open MPI Project is an open source MPI-3 implementation."
+
+toolchain = {'name': 'rocm-compilers', 'version': '19.0.0-ROCm-6.4.1'}
+
+source_urls = ['https://www.open-mpi.org/software/ompi/v%(version_major_minor)s/downloads']
+sources = [SOURCELOWER_TAR_BZ2]
+patches = [
+    '%(name)s-%(version_major_minor)s.7_fix-sshmem-build-failure.patch',
+    '%(name)s-%(version_major_minor)s.7_fix_gpfs_compatibility.patch',
+    '%(name)s-%(version_major_minor)s.3_disable_opal_path_nfs_test.patch',
+]
+checksums = [
+    {SOURCELOWER_TAR_BZ2: '119f2009936a403334d0df3c0d74d5595a32d99497f9b1d41e90019fee2fc2dd'},
+    {'%(name)s-%(version_major_minor)s.7_fix-sshmem-build-failure.patch': '7382a5bbe44c6eff9ab05c8f315a8911d529749655126d4375e44e809bfedec7'},
+    {'%(name)s-%(version_major_minor)s.7_fix_gpfs_compatibility.patch': '9739134ce273a691c9deac6e410510653a88c1542b60dbf8789e4a423447d4f6'},
+    {'%(name)s-%(version_major_minor)s.3_disable_opal_path_nfs_test.patch': '75d4417e35252ea3a19b2792f1b06e9aeb408c253aa4921d77226d57b71dee45'},
+]
+
+builddependencies = [
+    ('pkgconf', '2.3.0', '', ('GCCcore', '14.2.0')),
+    ('Perl', '5.40.0', '', ('GCCcore', '14.2.0')),
+    ('Autotools', '20240712', '', ('GCCcore', '14.2.0')),
+]
+dependencies = [
+    ('zlib', '1.3.1'),
+    ('libevent', '2.1.12', '', ('GCCcore', '14.2.0')),
+    ('libfabric', '1.22.0'),
+    ('xpmem', '2.7.4', '', ('GCCcore', '14.2.0')),
+    ('PMIx', '5.0.6'),
+    ('PRRTE', '3.0.8'),
+    ('hwloc-ROCm', '2.11.2'),
+    ('UCX-ROCm', '1.18.0'),
+    ('UCC-ROCm', '1.3.0'),
+    ('HIP', '6.4.1'),
+]
+
+# Disable building Level Zero components of romio if system dependencies are picked up. Sources are not based on
+# recent Level Zero interface anyway, so there's a high chance that builds fail.
+# See https://github.com/open-mpi/ompi/issues/10235
+preconfigopts = 'sed -i "s/have_ze=yes/have_ze=no/" %(start_dir)s/3rd-party/romio341/mpl/configure && ./autogen.pl --force && '
+configopts = "--with-show-load-errors=no --with-cray-xpmem=no --without-psm2 --without-usnic "
+
+# Skip the mpirun-based sanity-check programs (mpi_test_hello / ring_*).
+# Honored by our patched OpenMPI easyblock (extra_option 'mpi_tests'); the test
+# programs are still COMPILED with mpicc/mpifort/mpif90 (so the wrappers,
+# headers and link path are verified) -- only their mpirun execution is
+# skipped. Reason: this OpenMPI links the HPE Slingshot CXI libfabric, and the
+# easyblock sanity check runs `mpirun` directly on the build host. SLURM does
+# not allocate a CXI VNI to the batch step, so `cxip_gen_auth_key` returns
+# -FI_ENOSYS at MPI_Init -- a runtime/environment limitation, not a defect of
+# the built OpenMPI (configure, make, make check all pass). Keeps the build
+# hermetic and portable: the same easyconfig produces a correct binary on any
+# node with EESSI/CVMFS available, regardless of whether CXI is reachable
+# there. CXI is verified independently: at build time by libfabric's own
+# `fi_info -l | grep cxi` sanity check (proves the provider compiled in), and
+# post-install by `verify_cxi_stack.sh` (2-node, srun, real VNI).
+mpi_tests = False
+
+modextravars = {
+    # Tell UCX to consider all network devices; the default filter can exclude
+    # valid interconnects on heterogeneous hardware EESSI may run on.
+    'OMPI_MCA_opal_common_ucx_devices': 'any',
+    # HPE Slingshot / CXI: force PRRTE to launch an `orted` on the allocation
+    # head node so head-node ranks under `mpirun` get a CXI VNI. Without it,
+    # libfabric's cxip_gen_auth_key fails -FI_ENOSYS at runtime. Known Open MPI
+    # issue on Cray/HPE systems (open-mpi/ompi#12038, #12913).
+    'PRTE_MCA_ras_base_launch_orted_on_hn': '1',
+}
+
+moduleclass = 'mpi'

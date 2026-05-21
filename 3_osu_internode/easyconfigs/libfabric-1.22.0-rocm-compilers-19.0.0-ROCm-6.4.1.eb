@@ -1,0 +1,126 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# CXI-capable libfabric for EESSI on HPE Slingshot-11 systems (LUMI).
+#
+# Built from HPE's `shs-libfabric` fork at the SHS 12.0.2 release tag -- NOT
+# from upstream OFI libfabric. `shs-libfabric` release/shs-12.0.2 IS libfabric
+# 1.22.0 plus HPE's `cxi` provider, version-coherent with the cxi-driver UAPI
+# and libcxi from the same SHS 12.0.2 -- and therefore with LUMI's running cxi
+# kernel module.
+#
+# This coherence is mandatory. An earlier attempt built upstream OFI libfabric
+# 2.0.0 (the stock EESSI version): its `cxi` provider has diverged from HPE's
+# SHS and references a CXI driver flag (CXI_MAP_IOVA_ALLOC) that does NOT exist
+# in the SHS 12.0.2 UAPI -- the build fails with `CXI_MAP_IOVA_ALLOC
+# undeclared`. The provider that matches a SHS release lives only in
+# `shs-libfabric` at that release's tag.
+#
+# 1.22.0 is also the libfabric LUMI's native Cray stack ships on SHS 12, so the
+# rebuilt EESSI OpenMPI takes the same fabric path as native Cray MPICH.
+#
+# FULLY HERMETIC. Every CXI build dependency is an EasyBuild module built from
+# HPE source -- nothing is taken from the host's /usr/include or /usr/lib64:
+# libcxi, cassini-headers, cxi-driver-headers   (all SHS 12.0.2)
+# Unlike OFI 2.0.0's cxi provider, the SHS 12.0.2 provider needs neither
+# json-c nor cURL (confirmed: shs-libfabric prov/cxi/configure.m4).
+#
+# `--enable-cxi` is explicit and a sanity check greps the provider, so a
+# missing dependency aborts the build with a clear error.
+#
+# AMD GPU (ROCr/HMEM) SUPPORT -- also load-bearing. OpenMPI is built
+# `--with-rocm`, so its OFI MTL and BTL request the `FI_HMEM` capability to
+# move ROCm device buffers (the benchmark is `osu_bw -d rocm D D`). A libfabric
+# built without the ROCr HMEM backend reports `FI_HMEM_ROCR not supported`;
+# OpenMPI's `fi_domain` then fails with ENOSYS and its OFI BTL SIGSEGVs in
+# MPI_Init (cxip_fabric -> ofi_fabric_init -> ofi_fabric_insert). So this build
+# enables `--with-rocr`, pointed at the ROCr runtime (libhsa-runtime64 + the
+# hsa/ headers). The option fails configure if ROCr is not found, so it stays
+# fail-loud and hermetic; no host /opt/rocm pickup.
+#
+# TOOLCHAIN. Because it consumes ROCm, this easyconfig is built on the
+# `rocm-compilers` toolchain, not plain `GCCcore` -- the house convention for
+# any easyconfig that needs ROCm-LLVM. `rocm-compilers` carries ROCm-LLVM as a
+# toolchain component (ROCm-LLVM is the toolchain's `altroot`), so
+# $EBROOTROCMMINLLVM is set WITHOUT an explicit dependency, and libfabric is
+# compiled with the same amdclang toolchain as its consumers (OpenMPI,
+# UCX-ROCm). ROCm-LLVM ships the ROCr runtime; rocm-core does not.
+
+easyblock = 'ConfigureMake'
+
+name = 'libfabric'
+version = '1.22.0'
+
+homepage = 'https://ofiwg.github.io/libfabric/'
+description = """
+Libfabric is a core component of OFI. It is the library that defines and exports
+the user-space API of OFI, and is typically the only software that applications
+deal with directly. It works in conjunction with provider libraries, which are
+often integrated directly into libfabric.
+
+This build is HPE's shs-libfabric (SHS 12.0.2) and compiles the HPE Slingshot-11
+`cxi` provider, giving EESSI's OpenMPI native inter-node performance over the
+Slingshot fabric. It also enables the ROCr/HSA HMEM backend so GPU-resident
+(ROCm device) buffers can be sent directly over the fabric.
+"""
+
+toolchain = {'name': 'rocm-compilers', 'version': '19.0.0-ROCm-6.4.1'}
+toolchainopts = {'pic': True}
+
+# HPE shs-libfabric fork; tag release/shs-12.0.2 == libfabric 1.22.0 + the
+# SHS 12.0.2 `cxi` provider. A git checkout ships no configure script.
+sources = [
+    {'filename': '%(name)s-%(version)s-shs-12.0.2.tar.gz', 'git_config': {'url': 'https://github.com/HewlettPackard', 'repo_name': 'shs-%(name)s', 'tag': 'release/shs-12.0.2', 'keep_git_dir': False}},
+]
+
+builddependencies = [
+    ('binutils', '2.42'),
+    ('pkgconf', '2.3.0', '', ('GCCcore', '14.2.0')),
+    ('Autotools', '20240712', '', ('GCCcore', '14.2.0')),
+]
+dependencies = [
+    ('numactl', '2.0.19', '', ('GCCcore', '14.2.0')),
+    ('libcxi', '1.0.2', '', ('GCCcore', '14.2.0')),
+    ('cassini-headers', '1.1.1', '', SYSTEM),
+    ('cxi-driver-headers', '1.0.0', '', SYSTEM),
+    # ROCr/HSA (the --with-rocr HMEM backend) is provided by the
+    # rocm-compilers toolchain via ROCm-LLVM -- no explicit dependency needed.
+]
+
+# No osdependencies: with verbs/efa disabled below, libfabric needs nothing
+# from the host's RDMA stack.
+
+# git checkout: regenerate the build system before configuring.
+preconfigopts = "./autogen.sh && "
+# HERMETIC PROVIDER SET -- this is load-bearing, not cosmetic.
+# libfabric's configure auto-detects providers from whatever it finds on the
+# host. Left unconstrained it builds verbs/efa/psm2 against the host's
+# /usr/lib64 (libibverbs / libefa / libpsm2) and bakes them straight into
+# libfabric.so's ELF NEEDED list. That is:
+# (a) a host-library pickup -- forbidden in this hermetic stack; and
+# (b) fatal at runtime -- on LUMI the host libefa is ABI-old (`EFA_1.3` not
+# found) and libpsm2.so.2 is absent from the runtime path, so libfabric.so
+# -- and everything linking it, e.g. OpenMPI's libopen-pal/libmpi --
+# cannot be loaded at all (this is what made OpenMPI's `make check` fail).
+# So disable every provider that links an external library; keep only `cxi`
+# (our target) plus the pure-software core (tcp/udp/shm), which the build
+# always includes and which need nothing from the host.
+configopts = "--disable-verbs --disable-efa --disable-psm2 --disable-psm3 --disable-opx --disable-usnic --disable-sockets --disable-ucx --disable-xpmem --enable-cxi=yes --with-cassini-headers=$EBROOTCASSINIMINHEADERS --with-cxi-uapi-headers=$EBROOTCXIMINDRIVERMINHEADERS --with-rocr=$EBROOTROCMMINLLVM "
+
+buildopts = 'V=1'
+
+# Drop the libtool archive; downstream consumers use pkg-config / the .so.
+postinstallcmds = ['rm -f %(installdir)s/lib/%(name)s.la']
+
+sanity_check_paths = {
+    'files': ['bin/fi_info', 'bin/fi_pingpong', 'bin/fi_strerror', 'lib/%(name)s.a', 'lib/%(name)s.so'],
+    'dirs': ['include/rdma', 'lib/pkgconfig', 'share'],
+}
+
+# `fi_info -l | grep cxi` makes the build FAIL HERE if the cxi provider did not
+# compile in -- no more silently shipping a cxi-less libfabric.
+sanity_check_commands = [
+    'fi_info',
+    "fi_info -l | grep -i cxi",
+]
+
+moduleclass = 'lib'

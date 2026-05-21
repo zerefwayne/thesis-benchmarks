@@ -1,0 +1,48 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# libnl3 — Netlink protocol library. Core (required) dependency of libcxi:
+# libcxi's configure.ac does `PKG_CHECK_MODULES([... libnl-3.0 ...])` to talk
+# to the CXI kernel driver over netlink.
+#
+# No libnl easyconfig exists anywhere in easybuild-easyconfigs, so this is a
+# genuine new easyconfig. Standard autotools build, sourced from the upstream
+# git tag (avoids pinning a release-tarball checksum).
+#
+# VERIFY: if 3.11.0 / tag `libnl3_11_0` is unavailable, use the current libnl3
+# release — any recent libnl3 (>= 3.7) satisfies libcxi's `libnl-3.0` check.
+
+easyblock = 'ConfigureMake'
+
+name = 'libnl'
+version = '3.11.0'
+
+homepage = 'https://github.com/thom311/libnl'
+description = """libnl is a collection of libraries providing APIs to the
+Netlink protocol based Linux kernel interfaces."""
+
+toolchain = {'name': 'GCCcore', 'version': '14.2.0'}
+toolchainopts = {'pic': True}
+
+sources = [
+    {'filename': SOURCE_TAR_GZ, 'git_config': {'url': 'https://github.com/thom311', 'repo_name': '%(name)s', 'tag': 'libnl3_11_0', 'keep_git_dir': False}},
+]
+
+builddependencies = [
+    ('binutils', '2.42'),
+    ('pkgconf', '2.3.0'),
+    ('Autotools', '20240712'),
+    ('Bison', '3.8.2'),
+    ('flex', '2.6.4'),
+]
+
+# git checkout ships no configure script — regenerate it.
+preconfigopts = "./autogen.sh && "
+configopts = "--disable-static "
+
+
+sanity_check_paths = {
+    'files': ['lib/%(name)s-3.so', 'lib/%(name)s-route-3.so'],
+    'dirs': ['include/libnl3', 'lib/pkgconfig'],
+}
+
+moduleclass = 'lib'

@@ -1,0 +1,77 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# libcxi — HPE Slingshot-11 CXI userspace library. This is the piece that lets
+# a non-Cray libfabric reach the Slingshot fabric: libfabric's `cxi` provider
+# links libcxi, which talks to LUMI's running cxi kernel module via /dev/cxi*.
+#
+# Built fully from source (HPE shs-libcxi), version-pinned to LUMI's SHS 12.0.2
+# so the userspace <-> kernel CXI UAPI is identical to LUMI's loaded driver.
+# Nothing is taken from /usr/lib64 or /usr/include — the EESSI stack stays
+# watertight. The cxi kernel module itself is provided by LUMI and is not built.
+
+easyblock = 'ConfigureMake'
+
+name = 'libcxi'
+version = '1.0.2'
+
+homepage = 'https://github.com/HewlettPackard/shs-libcxi'
+description = """libcxi is the userspace library for the HPE Slingshot-11
+Cassini (CXI) NIC. It is the link-time dependency of libfabric's cxi provider."""
+
+toolchain = {'name': 'GCCcore', 'version': '14.2.0'}
+toolchainopts = {'pic': True}
+
+# git tag release/shs-12.0.2 matches cray-libcxi 1.0.2 on LUMI.
+sources = [
+    {'filename': SOURCE_TAR_GZ, 'git_config': {'url': 'https://github.com/HewlettPackard', 'repo_name': 'shs-%(name)s', 'tag': 'release/shs-12.%(version_minor_patch)s', 'keep_git_dir': False}},
+]
+patches = ['%(name)s-%(version_major_minor)s.2_build-library-only.patch']
+checksums = [
+    None,  # .tar.gz not checksummable reliably
+    {'%(name)s-%(version_major_minor)s.2_build-library-only.patch': '7015fe413538f5cb825b26ad9313d0c962c2dc25d42ee31de38d9d91bced414c'},
+]
+
+# Strip the build down to just the libcxi shared library + its header and
+# pkg-config file. Upstream Makefile.am also builds the utils/ diagnostic
+# tools, a criterion test suite and the retry_handler systemd service; those
+# require fuse / libyaml / lm-sensors and compile GPU sources against the
+# host's /opt/rocm -- both forbidden in a hermetic build. libfabric's cxi
+# provider only link-depends on libcxi.so, so the rest is dropped.
+builddependencies = [
+    ('binutils', '2.42'),
+    ('pkgconf', '2.3.0'),
+    ('Autotools', '20240712'),
+]
+dependencies = [
+    # CXI headers (this stack), built from source — see their easyconfigs.
+    ('cassini-headers', '1.1.1', '', SYSTEM),
+    ('cxi-driver-headers', '1.0.0', '', SYSTEM),
+    # libcxi configure.ac PKG_CHECK_MODULES core requirements.
+    ('libconfig', '1.8.1'),
+    ('libuv', '1.51.0'),
+    ('libnl', '3.11.0'),
+    ('numactl', '2.0.19'),
+]
+
+# git checkout ships no configure script — regenerate it.
+preconfigopts = "./autogen.sh && "
+# --disable-static: libfabric's cxi provider links the shared libcxi.
+# --without-systemd: the retry-handler systemd service is stripped by the
+# patch and not needed for libfabric to link libcxi.
+# --without-rocm/-cuda/-ze: configure otherwise probes the host (/opt/rocm,
+# /usr/local/cuda, /usr) for GPU SDKs and, if found, injects system -I paths
+# into CFLAGS. The patch removes the only GPU consumers (the utils/ tools),
+# so this just keeps the libcxi.so compile fully hermetic.
+configopts = "--disable-static --without-systemd --without-rocm --without-cuda --without-ze "
+
+
+# The cassini-headers / cxi-driver-headers include dirs are placed on CPATH by
+# their EasyBuild modules, so configure's header checks (cassini_user_defs.h,
+# uapi/misc/cxi.h) resolve without explicit -I flags.
+
+sanity_check_paths = {
+    'files': ['lib/%(name)s.so'],
+    'dirs': ['include', 'lib/pkgconfig'],
+}
+
+moduleclass = 'lib'

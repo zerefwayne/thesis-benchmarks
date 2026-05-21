@@ -1,0 +1,47 @@
+# Author:   Aayush Joglekar <aayush.joglekar@surf.nl>
+#
+# Verbatim copy of the stock EESSI OSU-Micro-Benchmarks 7.5 easyconfig — same
+# name, version and rompi-2025a toolchain. No content change is needed:
+# rebuilding it after OpenMPI/libfabric (build_eessi_cxi.sh) links the OSU
+# binaries against the CXI-capable stack, so osu_bw/osu_latency/... drive the
+# Slingshot fabric directly.
+#
+# Included here so easyconfigs/ is a complete, self-contained build set. Keep
+# it in sync with the upstream easyconfig, or delete it and let `eb` resolve
+# OSU from the upstream easybuild-easyconfigs tree.
+
+easyblock = 'ConfigureMake'
+
+name = 'OSU-Micro-Benchmarks'
+version = '7.5'
+
+homepage = 'https://mvapich.cse.ohio-state.edu/benchmarks/'
+description = "OSU Micro-Benchmarks"
+
+toolchain = {'name': 'rompi', 'version': '2025a'}
+toolchainopts = {'usempi': True}
+
+source_urls = ['https://mvapich.cse.ohio-state.edu/download/mvapich/']
+sources = [SOURCELOWER_TAR_GZ]
+checksums = ['1cf84ac5419456202757a757c5f9a4f5c6ecd05c65783c7976421cfd6020b3b3']
+
+dependencies = [
+    ('HIP', '6.4.1', '', ('rocm-compilers', '19.0.0-ROCm-6.4.1')),
+    ('RCCL', '2.22.3', '', ('rocm-compilers', '19.0.0-ROCm-6.4.1')),
+]
+
+configopts = "--enable-rocm --with-rocm=$EBROOTHIP --enable-rcclomb --with-rccl=$EBROOTRCCL "
+
+
+sanity_check_paths = {
+    'files': ['libexec/%(namelower)s/mpi/pt2pt/osu_bw', 'libexec/%(namelower)s/mpi/collective/osu_allreduce', 'libexec/%(namelower)s/xccl/collective/osu_xccl_allreduce'],
+    'dirs': ['libexec/%(namelower)s/mpi/collective', 'libexec/%(namelower)s/mpi/one-sided', 'libexec/%(namelower)s/mpi/pt2pt', 'libexec/%(namelower)s/mpi/startup', 'libexec/%(namelower)s/xccl/collective', 'libexec/%(namelower)s/xccl/pt2pt'],
+}
+
+sanity_check_commands = ['strings %(installdir)s/libexec/%(namelower)s/mpi/pt2pt/osu_bw | grep -qi rocm']
+
+modextrapaths = {
+    'PATH': ['libexec/%(namelower)s/mpi/collective', 'libexec/%(namelower)s/mpi/one-sided', 'libexec/%(namelower)s/mpi/pt2pt', 'libexec/%(namelower)s/mpi/startup', 'libexec/%(namelower)s/xccl/collective', 'libexec/%(namelower)s/xccl/pt2pt'],
+}
+
+moduleclass = 'perf'
